@@ -1,0 +1,328 @@
+{
+    "name": "metronic",
+    "version": "6.0.2",
+    "config": {
+        "demo": "",
+        "debug": false,
+        "compile": {
+            "rtl": {
+                "enabled": true,
+                "skip": [
+                    "socicon",
+                    "line-awesome",
+                    "flaticon",
+                    "flaticon2",
+                    "fontawesome5",
+                    "fontawesome-free"
+                ]
+            },
+            "jsUglify": false,
+            "cssMinify": false,
+            "jsSourcemaps": false,
+            "cssSourcemaps": false
+        },
+        "path": {
+            "src": "./../src",
+            "node_modules": "./node_modules",
+            
+            "demo_api_url": "https://keenthemes.com/metronic/themes/themes/metronic/dist/preview/"
+        },
+        "dist": [
+            "./../dist/default/src/assets",
+            "./../dist/skeleton/src/assets"
+        ]
+    },
+    "build": {
+        "vendors": {
+            "base": {
+                "src": {
+                    "mandatory": {
+                        "popper.js": {
+                            "scripts": [
+                                "{$config.path.node_modules}/popper.js/dist/umd/popper.js"
+                            ]
+                        },
+                        "tooltip.js": {
+                            "scripts": [
+                                "{$config.path.node_modules}/tooltip.js/dist/umd/tooltip.min.js"
+                            ]
+                        }
+                    },
+                    "optional": {
+                        "socicon": {
+                            "styles": [
+                                "{$config.path.node_modules}/socicon/css/socicon.css"
+                            ],
+                            "fonts": [
+                                "{$config.path.node_modules}/socicon/font/**"
+                            ]
+                        },
+                        "line-awesome": {
+                            "styles": [
+                                "{$config.path.src}/vendors/line-awesome/css/line-awesome.css"
+                            ],
+                            "fonts": [
+                                "{$config.path.src}/vendors/line-awesome/fonts/**"
+                            ]
+                        },
+                        "flaticon": {
+                            "styles": [
+                                "{$config.path.src}/vendors/flaticon/flaticon.css"
+                            ],
+                            "fonts": [
+                                "{$config.path.src}/vendors/flaticon/font/**"
+                            ]
+                        },
+                        "flaticon2": {
+                            "styles": [
+                                "{$config.path.src}/vendors/flaticon2/flaticon.css"
+                            ],
+                            "fonts": [
+                                "{$config.path.src}/vendors/flaticon2/font/**"
+                            ]
+                        },
+                        "@fortawesome": {
+                            "styles": [
+                                "{$config.path.node_modules}/@fortawesome/fontawesome-free/css/all.min.css"
+                            ],
+                            "fonts": [
+                                "{$config.path.node_modules}/@fortawesome/fontawesome-free/webfonts/**"
+                            ]
+                        }
+                    }
+                },
+                "bundle": {
+                    "styles": "{$config.output}/vendors/global/vendors.bundle.css",
+                    "scripts": "{$config.output}/vendors/global/vendors.bundle.js",
+                    "images": "{$config.output}/vendors/global/img",
+                    "fonts": "{$config.output}/vendors/global/fonts"
+                }
+            },
+            "custom": []
+        },
+        "demos": {
+            "demo1": {
+                "base": {
+                    "src": {
+                        "styles": [
+                            "{$config.path.src}/sass/theme/demos/demo1/style-angular.scss"
+                        ],
+                        "scripts": [
+                            "{$config.path.src}/js/theme/core/util.js",
+                            "{$config.path.src}/js/theme/core/base/header.js",
+                            "{$config.path.src}/js/theme/core/base/menu.js",
+                            "{$config.path.src}/js/theme/core/base/offcanvas.js",
+                            "{$config.path.src}/js/theme/core/base/scrolltop.js",
+                            "{$config.path.src}/js/theme/core/base/toggle.js",
+                            "{$config.path.src}/js/theme/core/base/dialog.js"
+                        ]
+                    },
+                    "bundle": {
+                        "styles": "{$config.output}/css/demo1/style.bundle.css",
+                        "scripts": "{$config.output}/js/demo1/scripts.bundle.js"
+                    }
+                },
+                "skins": {
+                    "header": {
+                        "src": {
+                            "styles": [
+                                "{$config.path.src}/sass/theme/demos/demo1/header/skins/**/*.scss"
+                            ]
+                        },
+                        "output": {
+                            "styles": "{$config.output}/css/demo1/skins/header/"
+                        }
+                    },
+                    "brand": {
+                        "src": {
+                            "styles": [
+                                "{$config.path.src}/sass/theme/demos/demo1/brand/skins/**/*.scss"
+                            ]
+                        },
+                        "output": {
+                            "styles": "{$config.output}/css/demo1/skins/brand/"
+                        }
+                    },
+                    "aside": {
+                        "src": {
+                            "styles": [
+                                "{$config.path.src}/sass/theme/demos/demo1/aside/skins/**/*.scss"
+                            ]
+                        },
+                        "output": {
+                            "styles": "{$config.output}/css/demo1/skins/aside/"
+                        }
+                    }
+                },
+                "pages": {
+                    "src": {
+                        "styles-by-demo": [
+                            "{$config.path.src}/sass/theme/pages/**/*.scss"
+                        ],
+                        "scripts": [
+                            "{$config.path.src}/js/theme/pages/**/*.js"
+                        ]
+                    },
+                    "output": {
+                        "styles-by-demo": "{$config.output}/css/demo1/pages/",
+                        "scripts": "{$config.output}/js/demo1/pages/"
+                    }
+                }
+            },
+            "demo2": {
+                "base": {
+                    "src": {
+                        "styles": [
+                            "{$config.path.src}/sass/theme/demos/demo2/style-angular.scss"
+                        ],
+                        "scripts": [
+                            "{$config.path.src}/js/theme/core/util.js",
+                            "{$config.path.src}/js/theme/core/base/header.js",
+                            "{$config.path.src}/js/theme/core/base/menu.js",
+                            "{$config.path.src}/js/theme/core/base/offcanvas.js",
+                            "{$config.path.src}/js/theme/core/base/scrolltop.js",
+                            "{$config.path.src}/js/theme/core/base/toggle.js",
+                            "{$config.path.src}/js/theme/core/base/dialog.js"
+                        ]
+                    },
+                    "bundle": {
+                        "styles": "{$config.output}/css/demo2/style.bundle.css",
+                        "scripts": "{$config.output}/js/demo2/scripts.bundle.js"
+                    }
+                },
+                "pages": {
+                    "src": {
+                        "styles-by-demo": [
+                            "{$config.path.src}/sass/theme/pages/**/*.scss"
+                        ],
+                        "scripts": [
+                            "{$config.path.src}/js/theme/pages/**/*.js"
+                        ]
+                    },
+                    "output": {
+                        "styles-by-demo": "{$config.output}/css/demo2/pages/",
+                        "scripts": "{$config.output}/js/demo2/pages/"
+                    }
+                }
+            },
+            "demo3": {
+                "base": {
+                    "src": {
+                        "styles": [
+                            "{$config.path.src}/sass/theme/demos/demo3/style-angular.scss"
+                        ],
+                        "scripts": [
+                            "{$config.path.src}/js/theme/core/util.js",
+                            "{$config.path.src}/js/theme/core/base/header.js",
+                            "{$config.path.src}/js/theme/core/base/menu.js",
+                            "{$config.path.src}/js/theme/core/base/offcanvas.js",
+                            "{$config.path.src}/js/theme/core/base/scrolltop.js",
+                            "{$config.path.src}/js/theme/core/base/toggle.js",
+                            "{$config.path.src}/js/theme/core/base/dialog.js"
+                        ]
+                    },
+                    "bundle": {
+                        "styles": "{$config.output}/css/demo3/style.bundle.css",
+                        "scripts": "{$config.output}/js/demo3/scripts.bundle.js"
+                    }
+                },
+                "pages": {
+                    "src": {
+                        "styles-by-demo": [
+                            "{$config.path.src}/sass/theme/pages/**/*.scss"
+                        ],
+                        "scripts": [
+                            "{$config.path.src}/js/theme/pages/**/*.js"
+                        ]
+                    },
+                    "output": {
+                        "styles-by-demo": "{$config.output}/css/demo3/pages/",
+                        "scripts": "{$config.output}/js/demo3/pages/"
+                    }
+                }
+            },
+            "demo4": {
+                "base": {
+                    "src": {
+                        "styles": [
+                            "{$config.path.src}/sass/theme/demos/demo4/style-angular.scss"
+                        ],
+                        "scripts": [
+                            "{$config.path.src}/js/theme/core/util.js",
+                            "{$config.path.src}/js/theme/core/base/header.js",
+                            "{$config.path.src}/js/theme/core/base/menu.js",
+                            "{$config.path.src}/js/theme/core/base/offcanvas.js",
+                            "{$config.path.src}/js/theme/core/base/scrolltop.js",
+                            "{$config.path.src}/js/theme/core/base/toggle.js",
+                            "{$config.path.src}/js/theme/core/base/dialog.js"
+                        ]
+                    },
+                    "bundle": {
+                        "styles": "{$config.output}/css/demo4/style.bundle.css",
+                        "scripts": "{$config.output}/js/demo4/scripts.bundle.js"
+                    }
+                },
+                "pages": {
+                    "src": {
+                        "styles-by-demo": [
+                            "{$config.path.src}/sass/theme/pages/**/*.scss"
+                        ],
+                        "scripts": [
+                            "{$config.path.src}/js/theme/pages/**/*.js"
+                        ]
+                    },
+                    "output": {
+                        "styles-by-demo": "{$config.output}/css/demo4/pages/",
+                        "scripts": "{$config.output}/js/demo4/pages/"
+                    }
+                }
+            },
+            "demo5": {
+                "base": {
+                    "src": {
+                        "styles": [
+                            "{$config.path.src}/sass/theme/demos/demo5/style-angular.scss"
+                        ],
+                        "scripts": [
+                            "{$config.path.src}/js/theme/core/util.js",
+                            "{$config.path.src}/js/theme/core/base/header.js",
+                            "{$config.path.src}/js/theme/core/base/menu.js",
+                            "{$config.path.src}/js/theme/core/base/offcanvas.js",
+                            "{$config.path.src}/js/theme/core/base/scrolltop.js",
+                            "{$config.path.src}/js/theme/core/base/toggle.js",
+                            "{$config.path.src}/js/theme/core/base/dialog.js"
+                        ]
+                    },
+                    "bundle": {
+                        "styles": "{$config.output}/css/demo5/style.bundle.css",
+                        "scripts": "{$config.output}/js/demo5/scripts.bundle.js"
+                    }
+                },
+                "pages": {
+                    "src": {
+                        "styles-by-demo": [
+                            "{$config.path.src}/sass/theme/pages/**/*.scss"
+                        ],
+                        "scripts": [
+                            "{$config.path.src}/js/theme/pages/**/*.js"
+                        ]
+                    },
+                    "output": {
+                        "styles-by-demo": "{$config.output}/css/demo5/pages/",
+                        "scripts": "{$config.output}/js/demo5/pages/"
+                    }
+                }
+            }
+        },
+        "media": {
+            "src": {
+                "media": [
+                    "{$config.path.src}/media/**/*.*"
+                ]
+            },
+            "output": {
+                "media": "{$config.output}/media/"
+            }
+        }
+    }
+}
