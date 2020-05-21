@@ -1,0 +1,600 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url("../fonts/WorkSans-Regular.woff2") format("woff2"), url("../fonts/WorkSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url("../fonts/WorkSans-SemiBold.woff2") format("woff2"), url("../fonts/WorkSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Miso';
+  src: url("../fonts/Miso.woff2") format("woff2"), url("../fonts/Miso.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Miso';
+  src: url("../fonts/Miso-Bold.woff2") format("woff2"), url("../fonts/Miso-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+#loading-progress-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  z-index: 2; }
+
+#loading-progress {
+  background: #4d8be9;
+  width: 0;
+  height: 8px; }
+
+#watermark {
+  position: absolute;
+  bottom: 2em;
+  right: 2.25em;
+  z-index: 10;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 1.1;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  -ms-text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  -moz-text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  -o-text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  /*   a {
+    color: inherit;
+    border-bottom: none;
+    padding: 0.2em 0.4em 0.2em;
+
+    &:hover {
+      background: $light;
+      color: $dark;
+      @include font-smoothing(off);
+    }
+  } */
+  /*   @media screen and (max-width: 850px) {
+    bottom: 1em;
+    right: 1em;
+  } */ }
+  #watermark span {
+    font-size: 0.75em;
+    font-weight: 500; }
+  #watermark a {
+    font-family: 'Miso';
+    font-size: 1.8em;
+    text-decoration: none;
+    color: #fff; }
+
+@media screen and (min-width: 2500px) {
+  html {
+    font-size: 28px; } }
+
+@media screen and (min-width: 2400px) and (max-width: 2500px) {
+  html {
+    font-size: 27px; } }
+
+@media screen and (min-width: 2300px) and (max-width: 2400px) {
+  html {
+    font-size: 26px; } }
+
+@media screen and (min-width: 2200px) and (max-width: 2300px) {
+  html {
+    font-size: 25px; } }
+
+@media screen and (min-width: 2100px) and (max-width: 2200px) {
+  html {
+    font-size: 24px; } }
+
+@media screen and (min-width: 2000px) and (max-width: 2100px) {
+  html {
+    font-size: 23px; } }
+
+@media screen and (min-width: 1900px) and (max-width: 2000px) {
+  html {
+    font-size: 22px; } }
+
+@media screen and (min-width: 1800px) and (max-width: 1900px) {
+  html {
+    font-size: 21px; } }
+
+@media screen and (min-width: 1700px) and (max-width: 1800px) {
+  html {
+    font-size: 20px; } }
+
+@media screen and (min-width: 1600px) and (max-width: 1700px) {
+  html {
+    font-size: 19px; } }
+
+@media screen and (min-width: 1500px) and (max-width: 1600px) {
+  html {
+    font-size: 18px; } }
+
+@media screen and (min-width: 1400px) and (max-width: 1500px) {
+  html {
+    font-size: 17px; } }
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  html {
+    font-size: 16px; } }
+
+/* @media screen and (min-width: 1200px) and (max-width: 1300px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+  html {
+    font-size: 11px;
+  }
+} */
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 12px; } }
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 10px; } }
+
+@-webkit-keyframes aboutIn {
+  0% {
+    -webkit-transform: translateY(-50%) scale(0.75);
+    -moz-transform: translateY(-50%) scale(0.75);
+    -ms-transform: translateY(-50%) scale(0.75);
+    -o-transform: translateY(-50%) scale(0.75);
+    transform: translateY(-50%) scale(0.75);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(-50%) scale(1);
+    -moz-transform: translateY(-50%) scale(1);
+    -ms-transform: translateY(-50%) scale(1);
+    -o-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+    opacity: 1; } }
+
+@-moz-keyframes aboutIn {
+  0% {
+    -webkit-transform: translateY(-50%) scale(0.75);
+    -moz-transform: translateY(-50%) scale(0.75);
+    -ms-transform: translateY(-50%) scale(0.75);
+    -o-transform: translateY(-50%) scale(0.75);
+    transform: translateY(-50%) scale(0.75);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(-50%) scale(1);
+    -moz-transform: translateY(-50%) scale(1);
+    -ms-transform: translateY(-50%) scale(1);
+    -o-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+    opacity: 1; } }
+
+@-ms-keyframes aboutIn {
+  0% {
+    -webkit-transform: translateY(-50%) scale(0.75);
+    -moz-transform: translateY(-50%) scale(0.75);
+    -ms-transform: translateY(-50%) scale(0.75);
+    -o-transform: translateY(-50%) scale(0.75);
+    transform: translateY(-50%) scale(0.75);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(-50%) scale(1);
+    -moz-transform: translateY(-50%) scale(1);
+    -ms-transform: translateY(-50%) scale(1);
+    -o-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+    opacity: 1; } }
+
+@keyframes aboutIn {
+  0% {
+    -webkit-transform: translateY(-50%) scale(0.75);
+    -moz-transform: translateY(-50%) scale(0.75);
+    -ms-transform: translateY(-50%) scale(0.75);
+    -o-transform: translateY(-50%) scale(0.75);
+    transform: translateY(-50%) scale(0.75);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(-50%) scale(1);
+    -moz-transform: translateY(-50%) scale(1);
+    -ms-transform: translateY(-50%) scale(1);
+    -o-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+    opacity: 1; } }
+
+@-webkit-keyframes aboutInMobile {
+  0% {
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@-moz-keyframes aboutInMobile {
+  0% {
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@-ms-keyframes aboutInMobile {
+  0% {
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes aboutInMobile {
+  0% {
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+#about-button {
+  position: absolute;
+  top: 3em;
+  right: 2.75em;
+  height: 2.875em;
+  width: 2.875em;
+  background: url("../img/about.png") no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  z-index: 2; }
+
+#about {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 10;
+  display: none;
+  pointer-events: none; }
+  #about .popup {
+    pointer-events: auto; }
+  #about h1 {
+    font-family: 'Miso';
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    line-height: 1;
+    text-transform: uppercase; }
+  #about .description + p {
+    margin-top: 1.25em; }
+  #about a {
+    color: #4d8be9;
+    text-decoration: none; }
+    #about a:hover {
+      border-bottom: 0.1em solid #4d8be9; }
+  #about p + p {
+    margin-top: 0.9em; }
+  #about p.small {
+    margin-top: 1.5em;
+    font-size: 0.8em; }
+  #about hr {
+    height: 0.05em;
+    background: #303030;
+    width: 2em;
+    border: 0;
+    margin: 1em 0; }
+  #about .popup {
+    max-width: 30em;
+    background: #fff;
+    color: #303030;
+    margin: 0 auto; }
+    #about .popup .inner {
+      padding: 2.25em 3em;
+      line-height: 1.75;
+      font-size: 90%;
+      position: relative; }
+    #about .popup .close {
+      position: absolute;
+      top: 0em;
+      right: 0em;
+      height: 5em;
+      width: 5em;
+      background: url("../img/close.png") no-repeat;
+      background-size: 25%;
+      cursor: pointer;
+      z-index: 2;
+      opacity: 0.7;
+      background-position: center; }
+      #about .popup .close:hover {
+        opacity: 1; }
+  #about .footer {
+    margin-top: 2em; }
+    #about .footer:before, #about .footer:after {
+      content: " ";
+      display: table; }
+    #about .footer:after {
+      clear: both; }
+  #about.visible {
+    display: block;
+    -webkit-animation: aboutIn 300ms ease-out;
+    -moz-animation: aboutIn 300ms ease-out;
+    -ms-animation: aboutIn 300ms ease-out;
+    -o-animation: aboutIn 300ms ease-out;
+    animation: aboutIn 300ms ease-out;
+    -webkit-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+  #about .watermark {
+    float: left;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.1;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    color: rgba(0, 0, 0, 0.75); }
+    #about .watermark span {
+      font-size: 0.75em;
+      font-weight: 500; }
+    #about .watermark a {
+      font-family: 'Miso';
+      font-size: 1.8em;
+      text-decoration: none;
+      color: inherit; }
+  #about .sharing:before, #about .sharing:after {
+    content: " ";
+    display: table; }
+  #about .sharing:after {
+    clear: both; }
+  #about .sharing .text {
+    font-family: "Miso";
+    text-transform: uppercase;
+    font-size: 1.15em;
+    opacity: 0.8; }
+  #about .sharing .icons {
+    margin-left: -0.5em; }
+    #about .sharing .icons:before, #about .sharing .icons:after {
+      content: " ";
+      display: table; }
+    #about .sharing .icons:after {
+      clear: both; }
+  #about .sharing .icon {
+    height: 2.4em;
+    width: 2.4em;
+    float: left;
+    background: url("../img/sharing.png") no-repeat;
+    background-size: auto 100%;
+    opacity: 0.25;
+    cursor: pointer; }
+    #about .sharing .icon.social_t {
+      background-position: 0 0; }
+    #about .sharing .icon.social_f {
+      background-position: 50% 0; }
+    #about .sharing .icon.social_l {
+      background-position: 100% 0; }
+    #about .sharing .icon:hover {
+      opacity: 0.8; }
+
+@media screen and (max-width: 700px) {
+  #about-button {
+    top: 2.75em; }
+  #about,
+  #about .popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none; }
+    #about.visible,
+    #about .popup.visible {
+      -webkit-animation: aboutInMobile 300ms ease-out;
+      -moz-animation: aboutInMobile 300ms ease-out;
+      -ms-animation: aboutInMobile 300ms ease-out;
+      -o-animation: aboutInMobile 300ms ease-out;
+      animation: aboutInMobile 300ms ease-out; }
+    #about h1,
+    #about .popup h1 {
+      font-size: 2em; }
+    #about .popup,
+    #about .popup .popup {
+      font-size: 150%;
+      max-width: none;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-scrolling: touch;
+      -moz-overflow-scrolling: touch;
+      -o-overflow-scrolling: touch;
+      overflow-scrolling: touch; }
+    #about .popup .inner,
+    #about .popup .popup .inner {
+      padding: 1.75em 2em; } }
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  /* Prevent font scaling in landscape while allowing user zoom */ }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #303030; }
+
+#viewport {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 300ms filter linear;
+  -moz-transition: 300ms filter linear;
+  -ms-transition: 300ms filter linear;
+  -o-transition: 300ms filter linear;
+  transition: 300ms filter linear; }
+  #viewport.blur {
+    -webkit-filter: blur(5px) brightness(0.5);
+    -ms-filter: blur(5px) brightness(0.5);
+    -moz-filter: blur(5px) brightness(0.5);
+    -o-filter: blur(5px) brightness(0.5);
+    filter: blur(5px) brightness(0.5); }
+
+#app-ui {
+  font-family: "Work Sans";
+  color: #303030;
+  display: none; }
+
+#main-title {
+  font-family: "Miso";
+  font-size: 3em;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.2em 0.35em;
+  position: absolute;
+  top: 1.25em;
+  left: 1.5em;
+  text-transform: uppercase;
+  z-index: 10;
+  width: auto;
+  opacity: 0; }
+  #main-title.visible {
+    opacity: 1; }
+
+.page {
+  font-family: "Work Sans";
+  padding: 3em;
+  background: #fff;
+  color: #303030;
+  height: 100%; }
+  .page h1 {
+    font-family: 'Miso';
+    text-transform: uppercase;
+    color: #4d8be9;
+    font-size: 2.5em; }
+  .page h1 + p {
+    margin-top: 1em; }
+
+@media screen and (max-width: 700px) {
+  #main-title {
+    top: 0.75em;
+    left: 0.75em; } }
