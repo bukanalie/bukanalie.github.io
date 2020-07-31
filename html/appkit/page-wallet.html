@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Wallet</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-content">
+<div class="card notch-clear rounded-0 gradient-dark mb-n5">
+<div class="card-body">
+<h1 class="color-white font-30 float-left">Wallet</h1>
+<a href="#" data-menu="menu-cards" class="float-right color-white btn btn-xxs font-600 rounded-s border-white"><i class="fa fa-plus mr-2"></i>Add Card</a>
+<div clas="clearfix"></div>
+</div>
+<div class="card-body mx-0 px-0 mt-n4 mb-5">
+<div class="card-slider owl-carousel owl-no-dots mb-0">
+<div class="card card-style mx-0 mt-4 bg-20" data-card-height="180">
+<div class="card-top pl-3 pt-3">
+<h1 class="color-white font-19">MasterCard</h1>
+</div>
+<div class="card-center pr-3">
+<h4 class="color-white text-right">**** **** **** 6345</h4>
+</div>
+<div class="card-bottom pl-3 pb-2">
+<h5 class="color-white">Jack Singer</h5>
+</div>
+<div class="card-bottom pr-3 pb-2">
+<h5 class="color-white float-right">01/26</h5>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style mx-0 mt-4 bg-1" data-card-height="180">
+<div class="card-top pl-3 pt-3">
+<h1 class="color-white">AMEX</h1>
+</div>
+<div class="card-center pr-3">
+<h4 class="color-white text-right">**** **** **** 3415</h4>
+</div>
+<div class="card-bottom pl-3 pb-2">
+<h5 class="color-white">John Runner</h5>
+</div>
+<div class="card-bottom pr-3 pb-2">
+<h5 class="color-white float-right">03/25</h5>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style mx-0 mt-4 bg-6" data-card-height="180">
+<div class="card-top pl-3 pt-3">
+<h1 class="color-white">Visa</h1>
+</div>
+<div class="card-center pr-3">
+<h4 class="color-white text-right">**** **** **** 3456</h4>
+</div>
+<div class="card-bottom pl-3 pb-2">
+<h5 class="color-white">Jane Louder</h5>
+</div>
+<div class="card-bottom pr-3 pb-2">
+<h5 class="color-white float-right">05/24</h5>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style mt-n3">
+<div class="content mb-2 mt-3">
+<div class="d-flex">
+<div class="pr-4">
+<p class="font-600 color-highlight mb-0">Your Balance</p>
+<h1>$23,500</h1>
+</div>
+<div class="w-100 pt-1">
+<h6 class="font-14 font-500">Income<span class="float-right color-green-dark">+$3.115</span></h6>
+<div class="divider mb-2 mt-1"></div>
+<h6 class="font-14 font-500">Expenses<span class="float-right color-red-dark">-$1.315</span></h6>
+</div>
+</div>
+</div>
+</div>
+<div class="content mb-0 mt-n3">
+<div class="row mb-0">
+<div class="col-6 pr-1">
+<div class="card card-style mx-0 mb-2 p-3">
+<h6 class="font-14">Income</h6>
+<h3 class="color-green-dark mb-0">+31.2%</h3>
+</div>
+</div>
+<div class="col-6 pl-1">
+<div class="card card-style mx-0 mb-2 p-3">
+<h6 class="font-14">Expenses</h6>
+<h3 class="color-red-dark mb-0">-14.5%</h3>
+</div>
+</div>
+<div class="col-6 pr-1">
+<div class="card card-style mx-0 p-3">
+<h6 class="font-14">Subscriptions</h6>
+<h3 class="color-brown-dark mb-0">+11.2%</h3>
+</div>
+</div>
+<div class="col-6 pl-1">
+<div class="card card-style mx-0 p-3">
+<h6 class="font-14">Savings</h6>
+<h3 class="color-blue-dark mb-0">$14,500</h3>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-0">
+<p class="font-600 color-highlight mb-n1">Friends and Family</p>
+<h2>Transactions</h2>
+<p>
+Showing latest activity from your card. These transactions have already been processed.
+</p>
+<div class="list-group list-custom-large">
+<a href="#">
+<img src="images/pictures/6s.jpg" class="rounded-xl">
+<span>Jane Louder</span>
+<strong>Direct Wire Transfer</strong>
+<span class="badge bg-red-dark font-11">25.00 USD</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#">
+<img src="images/pictures/15s.jpg" class="rounded-xl">
+<span>Johanna Doe</span>
+<strong>Direct Wire Transfer</strong>
+<span class="badge bg-green-dark font-11">100.00 USD</span>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-0">
+<p class="font-600 color-highlight mb-n1">Your Latest</p>
+<h2>Subscriptions</h2>
+<p>
+Showing latest activity from your card. These transactions have already been processed.
+</p>
+<div class="list-group list-custom-large">
+<a href="#">
+<i class="fab fa-spotify rounded-xl shadow-s bg-dark-dark"></i>
+<span>Spotify Premium</span>
+<strong>Monthly Subscription</strong>
+<span class="badge bg-yellow-dark font-11">25.00 USD</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#">
+<i class="fa fa-heart rounded-xl shadow-s bg-red-dark"></i>
+<span>Gym Membership</span>
+<span class="badge bg-red-dark font-11">15.00 USD</span>
+<strong class="left-10">Monthly Subsciption</strong>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" class="border-0">
+<i class="fa fa-dollar-sign rounded-xl shadow-s bg-green-dark"></i>
+<span>Bank Added Funds</span>
+<strong>Manual Payment Adusted</strong>
+<span class="badge bg-blue-dark font-11">1500.00 USD</span>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-0">
+<p class="font-600 color-highlight mb-n1">Graphical</p>
+<h2>Overview</h2>
+<p>
+Showing latest activity from your card. These transactions have already been processed.
+</p>
+<div class="chart-container mb-4" style="height:300px;">
+<canvas class="chart" id="wallet-chart" />
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content">
+<p class="font-600 color-highlight mb-n1">Financial</p>
+<h2>Reports</h2>
+<p>
+Showing latest activity from your card. These transactions have already been processed.
+</p>
+<a href="#" class="d-flex py-2">
+<div>
+<i class="fa fa-file-signature icon-30 mr-3 mt-2 fa-2x"></i>
+</div>
+<div>
+<p class="color-highlight mb-n1 font-12 font-600">Download</p>
+<h5 class="mb-0">Quarter Report</h5>
+</div>
+</a>
+<a href="#" class="d-flex py-2">
+<div>
+<i class="fa fa-file-pdf icon-30 mr-3 mt-2 fa-2x"></i>
+</div>
+<div>
+<p class="color-highlight mb-n1 font-12 font-600">Download</p>
+<h5 class="mb-0">Savings Sheet</h5>
+</div>
+</a>
+<a href="#" class="d-flex py-2">
+<div>
+<i class="fa fa-file-invoice icon-30 mr-3 mt-2 fa-2x"></i>
+</div>
+<div>
+<p class="color-highlight mb-n1 font-12 font-600">Download</p>
+<h5 class="mb-0">Service Invoice</h5>
+</div>
+</a>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-cards" class="menu menu-box-bottom rounded-m bg-white" data-menu-height="430">
+<div class="menu-title">
+<p class="color-highlight font-600">This is a Demo</p>
+<h1>Add a Card</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="content mt-0">
+<p>
+This is just a demo. Don't enter real information.
+</p>
+<div class="input-style input-style-2 input-required">
+<span class="input-style-1-active bg-">Card Holder Name</span>
+<em class="color-theme opacity-30">(required)</em>
+<input class="form-control" type="name" placeholder="John Doe">
+</div>
+<div class="input-style input-style-2 input-required">
+<span class="input-style-1-active bg-">Number on Card</span>
+<em class="color-theme opacity-30">(required)</em>
+<input class="form-control" type="number" placeholder="1234 5678 9012 3456">
+</div>
+<div class="row mb-0">
+<div class="col-6">
+<div class="input-style input-style-2 input-required">
+<span class="input-style-1-active bg-">Expiration</span>
+<em class="color-theme opacity-30">(required)</em>
+<input class="form-control" type="number" placeholder="05/25">
+</div>
+</div>
+<div class="col-6">
+<div class="input-style input-style-2 input-required">
+<span class="input-style-1-active bg-">Security</span>
+<em class="color-theme opacity-30">(required)</em>
+<input class="form-control" type="name" placeholder="123">
+</div>
+</div>
+</div>
+<a href="#" class="btn btn-m font-13 font-600 gradient-blue btn-full rounded-s mt-3">Add Card</a>
+</div>
+</div>
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

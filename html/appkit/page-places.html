@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center">
+<a href="index.html" class="header-title">Places</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="card card-fixed mb-n5" data-card-height="450">
+<div class="map-full">
+<iframe src="https://maps.google.com/?ie=UTF8&amp;ll=47.595131,-122.330414&amp;spn=0.006186,0.016512&amp;t=h&amp;z=17&amp;output=embed"></iframe>
+</div>
+</div>
+<div class="card card-clear" data-card-height="450"></div>
+<div class="page-content pb-3">
+
+<div class="card card-full rounded-m pb-4">
+<div class="drag-line"></div>
+<div class="content">
+<p class="font-600 mb-n1 color-highlight">Full Maps are Awesome</p>
+<h1>Close to You</h1>
+<p>
+By default the map you see here is an embeded Google Map. You can add your own API for maps and generate places.
+</p>
+<div class="d-flex">
+<div class="mr-auto">
+<img src="images/pictures/1s.jpg" width="140" class="rounded-sm">
+</div>
+<div class="w-100 pl-3">
+<h4 class="mb-0">Gold's Gym</h4>
+<p class="mb-2">Train with legends in the world of bodybuilding</p>
+<p>
+<i class="fa fa-star color-yellow-dark icon-10 text-center mr-2"></i>5.0
+<i class="fa fa-map-marker color-blue-dark icon-10 text-center ml-2 mr-2"></i>3.4 Miles Away
+<br>
+<span class="mt-3 badge border color-green-dark border-green-dark">POPULAR</span>
+</p>
+</div>
+</div>
+<div class="divider mt-3 mb-3"></div>
+<div class="d-flex">
+<div class="mr-auto">
+<img src="images/pictures/4s.jpg" width="140" class="rounded-sm">
+</div>
+<div class="w-100 pl-3">
+<h4 class="mb-0">John's Pub</h4>
+<p class="mb-2">Have a cold one and relax after a long day</p>
+<p>
+<i class="fa fa-star color-yellow-dark icon-10 text-center mr-2"></i>4.1
+<i class="fa fa-map-marker color-blue-dark icon-10 text-center ml-2 mr-2"></i>4.6 Miles Away
+<br>
+<span class="mt-2 badge border color-red-dark border-red-dark">PREMIUM</span>
+<span class="ml-2 badge border color-blue-dark border-blue-dark">FREE WIFI</span>
+</p>
+</div>
+</div>
+<div class="divider mt-3 mb-3"></div>
+<div class="d-flex">
+<div class="mr-auto">
+<img src="images/pictures/6s.jpg" width="140" class="rounded-sm">
+</div>
+<div class="w-100 pl-3">
+<h4 class="mb-0">Disco Dance</h4>
+<p class="mb-2">Get grooving to the sounds of your favorite tunes</p>
+<p>
+<i class="fa fa-star color-yellow-dark icon-10 text-center mr-2"></i>4.8
+<i class="fa fa-map-marker color-blue-dark icon-10 text-center ml-2 mr-2"></i>7.3 Miles Away
+<br>
+<span class="mt-3 badge border color-green-dark border-green-dark">POPULAR</span>
+<span class="ml-2 badge border color-red-dark border-red-dark">PREMIUM</span>
+</p>
+</div>
+</div>
+<div class="divider mt-3 mb-3"></div>
+<div class="d-flex">
+<div class="mr-auto">
+<img src="images/pictures/16s.jpg" width="140" class="rounded-sm">
+</div>
+<div class="w-100 pl-3">
+<h4 class="mb-0">Breakdance Class</h4>
+<p class="mb-2">Think you can handle it? Join us and show us!</p>
+<p>
+<i class="fa fa-star color-yellow-dark icon-10 text-center mr-2"></i>4.3
+<i class="fa fa-map-marker color-blue-dark icon-10 text-center ml-2 mr-2"></i>9.8 Miles Away
+<br>
+<span class="mt-2 badge border color-red-dark border-red-dark">PREMIUM</span>
+<span class="ml-2 badge border color-blue-dark border-blue-dark">FREE WIFI</span>
+</p>
+</div>
+</div>
+<div class="divider mt-3 mb-3"></div>
+<div class="d-flex">
+<div class="mr-auto">
+<img src="images/pictures/19s.jpg" width="140" class="rounded-sm">
+</div>
+<div class="w-100 pl-3">
+<h4 class="mb-0">Phone Stay</h4>
+<p class="mb-2">Grab a coffee and stay on your phone, you're safe!</p>
+<p>
+<i class="fa fa-star color-yellow-dark icon-10 text-center mr-2"></i>4.5
+<i class="fa fa-map-marker color-blue-dark icon-10 text-center ml-2 mr-2"></i>11.5 Miles Away
+<br>
+<span class="mt-3 badge border color-green-dark border-green-dark">POPULAR</span>
+<span class="ml-2 badge border color-red-dark border-red-dark">PREMIUM</span>
+</p>
+</div>
+</div>
+<a href="#" data-back-to-top class="btn gradient-blue btn-full btn-m font-700 font-12 mt-4 rounded-s">Back to Map</a>
+</div>
+</div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

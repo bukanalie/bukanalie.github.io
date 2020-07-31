@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Interests</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1>Interests</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card card-style">
+<div class="content">
+<p class="mb-n1 color-highlight font-600">Get Personalized Reocmandations</p>
+<h1>Choose your Interests</h1>
+<p>
+A category, or interest selector page based on checkboxes. This is great if you want to get info from your users about what they like
+and then submit through a form.
+</p>
+<div class="divider"></div>
+<div class="form-check interest-check">
+<input class="form-check-input" type="checkbox" value="" id="check1" checked>
+<label class="form-check-label shadow-xl rounded-xl" for="check1">Technology</label>
+<i class="fa fa-check-circle color-white font-18"></i>
+<i class="fa fa-mobile-alt font-17 color-red-dark"></i>
+</div>
+<div class="form-check interest-check">
+<input class="form-check-input" type="checkbox" value="" id="check2">
+<label class="form-check-label shadow-xl rounded-xl" for="check2">Pets</label>
+<i class="fa fa-check-circle color-white font-18"></i>
+<i class="fa fa-paw font-17 color-brown-dark"></i>
+</div>
+<div class="form-check interest-check">
+<input class="form-check-input" type="checkbox" value="" id="check3">
+<label class="form-check-label shadow-xl rounded-xl" for="check3">Food</label>
+<i class="fa fa-check-circle color-white font-18"></i>
+<i class="fa fa-utensils font-17 color-gray-dark"></i>
+</div>
+<div class="form-check interest-check">
+<input class="form-check-input" type="checkbox" value="" id="check4">
+<label class="form-check-label shadow-xl rounded-xl" for="check4">Outdoor</label>
+<i class="fa fa-check-circle color-white font-18"></i>
+<i class="fa fa-bicycle font-17 color-blue-dark"></i>
+</div>
+<div class="form-check interest-check">
+<input class="form-check-input" type="checkbox" value="" id="check5">
+<label class="form-check-label shadow-xl rounded-xl" for="check5">Sports</label>
+<i class="fa fa-check-circle color-white font-18"></i>
+<i class="fa fa-basketball-ball color-brown-dark font-17"></i>
+</div>
+<div class="form-check interest-check">
+<input class="form-check-input" type="checkbox" value="" id="check6">
+<label class="form-check-label shadow-xl rounded-xl" for="check6">Comedy</label>
+<i class="fa fa-check-circle color-white font-18"></i>
+<i class="far fa-smile font-17 color-yellow-dark"></i>
+</div>
+<div class="form-check interest-check">
+<input class="form-check-input" type="checkbox" value="" id="check7">
+<label class="form-check-label shadow-xl rounded-xl" for="check7">Music</label>
+<i class="fa fa-check-circle color-white font-18"></i>
+<i class="fa fa-music font-17 color-instagram"></i>
+</div>
+<div class="form-check interest-check">
+<input class="form-check-input" type="checkbox" value="" id="check8">
+<label class="form-check-label shadow-xl rounded-xl" for="check8">Travel</label>
+<i class="fa fa-check-circle color-white font-18"></i>
+<i class="fa fa-plane font-14 color-dark-dark"></i>
+</div>
+<div class="form-check interest-check">
+<input class="form-check-input" type="checkbox" value="" id="check9" checked>
+<label class="form-check-label shadow-xl rounded-xl" for="check9">Life Hacks</label>
+<i class="fa fa-check-circle color-white font-18"></i>
+<i class="fa fa-cut font-16 color-blue-dark"></i>
+</div>
+<div class="form-check interest-check">
+<input class="form-check-input" type="checkbox" value="" id="check10">
+<label class="form-check-label shadow-xl rounded-xl" for="check10">Medicine</label>
+<i class="fa fa-check-circle color-white font-18"></i>
+<i class="fa fa-vial font-17 color-blue-dark"></i>
+</div>
+<div class="form-check interest-check">
+<input class="form-check-input" type="checkbox" value="" id="check11">
+<label class="form-check-label shadow-xl rounded-xl" for="check11">Physics</label>
+<i class="fa fa-check-circle color-white font-18"></i>
+<i class="fa fa-atom font-17 color-green-dark"></i>
+</div>
+<div class="form-check interest-check">
+<input class="form-check-input" type="checkbox" value="" id="check12">
+<label class="form-check-label shadow-xl rounded-xl" for="check12">Space</label>
+<i class="fa fa-check-circle color-white font-18"></i>
+<i class="fa fa-rocket font-16 color-teal-dark"></i>
+</div>
+<div class="form-check interest-check">
+<input class="form-check-input" type="checkbox" value="" id="check13">
+<label class="form-check-label shadow-xl rounded-xl" for="check13">Astrology</label>
+<i class="fa fa-check-circle color-white font-18"></i>
+<i class="fa fa-moon font-15 color-dark-dark"></i>
+</div>
+<div class="form-check interest-check">
+<input class="form-check-input" type="checkbox" value="" id="check14">
+<label class="form-check-label shadow-xl rounded-xl" for="check14">Apple</label>
+<i class="fa fa-check-circle color-white font-18"></i>
+<i class="fab fa-apple font-17 color-gray-dark"></i>
+</div>
+<div class="form-check interest-check">
+<input class="form-check-input" type="checkbox" value="" id="check15">
+<label class="form-check-label shadow-xl rounded-xl" for="check15">Android</label>
+<i class="fa fa-check-circle color-white font-18"></i>
+<i class="fab fa-android font-16 color-green-dark"></i>
+</div>
+<div class="form-check interest-check">
+<input class="form-check-input" type="checkbox" value="" id="check16" checked>
+<label class="form-check-label shadow-xl rounded-xl" for="check16">AppStore</label>
+<i class="fa fa-check-circle color-white font-18"></i>
+<i class="fab fa-app-store-ios font-16 color-blue-dark"></i>
+</div>
+<div class="divider"></div>
+<p class="font-10 text-center mt-n3">You can update your preferrences anytime you wish.</p>
+<a href="#" class='btn btn-full btn-m font-13 font-600 rounded-sm gradient-highlight'>Submit Interests</a>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

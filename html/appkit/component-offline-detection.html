@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Offline Detection</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html" class="active-nav"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1 class="font-24">Offline Detection</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card card-style">
+<div class="content">
+<p>
+On this page, turn off WiFi / Data connection. A message will appear notifying you that you are now offline. Also, the message below will change.
+</p>
+</div>
+</div>
+<div class="content">
+<div class="row">
+<div class="col-6">
+<a href="#" class="simulate-offline btn btn-m rounded-s btn-full bg-red-dark shadow-l text-uppercase font-900">Simulate Offline</a>
+</div>
+<div class="col-6">
+<a href="#" class="simulate-online btn btn-m rounded-s btn-full bg-green-dark shadow-l text-uppercase font-900">Simulate Online</a>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content">
+<h3>Disable Page</h3>
+<p>
+There maybe cases where you would like to completely remove access from a page if that page is offline. You can do that as well by showing a message prompting the user to connect.
+</p>
+</div>
+</div>
+<a href="#" data-menu="menu-offline" class="btn btn-margins btn-m rounded-s btn-full bg-red-dark shadow-l text-uppercase font-900">Simulate Page Disabled</a>
+<div class="card card-style">
+<div class="content">
+<h3 class="mb-1">Where can I use it?</h3>
+<p>
+This function is natively integrated in our code. All pages will detect if you are online or offline and display this message. Turn off the internet on any page and the message will pop-up.
+</p>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+<div id="menu-offline" class="menu menu-box-modal rounded-m" data-menu-width="310" data-menu-height="270">
+<h1 class="text-center color-theme mt-4 font-700">No Connection</h1>
+<p class="pl-3 pr-3 text-center color-theme opacity-60">
+This page requires an internet connection to work. Please connect turn on your WiFi or Celluar Data to Enable this page.
+</p>
+<a href="#" class="close-menu btn btn-m font-900 text-uppercase bg-highlight rounded-sm btn-center-l">Close Message</a>
+<p class="text-center font-9 color-theme mt-3">In real conditions you can remove this Button</p>
+</div>
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

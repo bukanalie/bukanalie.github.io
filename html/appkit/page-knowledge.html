@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Knowledge Base</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1 class="font-24">Knowledge Base</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card card-style bg-11" data-card-height="250">
+<div class="card-center text-center">
+<h1 class="color-white text-center  mb-n2">How can we Help?</h1>
+<p class="color-white opacity-50">A fully functional search system.</p>
+<div class="ml-4 mr-4">
+<div class="search-box search-dark shadow-xl border-0 bg-theme rounded-sm ">
+<i class="fa fa-search ml-3"></i>
+<input type="text" class="border-0" placeholder="Search here..." data-search>
+</div>
+</div>
+</div>
+<div class="card-overlay bg-black opacity-90"></div>
+</div>
+<div class="content mt-n3 mb-0 mr-4">
+<div class="search-results disabled">
+<div class="list-group list-custom-large">
+<a href="#" data-filter-item data-filter-name="all demo smartphone apple iphone">
+<i class="fab fa-apple color-gray-dark"></i>
+<span>Apple</span>
+<strong>Works on iOS 10 and Higher</strong>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-filter-item data-filter-name="all demo smartphone android iphone">
+<i class="fab fa-android color-green-dark"></i>
+<span>Android</span>
+<strong>Works on Android 5.1.1 and Higher</strong>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-filter-item data-filter-name="all demo code css3 css">
+<i class="fab fa-css3 color-blue-dark font-17"></i>
+<span>CSS3 </span>
+<strong>Beautiful Design. Simple Code.</strong>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-filter-item data-filter-name="all demo code html5 html">
+<i class="fab fa-html5 color-orange-dark"></i>
+<span>HTML5 </span>
+<strong>Powerful and Universally Compatible</strong>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-filter-item data-filter-name="all demo support help">
+<i class="fa fa-life-ring color-red-dark font-17"></i>
+<span>Support </span>
+<strong>Elite Quality, 24/7 Support for Buyers</strong>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-filter-item data-filter-name="all demo code js jquery java javascript">
+<i class="fab fa-js color-yellow-dark font-17"></i>
+<span>JavaScript </span>
+<strong>Clean Code, Easy to Use and Modify</strong>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-filter-item data-filter-name="all demo support elite help documentation">
+<i class="fa fa-file color-gray-dark font-17"></i>
+<span>Documentation </span>
+<strong>Every Feature and Aspect Covered.</strong>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+</div>
+<div class="search-no-results disabled mt-4">
+<div class="card card-style mx-0">
+<div class="content">
+<p class="mb-n1 font-600 color-highlight">Sorry, there are</p>
+<h1>No Results</h1>
+<p>
+Your search brought up no results. Try using a different keyword. Or try typying all
+to see all items in the demo. These can be linked to anything you want.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style mt-5">
+<div class="content mb-2">
+<p class="color-highlight font-600 mb-n1">Most comon Questions we Get</p>
+<h1>Frequent Questions</h1>
+<p>
+We get asked these questions a lot, so we made this small section to help you out identifying what you need faster.
+</p>
+<div class="divider mt-2 mb-2"></div>
+<div class="d-flex">
+<div class="pt-1">
+<h5 data-activate="question-1" class="font-600 font-15">Is this a PWA?</h5>
+</div>
+<div class="ml-auto mr-1 pr-2">
+<div class="custom-control classic-switch">
+<input type="checkbox" class="classic-input" id="question-1">
+<label class="custom-control-label" for="question-1"></label>
+<i class="fa fa-angle-down font-11 color-green1-dark"></i>
+</div>
+</div>
+</div>
+<div data-switch="question-1" class="switch-is-unchecked">
+<p class="pb-3">
+Yes. Our item is a PWA. We have a servier worker and a manifest.json file ready and prepared for you to use the item offline.
+</p>
+</div>
+<div class="divider mt-2 mb-2"></div>
+<div class="d-flex">
+<div class="pt-1">
+<h5 data-activate="question-1a" class="font-600 font-15">Is this RTL Ready?</h5>
+</div>
+<div class="ml-auto mr-1 pr-2">
+<div class="custom-control classic-switch">
+<input type="checkbox" class="classic-input" id="question-1a">
+<label class="custom-control-label" for="question-1a"></label>
+<i class="fa fa-angle-down font-11 color-green1-dark"></i>
+</div>
+</div>
+</div>
+<div data-switch="question-1a" class="switch-is-unchecked">
+<p class="pb-3">
+Yes. Our item includes a code-rtl version, designed carefully for RTL Compliance.
+</p>
+</div>
+<div class="divider mt-2 mb-2"></div>
+<div class="d-flex">
+<div class="pt-1">
+<h5 data-activate="question-2" class="font-600 font-15">Is this a Cordova App?</h5>
+</div>
+<div class="ml-auto mr-1 pr-2">
+<div class="custom-control classic-switch">
+<input type="checkbox" class="classic-input" id="question-2">
+<label class="custom-control-label" for="question-2"></label>
+<i class="fa fa-angle-down font-11 color-green1-dark"></i>
+</div>
+</div>
+</div>
+<div data-switch="question-2" class="switch-is-unchecked">
+<p class="pb-3">
+No, but we have a ready built version in our portfolio and you can convert it to Cordova yourself. It's really simple.
+</p>
+</div>
+<div class="divider mt-2 mb-2"></div>
+<div class="d-flex">
+<div class="pt-1">
+<h5 data-activate="question-3" class="font-600 font-15">Is this a Cordova App?</h5>
+</div>
+<div class="ml-auto mr-1 pr-2">
+<div class="custom-control classic-switch">
+<input type="checkbox" class="classic-input" id="question-3">
+<label class="custom-control-label" for="question-3"></label>
+<i class="fa fa-angle-down font-11 color-green1-dark"></i>
+</div>
+</div>
+</div>
+<div data-switch="question-3" class="switch-is-unchecked">
+<p class="pb-3">
+No, but we have a ready built version in our portfolio and you can convert it to Cordova yourself. It's really simple.
+</p>
+</div>
+<div class="divider mt-2 mb-2"></div>
+<div class="d-flex">
+<div class="pt-1">
+<h5 data-activate="question-4" class="font-600 font-15">Is this a WordPres Theme?</h5>
+</div>
+<div class="ml-auto mr-1 pr-2">
+<div class="custom-control classic-switch">
+<input type="checkbox" class="classic-input" id="question-4">
+<label class="custom-control-label" for="question-4"></label>
+<i class="fa fa-angle-down font-11 color-green1-dark"></i>
+</div>
+</div>
+</div>
+<div data-switch="question-4" class="switch-is-unchecked">
+<p>
+No. Our item is a HTML, CSS3 and JS Site Template. You can however convert it to a WordPress Theme.
+</p>
+</div>
+<div class="divider mt-2 mb-2"></div>
+<div class="d-flex">
+<div class="pt-1">
+<h5 data-activate="question-5" class="font-600 font-15">Is this built with Boostrap?</h5>
+</div>
+<div class="ml-auto mr-1 pr-2">
+<div class="custom-control classic-switch">
+<input type="checkbox" class="classic-input" id="question-5">
+<label class="custom-control-label" for="question-5"></label>
+<i class="fa fa-angle-down font-11 color-green1-dark"></i>
+</div>
+</div>
+</div>
+<div data-switch="question-5" class="switch-is-unchecked">
+<p class="pb-3">
+Yes! We include 2 versions, one built with Boostrap, and a much more flexible and powerful custom AJAX version.
+</p>
+</div>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

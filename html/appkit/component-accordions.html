@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Accordions</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html" class="active-nav"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1>Accordions</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card card-style">
+<div class="content">
+<h4>Classic</h4>
+<p>
+Simple accordions, you can use them with or without icons, it's incredibly simple.
+</p>
+</div>
+<div class="accordion" id="accordion-1">
+<div class="mb-0">
+<button class="btn accordion-btn border-0 color-theme" data-toggle="collapse" data-target="#collapse1">
+<i class="fa fa-heart color-red-dark mr-2"></i>
+Accordion Title 1
+<i class="fa fa-plus font-10 accordion-icon"></i>
+</button>
+<div id="collapse1" class="collapse" data-parent="#accordion-1">
+<div class="py-2 pl-3 pr-3">
+This is the accordion content. You can add any content you want to it. Really, anything! Add images, text, lists, captions or any element you want.
+</div>
+</div>
+</div>
+<div class="mb-0">
+<button class="btn accordion-btn border-0 color-theme" data-toggle="collapse" data-target="#collapse2">
+<i class="fa fa-star color-yellow-dark mr-2"></i>
+Accordion Title 2
+<i class="fa fa-chevron-down font-10 accordion-icon"></i>
+</button>
+<div id="collapse2" class="collapse" data-parent="#accordion-1">
+<div class="py-2 pl-3 pr-3">
+This is the accordion content. You can add any content you want to it. Really, anything! Add images, text, lists, captions or any element you want.
+</div>
+</div>
+</div>
+<div class="mb-2">
+<button class="btn accordion-btn border-0 color-theme" data-toggle="collapse" data-target="#collapse3">
+<i class="fa fa-cloud color-blue-dark mr-2"></i>
+Accordion Title 3
+<i class="fa fa-arrow-down font-10 accordion-icon"></i>
+</button>
+<div id="collapse3" class="collapse" data-parent="#accordion-1">
+<div class="py-2 pl-3 pr-3">
+This is the accordion content. You can add any content you want to it. Really, anything! Add images, text, lists, captions or any element you want.
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-0">
+<h4 class="font-700">Colorful</h4>
+<p>
+Use them in any color, shape or size. Everything is possible.
+</p>
+</div>
+<div class="accordion mt-4" id="accordion-6">
+<div class="card card-style shadow-0 bg-red-dark mb-0">
+<button class="btn accordion-btn border-0  color-white" data-toggle="collapse" data-target="#collapse11">
+<i class="fa fa-heart mr-2"></i>
+Accordion Title 1
+<i class="fa fa-plus font-10 accordion-icon"></i>
+</button>
+<div id="collapse11" class="collapse bg-theme" data-parent="#accordion-6">
+<div class="py-3 color-theme">
+This is the accordion content. You can add any content you want to it. Really, anything! Add images, text, lists, captions or any element you want.
+</div>
+</div>
+</div>
+<div class="card card-style bg-green-dark mb-0">
+<button class="btn accordion-btn border-0 color-white" data-toggle="collapse" data-target="#collapse12">
+<i class="fa fa-star mr-2"></i>
+Accordion Title 2
+<i class="fa fa-chevron-down font-10 accordion-icon"></i>
+</button>
+<div id="collapse12" class="collapse bg-theme" data-parent="#accordion-6">
+<div class="py-3 color-theme">
+This is the accordion content. You can add any content you want to it. Really, anything! Add images, text, lists, captions or any element you want.
+</div>
+</div>
+</div>
+<div class="card card-style bg-yellow-dark mb-0">
+<button class="btn accordion-btn border-0 color-white" data-toggle="collapse" data-target="#collapse13">
+<i class="fa fa-cog mr-2"></i>
+Accordion Title 4
+<i class="fa fa-angle-down font-10 accordion-icon"></i>
+</button>
+<div id="collapse13" class="collapse bg-theme" data-parent="#accordion-6">
+<div class="py-3 color-theme">
+This is the accordion content. You can add any content you want to it. Really, anything! Add images, text, lists, captions or any element you want.
+</div>
+</div>
+</div>
+<div class="card card-style bg-blue-dark">
+<button class="btn accordion-btn border-0 color-white" data-toggle="collapse" data-target="#collapse14">
+<i class="fa fa-cloud mr-2"></i>
+Accordion Title 4
+<i class="fa fa-arrow-down font-10 accordion-icon"></i>
+</button>
+<div id="collapse14" class="collapse bg-theme" data-parent="#accordion-6">
+<div class="py-3 color-theme">
+This is the accordion content. You can add any content you want to it. Really, anything! Add images, text, lists, captions or any element you want.
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style pb-3">
+<div class="content">
+<h4 class="font-700">Captioned</h4>
+<p>
+Use them with images or captioned images, they still work perfectly as accordions.
+</p>
+</div>
+<div class="accordion mb-2" id="accordion-3">
+<div data-card-height="100" class="card card-style bg-13 mb-0 rounded-s">
+<div class="card-center">
+<button class="btn accordion-btn border-0" data-toggle="collapse" data-target="#collapse7">
+<h3 class="color-white">Accordion Title 1</h3>
+<p class="color-white opacity-70 font-500 mb-0 mt-n1">You can use captions for Accordions</p>
+</button>
+</div>
+<div class="card-overlay bg-black opacity-80 rounded-s"></div>
+</div>
+<div id="collapse7" class="collapse" data-parent="#accordion-3">
+<div class="pt-3 pb-3 pl-3 pr-3">
+This is the accordion content. You can add any content you want to it. Really, anything! Add images, text, lists, captions or any element you want.
+</div>
+</div>
+<div data-card-height="100" class="card card-style bg-15 mb-0 mt-2 rounded-s">
+<div class="card-center">
+<button class="btn accordion-btn border-0" data-toggle="collapse" data-target="#collapse8">
+<h3 class="color-white">Accordion Title 2</h3>
+<p class="color-white opacity-70 font-500 mb-0 mt-n1">You can use different Sizes</p>
+</button>
+</div>
+<div class="card-overlay bg-black opacity-80 rounded-s"></div>
+</div>
+<div id="collapse8" class="collapse" data-parent="#accordion-3">
+<div class="pt-3 pb-3 pl-3 pr-3">
+This is the accordion content. You can add any content you want to it. Really, anything! Add images, text, lists, captions or any element you want.
+</div>
+</div>
+<div data-card-height="100" class="card card-style bg-16 mb-0 mt-2 rounded-s">
+<div class="card-center">
+<button class="btn accordion-btn border-0" data-toggle="collapse" data-target="#collapse10">
+<h3 class="color-white">Accordion Title 3</h3>
+<p class="color-white opacity-70 font-500 mb-0 mt-n1">You can use different Sizes</p>
+</button>
+</div>
+<div class="card-overlay bg-black opacity-80 rounded-s"></div>
+</div>
+<div id="collapse10" class="collapse" data-parent="#accordion-3">
+<div class="pt-3 pb-3 pl-3 pr-3">
+This is the accordion content. You can add any content you want to it. Really, anything! Add images, text, lists, captions or any element you want.
+</div>
+</div>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

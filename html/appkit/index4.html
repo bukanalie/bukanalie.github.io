@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-left header-auto-show">
+<a href="index.html" class="header-title">AppKit</a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+<a href="#" data-menu="menu-share" class="header-icon header-icon-2"><i class="fas fa-share-alt"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav active-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1>Today</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card card-style bg-19" data-card-height="250">
+<div class="card-bottom pb-3 pl-3 ml-2">
+<h1 class="color-white font-30 line-height-xl">Your Most <br>Played Songs</h1>
+<h4 class="color-white opacity-50">A curated playlist for you</h4>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style bg-16" data-card-height="350">
+<div class="card-center text-right pr-3 mr-2">
+<h1 class="color-white font-40 mb-4">Calendar</h1>
+<h1 class="color-white font-20 line-height-l mb-4">
+John and Jake<br>
+<span class="opacity-30">at</span> Starbucks<br>
+<span class="opacity-30">in</span> 25 Minutes
+</h1>
+<a href="#" class="btn btn-m rounded-s font-600 ml-3 bg-highlight">Get Directions</a>
+</div>
+<div class="card-overlay bg-black opacity-80"></div>
+</div>
+<div class="card card-style gradient-highlight" data-card-height="350">
+<div class="card-top pt-3 pl-3 ml-2 mt-2">
+<h1 class="color-white font-30 line-height-xl">Learn To <br>Bake a Cake</h1>
+<h4 class="color-white opacity-50">In 25 Minutes or Less</h4>
+<a href="#" class="icon icon-s rounded-xl bg-white color-highlight mt-4"><i class="fa fa-play"></i></a>
+</div>
+<div class="card-bottom">
+<img src="images/food/sweets/sweet-2.png" class="float-right mb-n5 mr-n3" width="300">
+</div>
+<div class="card-overlay bg-black opacity-30"></div>
+</div>
+<div class="card card-style bg-34" data-card-height="350">
+<div class="card-top pb-3 pl-3 pt-3 mt-2 ml-2">
+<h1 class="color-white font-30 line-height-xl mb-4">Shopping <br>Checklist</h1>
+<a href="#" class="d-flex mb-3">
+<div>
+<span href="#" class="icon icon-m bg-white rounded-m color-highlight"><i class="fa fa-utensils"></i></span>
+</div>
+<div>
+<h4 class="color-white pl-3 mb-0">Dinner</h4>
+<h5 class="color-white opacity-30 font-500 pl-3">Get food for Tonight</h5>
+</div>
+</a>
+<a href="#" class="d-flex mb-3">
+<div>
+<span href="#" class="icon icon-m bg-white rounded-m color-highlight"><i class="fa fa-phone"></i></span>
+</div>
+<div>
+<h4 class="color-white pl-3 mb-0">Call Jane</h4>
+<h5 class="color-white opacity-30 font-500 pl-3">Schedule Meeting</h5>
+</div>
+</a>
+<a href="#" class="d-flex">
+<div>
+<span href="#" class="icon icon-m bg-white rounded-m color-highlight"><i class="fa fa-book"></i></span>
+</div>
+<div>
+<h4 class="color-white pl-3 mb-0">Finish Book</h4>
+<h5 class="color-white opacity-30 font-500 pl-3">Read 50 Shades of Code</h5>
+</div>
+</a>
+</div>
+<div class="card-overlay bg-black opacity-80"></div>
+</div>
+<div class="card card-style gradient-red" data-card-height="120">
+<div class="card-top pt-3 pl-3 ml-2 mt-2">
+<h1 class="color-white font-30">Overdue</h1>
+<h4 class="color-white opacity-50">Pay Spotfiy Subscription</h4>
+</div>
+<div class="card-top">
+<a href="#" class="icon icon-xl bg-white color-red-dark float-right mt-4 mr-3 rounded-m"><i class="fa fa-exclamation font-24"></i></a>
+</div>
+<div class="card-overlay bg-black opacity-30"></div>
+</div>
+<div class="card card-style bg-1" data-card-height="310">
+<div class="card-top pb-3 pl-3 pt-3 mt-2 ml-2">
+<h1 class="color-white font-30 line-height-xl mb-3">Today's <br>Notes</h1>
+<p class="color-white opacity-70 font-15 line-height-l">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque luctus libero, nec viverra augue auctor sit amet. In in viverra nibh, eget tempus dolor.
+</p>
+<a href="#" class="icon icon-m bg-white color-highlight rounded-m mr-2"><i class="fa fa-pen"></i></a>
+<a href="#" class="icon icon-m bg-white color-highlight rounded-m mr-2"><i class="fa fa-envelope"></i></a>
+<a href="#" data-menu="menu-share" class="icon icon-m bg-white color-red-dark rounded-m float-right mr-4"><i class="fa fa-share-alt"></i></a>
+</div>
+<div class="card-overlay bg-black opacity-80"></div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-homepages"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

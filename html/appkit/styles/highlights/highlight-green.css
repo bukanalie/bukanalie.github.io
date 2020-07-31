@@ -1,0 +1,68 @@
+/* Generating Color Pack*/
+.color-highlight {
+  color: #8CC152 !important;
+}
+
+.bg-highlight {
+  background-color: #8CC152 !important;
+  color: #FFF !important;
+}
+
+.border-highlight {
+  border-color: #8CC152 !important;
+}
+
+.gradient-highlight {
+  background-image: linear-gradient(to bottom, #A0D468, #8CC152) !important;
+}
+
+.gradient-menu {
+  background-image: linear-gradient(130deg, #7ea5f6, #ff384c) !important;
+}
+
+/*Footer Bar Colors*/
+.footer-bar-1 .active-nav strong {
+  background-color: #A0D468;
+}
+
+.footer-bar-2 .active-nav strong {
+  background-color: #A0D468;
+}
+
+.footer-bar-3 .active-nav span {
+  color: #A0D468;
+}
+
+.footer-bar-3 .active-nav i {
+  color: #A0D468;
+}
+
+.footer-bar-4 .active-nav strong {
+  background-color: #A0D468;
+}
+
+.footer-bar-5 .active-nav strong {
+  background-color: #A0D468;
+}
+
+.footer-bar-6 .active-nav em {
+  background-image: linear-gradient(to bottom, #A0D468 0%, #8CC152 100%) !important;
+}
+
+.footer-bar-6 .circle-nav strong {
+  background-image: linear-gradient(to bottom, #A0D468 0%, #8CC152 100%) !important;
+}
+
+/*Input Fields*/
+.input-style .input-style-1-active {
+  color: #A0D468 !important;
+}
+
+.input-style input:focus, .input-style textarea:focus, .input-style select:focus {
+  border-color: #A0D468;
+}
+
+/*Interest Page*/
+.interest-check input:checked ~ label {
+  background-color: #8CC152 !important;
+}

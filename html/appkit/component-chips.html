@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Chips</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html" class="active-nav"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1>Chips</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card card-style">
+<div class="content mb-0">
+<h4>Light Mode</h4>
+<p>
+Use them with icons and different colors.
+</p>
+<a href="#" class="chip chip-s bg-gray-light">
+<i class="fa fa-check bg-green-dark color-white"></i>
+<strong class="color-black font-400">All good</strong>
+</a>
+<a href="#" class="chip chip-s bg-gray-light">
+<i class="fa fa-times bg-red-dark color-white"></i>
+<strong class="color-black font-400">Error</strong>
+</a>
+<a href="#" class="chip chip-s chip-image bg-gray-light">
+<img src="images/pictures/0t.jpg" alt="img">
+<strong class="color-black font-400">All good</strong>
+</a>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-0">
+<h4 class="font-700">Dark Mode</h4>
+<p>
+Use them with icons and different colors.
+</p>
+<a href="#" class="chip chip-s bg-dark-dark">
+<i class="fa fa-check color-white bg-green-dark"></i>
+<span class="color-white">All good</span>
+</a>
+<a href="#" class="chip chip-s bg-dark-dark">
+<i class="fa fa-times color-white bg-red-dark"></i>
+<span class="color-white">Error</span>
+</a>
+<a href="#" class="chip chip-s bg-dark-dark">
+<img src="images/pictures/21s.jpg" alt="img">
+<span class="color-white">All good</span>
+</a>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-0">
+<h4 class="font-700">Colorful</h4>
+<p>
+Use them with icons and different colors.
+</p>
+<a href="#" class="chip chip-s bg-green-dark">
+<i class="fa fa-check color-white bg-green-light"></i>
+<span class="color-white">All good</span>
+</a>
+<a href="#" class="chip chip-s bg-red-dark">
+<i class="fa fa-times color-white bg-red-light"></i>
+<span class="color-white">Error</span>
+</a>
+<a href="#" class="chip chip-s bg-blue-dark">
+<img src="images/pictures/12s.jpg" alt="img">
+<span class="color-white">All good</span>
+</a>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-0">
+<h4>Different Sizes</h4>
+<p>
+Use them with icons and different colors.
+</p>
+<a href="#" class="chip chip-s bg-gray-light">
+<i class="fa fa-check color-white bg-green-dark"></i>
+<strong class="color-black font-400">Small</strong>
+</a>
+<a href="#" class="chip chip-m bg-gray-light">
+<i class="fa fa-times color-white bg-red-dark"></i>
+<strong class="color-black font-400">Med</strong>
+</a>
+<a href="#" class="chip chip-l bg-gray-light">
+<i class="fa fa-cog color-white bg-blue-dark"></i>
+<strong class="color-black font-400">Big</strong>
+</a>
+<a href="#" class="chip chip-xl ml-2 bg-gray-light">
+<i class="fab fa-facebook-f color-white bg-facebook"></i>
+<strong class="color-black font-400">Huge</strong>
+</a>
+<br><br>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

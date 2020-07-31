@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Wallet Cards</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1>Cards</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="content">
+<div class="card card-style mx-0 bg-20" data-card-height="180">
+<div class="card-top pl-3 pt-3">
+<h1 class="color-white font-19">MasterCard</h1>
+</div>
+<div class="card-center pr-3">
+<h4 class="color-white text-right">**** **** **** 6345</h4>
+</div>
+<div class="card-bottom pl-3 pb-2">
+<h5 class="color-white">Jack Singer</h5>
+</div>
+<div class="card-bottom pr-3 pb-2">
+<h5 class="color-white float-right">01/26</h5>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style mx-0 bg-1" data-card-height="180">
+<div class="card-top pl-3 pt-3">
+<h1 class="color-white">AMEX</h1>
+</div>
+<div class="card-center pr-3">
+<h4 class="color-white text-right">**** **** **** 3415</h4>
+</div>
+<div class="card-bottom pl-3 pb-2">
+<h5 class="color-white">John Runner</h5>
+</div>
+<div class="card-bottom pr-3 pb-2">
+<h5 class="color-white float-right">03/25</h5>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style mx-0 bg-6" data-card-height="180">
+<div class="card-top pl-3 pt-3">
+<h1 class="color-white">Visa</h1>
+</div>
+<div class="card-center pr-3">
+<h4 class="color-white text-right">**** **** **** 3456</h4>
+</div>
+<div class="card-bottom pl-3 pb-2">
+<h5 class="color-white">Jane Louder</h5>
+</div>
+<div class="card-bottom pr-3 pb-2">
+<h5 class="color-white float-right">05/24</h5>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style mx-0 bg-28" data-card-height="180">
+<div class="card-top pl-3 pt-3">
+<h1 class="color-white font-19">Loyalty Card</h1>
+</div>
+<div class="card-center pr-3 pt-3">
+<h1 class="color-white text-center font-30">50% Discount</h1>
+</div>
+<div class="card-bottom pr-3 pb-2">
+<h5 class="color-white text-right font-13">Jane Model</h5>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-cards" class="menu menu-box-bottom rounded-m bg-white" data-menu-height="430">
+<div class="menu-title">
+<p class="color-highlight font-600">This is a Demo</p>
+<h1>Add a Card</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="content mt-0">
+<p>
+This is just a demo. Don't enter real information.
+</p>
+<div class="input-style input-style-2 input-required">
+<span class="input-style-1-active bg-">Card Holder Name</span>
+<em class="color-theme opacity-30">(required)</em>
+<input class="form-control" type="name" placeholder="John Doe">
+</div>
+<div class="input-style input-style-2 input-required">
+<span class="input-style-1-active bg-">Number on Card</span>
+<em class="color-theme opacity-30">(required)</em>
+<input class="form-control" type="number" placeholder="1234 5678 9012 3456">
+</div>
+<div class="row mb-0">
+<div class="col-6">
+<div class="input-style input-style-2 input-required">
+<span class="input-style-1-active bg-">Expiration</span>
+<em class="color-theme opacity-30">(required)</em>
+<input class="form-control" type="number" placeholder="05/25">
+</div>
+</div>
+<div class="col-6">
+<div class="input-style input-style-2 input-required">
+<span class="input-style-1-active bg-">Security</span>
+<em class="color-theme opacity-30">(required)</em>
+<input class="form-control" type="name" placeholder="123">
+</div>
+</div>
+</div>
+<a href="#" class="btn btn-m font-13 font-600 gradient-blue btn-full rounded-s mt-3">Add Card</a>
+</div>
+</div>
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

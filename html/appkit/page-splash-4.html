@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Subscriptions</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div class="page-content pb-0">
+<div class="card rounded-0" data-card-height="cover">
+<div class="card-center pl-3">
+<div class="text-center">
+<h1 class="font-40 font-800 pb-2">App<span class="gradient-highlight p-2 mx-1 color-white scale-box d-inline-block rounded-s border-0">Kit</span></h1>
+<h5 class="mt-n2 opacity-30 mb-4">Powered by Enabled.</h5>
+</div>
+<div class="ml-3 mr-4 mb-n3">
+<div class="input-style input-style-1 input-required">
+<span class="color-highlight">Your Email</span>
+<em>(required)</em>
+<input type="email" placeholder="Your Email">
+</div>
+<div class="input-style input-style-1 input-required mb-3">
+<span class="color-highlight">Your Password</span>
+<em>(required)</em>
+<input type="password" placeholder="Your Password">
+</div>
+<div class="clearfix"></div>
+<div class="form-check icon-check text-left float-left opacity-50">
+<input class="form-check-input" type="checkbox" value="" id="check4">
+<label class="form-check-label font-13" for="check4">Remember Me</label>
+<i class="icon-check-1 far fa-circle color-gray-dark font-14"></i>
+<i class="icon-check-2 fa fa-check-circle font-14 color-highlight"></i>
+</div>
+<a href="#" class="font-11 float-right color-theme opacity-30">Forgot Password?</a>
+<div class="clearfix"></div>
+</div>
+<a href="#" class="btn btn-center-l gradient-highlight rounded-sm btn-l font-13 font-600 mt-5 border-0">Sign In</a>
+<span class="text-center d-block font-600 opacity-30 mt-3 mb-3">or</span>
+<div class="text-center">
+<a href="#" class="icon bg-transparent icon-m border rounded-xl border-xs mx-1 border-gray-dark color-facebook"><i class="fab fa-facebook-f"></i></a>
+<a href="#" class="icon bg-transparent icon-m border rounded-xl border-xs mx-1 border-gray-dark color-google"><i class="fab fa-google"></i></a>
+<a href="#" class="icon bg-transparent icon-m border rounded-xl border-xs mx-1 border-gray-dark color-twitter"><i class="fab  font-18 fa-twitter"></i></a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

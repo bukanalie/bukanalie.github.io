@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Task Progress</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html" class="active-nav"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1 class="font-22">Task Progress</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card card-style">
+<div class="content">
+<h4>Database<span class="badge float-right color-red-dark">Error</span></h4>
+<div class="progress" style="height:24px;">
+<div class="progress-bar border-0 bg-red-dark text-left pl-2" role="progressbar" style="width: 35%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+<span class="position-absolute color-white">35% Complete</span>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content">
+<h4 class="font-700">Current Task</h4>
+<p class="mt-n2 color-highlight mb-3">You nearly achieved your visitor goal</p>
+<div class="progress rounded-l" style="height:28px">
+<div class="progress-bar bg-highlight text-left pl-3 color-white" role="progressbar" style="width: 83%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+83% Complete
+</div>
+</div>
+<p class="pt-3">
+We use a custom coded progress system to generate progress bars with great ease. No need for complicated JS. Just data- your parameters and our code will generate the progress bar for you.
+</p>
+</div>
+</div>
+<div data-card-height="150" class="card card-style bg-17">
+<div class="card-top pt-4 ml-3 mr-3">
+<h2 class="color-white font-600">Task Completion</h2>
+<p class="mt-n2 color-white">You nearly achieved your visitor goal</p>
+</div>
+<div class="card-bottom ml-3 mr-3 mb-4">
+<div class="progress" style="height:26px;">
+<div class="progress-bar border-0 bg-theme color-theme text-left pl-2" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+50% Complete
+</div>
+</div>
+</div>
+<div class="card-overlay gradient-red opacity-85"></div>
+</div>
+<div class="row mb-0">
+<div class="col-6 pr-0">
+<div data-card-height="200" class="card card-style bg-31">
+<div class="card-top mt-3 ml-3 mr-3">
+<h3 class="color-white">Backup</h3>
+<p class="color-white opacity-90">Backing up server now.<br> Please wait.</p>
+</div>
+<div class="card-bottom ml-3 mr-3 mb-3">
+<div class="progress rounded-xl" style="height:26px;">
+<div class="progress-bar rounded-xl border-0 bg-theme color-theme text-left pl-2" role="progressbar" style="width: 30%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+30%
+</div>
+</div>
+</div>
+<div class="card-overlay bg-green-dark opacity-90"></div>
+</div>
+</div>
+<div class="col-6 pl-0">
+<div data-card-height="200" class="card card-style bg-16">
+<div class="card-top mt-3 ml-3 mr-3">
+<h3 class="color-white">Setup</h3>
+<p class="color-white opacity-80">Profile is almost setup.<br> One thing left.</p>
+</div>
+<div class="card-bottom ml-3 mr-3 mb-3">
+<div class="progress" style="height:8px;">
+<div class="progress-bar border-0 bg-green-dark text-left pl-2" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+</div>
+</div>
+</div>
+<div class="card-overlay bg-blue-dark opacity-80"></div>
+</div>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">V-Card</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1>V-Card</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content fixed-height-page">
+<div class="card card-style bg-34" data-card-height="400">
+<div class="card-top text-center">
+<h1 class="color-white text-center font-22 pt-3 mb-0">Hello, my name is</h1>
+<h1 class="color-white font-40 font-900">John Doe</h1>
+</div>
+<div class="card-bottom text-center">
+<p class="color-white font-15 opacity-70 px-4">
+We're the only Elite Mobile Author on Envato Market, creating amazing Mobile Products ever since 2009 only for you!
+</p>
+<a href="scripts/vcard.vcf" class="btn btn-center-m btn-s font-12 font-600 mb-4 bg-white color-black">Download V-Card</a>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style">
+<div class="content mt-3 mb-2">
+<p class="font-600 mb-n1 color-highlight">Call Us</p>
+<h1 class="vcard-title font-24 font-700 text-capitalize">Phone</h1>
+<div class="vcard-field"><strong>Mobile</strong><a href="tel:+1 234 567 890">+1 234 567 890</a><i class="fa fa-phone color-green1-dark"></i></div>
+<div class="vcard-field"><strong>Office</strong><a href="tel:+2 234 567 890">+2 234 567 890</a><i class="fa fa-suitcase color-brown1-dark"></i></div>
+<div class="vcard-field border-0"><strong>Personal</strong><a href="tel:+3 234 567 890">+3 234 567 890</a><i class="fa fa-user color-red2-dark"></i></div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mt-3 mb-2">
+<p class="font-600 mb-n1 color-highlight">Grab a Coffee</p>
+<h1 class="vcard-title font-24 font-700 text-capitalize">Address</h1>
+<div class="vcard-field line-height-l pb-3"><strong>Work</strong><a href="tel:+1 234 567 890">Milky Way, Planet Earth, <br> 2134 UltraMobile Street</a><i class="fa fa-map-marker color-blue2-dark mt-n2"></i></div>
+<div class="vcard-field line-height-l pb-3 pt-4 border-0"><strong>Home</strong><a href="tel:+1 234 567 890">Milky Way, Planet Earth, <br> 1234 Enabled Avenue</a><i class="fa fa-map-marker color-blue2-dark mt-3"></i></div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mt-3 mb-2">
+<p class="font-600 mb-n1 color-highlight">Drop us an </p>
+<h1 class="vcard-title font-24 font-700 text-capitalize">Email</h1>
+<div class="vcard-field"><strong>Home</strong><a href="mailto:home@domain.com">home@domain.com</a><i class="fa fa-home color-green1-dark"></i></div>
+<div class="vcard-field"><strong>Office</strong><a href="mailto:office@domain.com">office@domain.com</a><i class="fa fa-suitcase color-brown1-dark"></i></div>
+<div class="vcard-field border-0"><strong>Personal</strong><a href="mailto:personal@domain.com">personal@domain.com</a><i class="fa fa-user color-red2-dark"></i></div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mt-3 mb-2">
+<p class="font-600 mb-n1 color-highlight">Visit our</p>
+<h1 class="vcard-title font-24 font-700 text-capitalize">Website</h1>
+<div class="vcard-field border-0"><strong>URL</strong><a class="default-link" href="https://www.enableds.com/">www.domain.com</a><i class="fa fa-globe"></i></div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mt-3 mb-2">
+<p class="font-600 mb-n1 color-highlight">Let's get</p>
+<h1 class="vcard-title font-24 font-700 text-capitalize">Social</h1>
+<div class="vcard-field"><strong>Facebook</strong><a href="www.enableds.html">karla.black</a><i class="fab fa-facebook color-facebook"></i></div>
+<div class="vcard-field"><strong>Twitter</strong><a href="www.enableds.html">@karla.black</a><i class="fab fa-twitter color-twitter"></i></div>
+<div class="vcard-field border-0"><strong>Instagram</strong><a href="www.enableds.html">@karla.black</a><i class="fab fa-instagram color-instagram"></i></div>
+</div>
+</div>
+<a href="scripts/vcard.vcf" class="btn btn-full btn-margins rounded-s btn-m font-12 font-600 mb-4 gradient-highlight color-white">Download V-Card</a>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

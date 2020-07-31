@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Embedly</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html" class="active-nav"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1>Embedly</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card card-style">
+<div class="content">
+<h4>Embed Anything</h4>
+<p>
+Embed anything. Embedly is the most powerful embed script in the world. You can embed absolutely anything.
+</p>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-0">
+<h3>Custom Website Embeds</h3>
+<p>
+You can embed most websites in the world using Embedly. It's super simple. ust copy and paste a link and you're ready to go!
+</p>
+<div class="divider"></div>
+<a class="embedly-card" data-card-controls="0" href="https://themeforest.net/item/sticky-mobile-mobile-template/23229237"></a>
+</div>
+</div>
+<div class="card card-style">
+<div class="content">
+<h3>Social Pages Embeds</h3>
+<p class="mb-0">
+You can embed most websites in the world using Embedly. It's super simple. ust copy and paste a link and you're ready to go!
+</p>
+<div class="divider"></div>
+<a class="embedly-card" data-card-controls="0" href="https://www.facebook.com/enabled.labs/photos/a.457879680893757/2816086388406396/?type=1&amp;theater"></a>
+<blockquote class="embedly-card" data-card-controls="0"><h4><a href="https://twitter.com/iEnabled/status/1155768091076419587"></a></h4></blockquote>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-0">
+<h3>AppStore & PlayStore</h3>
+<p>
+You can embed most websites in the world using Embedly. It's super simple. ust copy and paste a link and you're ready to go!
+</p>
+<div class="divider"></div>
+<a class="embedly-card" data-card-controls="0" href="https://apps.apple.com/us/app/eden-envato-sales-tracker/id1336038164"></a>
+<a class="embedly-card" data-card-controls="0" href="https://play.google.com/store/apps/details?id=com.paintedman.ensales&amp;hl=en"></a>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-0">
+<h3>Media Embeds</h3>
+<p>
+You can embed most websites in the world using Embedly. It's super simple. ust copy and paste a link and you're ready to go!
+</p>
+<div class="divider"></div>
+<a class="embedly-card" data-card-controls="0" href="https://www.youtube.com/watch?v=c9MnSeYYtYY"></a>
+<a class="embedly-card" data-card-controls="0" href="https://vimeo.com/70301553"></a>
+<a class="embedly-card" data-card-controls="0" href="https://soundcloud.com/envato/audiojungle-watermark"></a>
+</div>
+</div>
+
+
+<script async src="../../../cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

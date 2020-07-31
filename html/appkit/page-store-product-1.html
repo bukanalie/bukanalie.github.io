@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Product Card</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1 class="font-20">Product Card</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card card-style bg-18" data-card-height="300">
+<div class="card-top">
+<a href="#" data-menu="menu-heart" class="icon icon-s bg-white color-red-dark rounded-xl mt-3 ml-3"><i class="fa fa-heart"></i></a>
+<a href="#" data-menu="menu-cart" class="icon icon-s bg-white color-black rounded-xl mt-3 ml-2"><i class="fa fa-shopping-bag"></i></a>
+</div>
+<div class="card-bottom mb-3 ml-3 mr-3">
+<h1 class="color-white font-800 mb-0">All new Design</h1>
+<p class="color-white font-14 mb-0 opacity-60">
+Revolutionary wireless In Ear Headphones with Active Noise Cancelation and all day battery
+</p>
+</div>
+<div class="card-overlay bg-black opacity-60"></div>
+</div>
+<div class="card card-style">
+<div class="content">
+<h1 class="mb-0">Apple AirPods Pro</h1>
+<p class="mb-4 opacity-70">Wireless In Ear Headphones with Awesome iOS Compatibility and Active Noise Cancelation</p>
+<div class="d-flex">
+<div class="mr-auto align-self-center">
+<h2 class="pt-1 mr-3 font-700">$199.99</h2>
+<p class="font-400 font-10 mt-n2 opacity-50">VAT not Included</p>
+</div>
+<div class="align-self-center">
+<a href="#" data-menu="menu-heart" class="icon icon-xs bg-white shadow-xl color-red-dark rounded-xl"><i class="fa fa-heart"></i></a>
+<a href="#" data-menu="menu-share" class="icon icon-xs bg-white shadow-xl color-blue-dark rounded-xl ml-1"><i class="fa fa-share-alt"></i></a>
+</div>
+</div>
+<div class="divider mt-3"></div>
+<div class="row mb-0">
+<div class="col-3">
+<div class="input-style input-style-2">
+<span class="input-style-1-active color-highlight">Qty</span>
+<input class="form-control" type="number" placeholder="1" value="1">
+</div>
+</div>
+<div class="col-9">
+<div class="input-style input-style-2">
+<span class="input-style-1-active">Color</span>
+<em><i class="fa fa-angle-down"></i></em>
+<select class="form-control">
+<option value="default" selected>White</option>
+<option value="a">Space Gray</option>
+<option value="b">Midnight Green</option>
+<option value="c">Product (RED)</option>
+</select>
+</div>
+</div>
+</div>
+<div class="divider mb-4 mt-3"></div>
+<a href="#" data-menu="menu-added" class="btn btn-full btn-m rounded-s font-600 gradient-highlight">Add to Cart</a>
+</div>
+</div>
+<div class="double-slider owl-carousel owl-no-dots">
+<div class="item">
+<div data-card-height="220" class="card shadow-xl rounded-m" style="background-image:url(images/pictures/6l.jpg)">
+<div class="card-bottom text-center">
+<h4 class="color-white font-800 mb-3">PWA Kit</h4>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+</div>
+<div class="item">
+<div data-card-height="220" class="card shadow-xl rounded-m" style="background-image:url(images/pictures/16l.jpg)">
+<div class="card-bottom text-center">
+<h4 class="color-white font-800 mb-3">Bootstrap</h4>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+</div>
+<div class="item">
+<div data-card-height="220" class="card shadow-xl rounded-m" style="background-image:url(images/pictures/20l.jpg)">
+<div class="card-bottom text-center">
+<h4 class="color-white font-800 mb-3">Mobile Kit</h4>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+</div>
+<div class="item">
+<div data-card-height="220" class="card shadow-xl rounded-m" style="background-image:url(images/pictures/31l.jpg)">
+<div class="card-bottom text-center">
+<h4 class="color-white font-800 mb-3">Bootstrap</h4>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+</div>
+<div class="item">
+<div data-card-height="220" class="card shadow-xl rounded-m" style="background-image:url(images/pictures/33l.jpg)">
+<div class="card-bottom text-center">
+<h4 class="color-white font-800 mb-3">Mobile Kit</h4>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content">
+<p class="font-600 color-highlight mb-n1">All The Details</p>
+<h3>Description</h3>
+<p>Lorem Dolor sollicitudin non tortor sit amet finibus. Pellentesque leo tellus, pretium quis aliquam a, accumsan non quam. Integer vehicula, massa quis tincidunt dignissim, justo turpis blandit ante, vitae pharetra diam justo a massa. Sed lobortis magna id dui euismod, lobortis viverra sem ullamcorper. </p>
+<div class="divider mt-3"></div>
+<p class="font-600 color-highlight mb-n1">Technical</p>
+<h3>Specifications</h3>
+<p>
+Integer vehicula, massa quis tincidunt dignissim, justo turpis blandit ante, vitae pharetra diam justo.
+</p>
+<div class="row">
+<div class="col-7 color-theme font-600">Brand</div>
+<div class="col-5">Apple</div>
+<div class="col-7 color-theme font-600">Wireless</div>
+<div class="col-5">Yes</div>
+<div class="col-7 color-theme font-600">Battery Life</div>
+<div class="col-5">24 Hours</div>
+<div class="col-7 color-theme font-600">Noise Cencelation</div>
+<div class="col-5">Yes</div>
+<div class="col-7 color-theme font-600">Water Resistant</div>
+<div class="col-5">IP68</div>
+</div>
+<div class="divider mt-3"></div>
+<div class="mb-4">
+<div class="d-flex">
+<div>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<h5>Absolutely Gorgeous</h5>
+</div>
+<div class="ml-auto w-50 align-self-center">
+<h6 class="mb-0 mt-2 text-right">John D.</h6>
+<p class="font-10 mb-0 mt-n1 opacity-40 text-right">21th March 2025</p>
+</div>
+</div>
+<p class="mt-3">
+The ratings are not only for its amazing beautiful
+design but also these are for the queries they respond quickly.
+</p>
+</div>
+<div class="mb-4">
+<div class="d-flex">
+<div>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<h5>The best bang for your buck. Awesome quality and speed</h5>
+</div>
+<div class="ml-auto w-50 align-self-center">
+<h6 class="mb-0 mt-2 text-right">Jack S.</h6>
+<p class="font-10 mb-0 mt-n1 opacity-40 text-right">21th March 2025</p>
+</div>
+</div>
+<p class="mt-3">
+I am not any developer or know any codes. But with some trial and error I was able to update these theme on for my website.
+</p>
+</div>
+<div class="mb-4">
+<div class="d-flex">
+<div>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<h5>Customer Support</h5>
+</div>
+<div class="ml-auto w-50 align-self-center">
+<h6 class="mb-0 mt-2 text-right">Joe P.</h6>
+<p class="font-10 mb-0 mt-n1 opacity-40 text-right">21th March 2025</p>
+</div>
+</div>
+<p class="mt-3">
+Also At times when I was not able to overcome with some issues I contacted the support team to help me.
+They managed to provide me solution quickly.
+</p>
+</div>
+<a href="#" data-menu="menu-added" class="btn btn-full gradient-highlight font-13 btn-m font-600 mt-3 rounded-s">Add to Cart</a>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-cart" class="menu menu-box-bottom rounded-m bg-theme" data-menu-height="420">
+<div class="menu-title">
+<p class="color-highlight">Customize your Order</p>
+<h1 class="font-22 font-800">Customize Product</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="content">
+<div class="divider mt-n2"></div>
+<div class="d-flex mb-4">
+<div>
+<img src="images/pictures/17s.jpg" class="rounded-sm" width="80">
+</div>
+<div class="w-100 ml-3 pt-1">
+<h6 class="font-500 font-14 pb-2">Awesome headset with pinkish color and iPhone adapter </h6>
+<h4>$49.99</h4>
+</div>
+</div>
+<div class="divider"></div>
+<div class="row mb-0">
+<div class="col-4">
+<div class="input-style input-style-2">
+<span class="input-style-1-active color-highlight">Quantity</span>
+<input class="form-control" type="number" placeholder="1" value="1">
+</div>
+</div>
+<div class="col-4">
+<div class="input-style input-style-2">
+<span class="input-style-1-active">Storage</span>
+<em><i class="fa fa-angle-down"></i></em>
+<select class="form-control">
+<option value="default" selected>64 GB</option>
+<option value="a">128 GB</option>
+<option value="b">256 GB</option>
+<option value="c">512 GB</option>
+</select>
+</div>
+</div>
+<div class="col-4">
+<div class="input-style input-style-2">
+<span class="input-style-1-active">Size</span>
+<em><i class="fa fa-angle-down"></i></em>
+<select class="form-control">
+<option value="default" selected>Small</option>
+<option value="a">Medium</option>
+<option value="b">Large</option>
+</select>
+</div>
+</div>
+</div>
+<a href="#" class="close-menu btn btn-full gradient-blue font-13 btn-m font-600 mt-3 rounded-s">Apply Changes</a>
+</div>
+</div>
+
+<div id="menu-heart" class="menu menu-box-modal rounded-m" data-menu-hide="800" data-menu-width="250" data-menu-height="170">
+<h1 class="text-center mt-3 pt-2">
+<i class="fa fa-check-circle color-green-dark fa-3x"></i>
+</h1>
+<h3 class="text-center pt-2">Saved to Favorites</h3>
+</div>
+
+<div id="menu-added" class="menu menu-box-modal rounded-m" data-menu-hide="800" data-menu-width="250" data-menu-height="170">
+<h1 class="text-center mt-3 pt-2">
+<i class="fa fa-shopping-bag color-brown-dark fa-3x"></i>
+</h1>
+<h3 class="text-center pt-2">Added to Cart</h3>
+</div>
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-store"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

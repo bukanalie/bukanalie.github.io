@@ -1,0 +1,668 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Action Modals</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html" class="active-nav"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1 class="font-26">Action Modals</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card card-style">
+<div class="content mb-0">
+<p>
+Interact with your users with Gorgeous Action Modals. These will have a gorgeous effect, making them feel like native interactions.
+</p>
+<div class="divider mb-0"></div>
+<div class="list-group list-custom-small list-icon-0">
+<a href="#" data-menu="menu-share">
+<i class="fa fa-share-alt color-blue-dark"></i>
+<span>Share List</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-share-thumbs">
+<i class="fa fa-th color-green-dark"></i>
+<span>Share Thumbs</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-call">
+<i class="fa fa-phone color-phone"></i>
+<span>Call Button</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-cart-item">
+<i class="fa fa-shopping-bag color-brown-dark"></i>
+<span>Cart Item Edit</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-cart">
+<i class="fa fa-shopping-cart color-green-dark"></i>
+<span>Cart Items List</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-video">
+<i class="fab fa-youtube color-red-dark"></i>
+<span>Video Embeds</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-maps">
+<i class="fa fa-map-marker color-blue-dark"></i>
+<span>Google Maps</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-success-1">
+<i class="fa fa-check color-green-dark"></i>
+<span>Success Bar</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-success-2">
+<i class="fa fa-check-circle color-green-dark"></i>
+<span>Success Box</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-warning-1">
+<i class="fa fa-times color-red-dark"></i>
+<span>Warning Bar</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-warning-2">
+<i class="fa fa-times-circle color-red-dark"></i>
+<span>Warning Box</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-option-1">
+<i class="fa fa-info color-blue-dark"></i>
+<span>Option Bar</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-option-2">
+<i class="fa fa-info-circle color-blue-dark"></i>
+<span>Option Box</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-forgot">
+<i class="fa fa-question-circle color-magenta-dark"></i>
+<span>Password Reset</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-signin">
+<i class="fa fa-sign-in-alt color-green-dark"></i>
+<span>Login</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-signup">
+<i class="fa fa-sign-out-alt color-green-dark"></i>
+<span>Register</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-language">
+<i class="fa fa-globe color-blue-dark"></i>
+<span>Language</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-menu="menu-age" class="border-0">
+<i class="fa fa-user color-red-dark"></i>
+<span>Age Check</span>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-share" class="menu menu-box-modal rounded-m" data-menu-height="410" data-menu-width="350">
+<div class="menu-title">
+<p class="color-highlight">Tap a link to</p>
+<h1>Share</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="divider divider-margins mt-3 mb-0"></div>
+<div class="content mt-0">
+<div class="list-group list-custom-small">
+<a href="#">
+<i class="fab fa-facebook-f font-12 bg-facebook color-white shadow-l rounded-l"></i>
+<span>Facebook</span>
+<i class="fa fa-angle-right mr-2"></i>
+</a>
+<a href="#">
+<i class="fab fa-twitter font-12 bg-twitter color-white shadow-l rounded-l"></i>
+<span>Twitter</span>
+<i class="fa fa-angle-right mr-2"></i>
+</a>
+<a href="#">
+<i class="fab fa-linkedin-in font-12 bg-linkedin color-white shadow-l rounded-l"></i>
+<span>LinkedIn</span>
+<i class="fa fa-angle-right mr-2"></i>
+</a>
+<a href="#">
+<i class="fab fa-whatsapp font-12 bg-whatsapp color-white shadow-l rounded-l"></i>
+<span>WhatsApp</span>
+<i class="fa fa-angle-right mr-2"></i>
+</a>
+<a href="#">
+<i class="fa fa-envelope font-12 bg-mail color-white shadow-l rounded-l"></i>
+<span>Email</span>
+<i class="fa fa-angle-right mr-2"></i>
+</a>
+<a href="#" class="close-menu border-0">
+<i class="fa fa-times font-12 bg-red-dark color-white shadow-l rounded-l"></i>
+<span>Close</span>
+<i class="fa fa-angle-right mr-2"></i>
+</a>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="menu-share-thumbs" class="menu menu-box-modal rounded-m" data-menu-height="320" data-menu-width="350">
+<div class="menu-title">
+<p class="color-highlight">Tap a link to</p>
+<h1>Share</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="divider divider-margins"></div>
+<div class="d-flex">
+<div class="ml-auto mr-auto">
+<a href="#" class="icon icon-l bg-facebook rounded-s shadow-xl"><i class="fab fa-facebook-f font-22"></i><br></a>
+<p class="font-11 text-center opacity-70">Facebook</p>
+</div>
+<div class="mr-auto">
+<a href="#" class="icon icon-l bg-twitter rounded-s shadow-xl"><i class="fab fa-twitter font-22"></i><br></a>
+<p class="font-11 text-center opacity-70">Twitter</p>
+</div>
+<div class="mr-auto">
+<a href="#" class="icon icon-l bg-phone rounded-s shadow-xl"><i class="fa fa-phone font-22"></i><br></a>
+<p class="font-11 text-center opacity-70">Call</p>
+</div>
+</div>
+<div class="d-flex">
+<div class="ml-auto mr-auto">
+<a href="#" class="icon icon-l bg-linkedin rounded-s shadow-xl"><i class="fab fa-linkedin-in font-22"></i><br></a>
+<p class="font-11 text-center opacity-70">LinkedIn</p>
+</div>
+<div class="mr-auto">
+<a href="#" class="icon icon-l bg-mail rounded-s shadow-xl"><i class="fa fa-envelope font-22"></i><br></a>
+<p class="font-11 text-center opacity-70">Email</p>
+</div>
+<div class="mr-auto">
+<a href="#" class="icon icon-l bg-whatsapp rounded-s shadow-xl"><i class="fab fa-whatsapp font-22"></i><br></a>
+<p class="font-11 text-center opacity-70">WhatsApp</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div id="menu-call" class="menu menu-box-modal rounded-m" data-menu-height="330" data-menu-width="350">
+<div class="menu-title">
+<p class="color-highlight">Just tap to</p>
+<h1>Call Now</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="content">
+<a href="tel:+1 234 567 890" class="btn btn-l font-14 shadow-l btn-full rounded-s font-600 bg-green-dark text-left mb-2"><span class="ml-n2">Headquarters:</span><span class="float-right mr-n1">+1 234 567 890</span></a>
+<a href="tel:+2 234 567 890" class="btn btn-l font-14 shadow-l btn-full rounded-s font-600 bg-blue-dark text-left mb-2"><span class="ml-n2">Suppport Center:</span><span class="float-right mr-n1">+2 234 567 890</span></a>
+<a href="tel:+3 234 567 890" class="btn btn-l font-14 shadow-l btn-full rounded-s font-600 bg-red-dark text-left"><span class="ml-n2">Emergency 24/7:</span><span class="float-right mr-n1">+3 234 567 890</span></a>
+<p class="color-theme text-center font-10 opacity-30 pt-2 mt-2 mb-0 pb-0">Emergency Available 24/7 - Regular Numbers Mon-Fri 09:00 - 05:00 </p>
+</div>
+</div>
+
+
+
+
+
+<div id="menu-cart-item" class="menu menu-box-modal rounded-m bg-theme" data-menu-width="350" data-menu-height="400">
+<div class="menu-title">
+<p class="color-highlight">Customize your </p>
+<h1 class="font-800">Cart Item</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="content">
+<div class="divider mt-n2"></div>
+<div class="d-flex mb-4">
+<div>
+<img src="images/pictures/17s.jpg" class="rounded-sm" width="80">
+</div>
+<div class="w-100 ml-3 pt-1">
+<h6 class="font-500 font-14 pb-2">Awesome headset with pinkish color and iPhone adapter </h6>
+<h4>$49.99</h4>
+</div>
+</div>
+<div class="divider"></div>
+<div class="row mb-0">
+<div class="col-4">
+<div class="input-style input-style-2">
+<span class="input-style-1-active color-highlight">Quantity</span>
+<input class="form-control" type="number" placeholder="1" value="1">
+</div>
+</div>
+<div class="col-4">
+<div class="input-style input-style-2">
+<span class="input-style-1-active">Storage</span>
+<em><i class="fa fa-angle-down"></i></em>
+<select class="form-control">
+<option value="default" selected>64 GB</option>
+<option value="a">128 GB</option>
+<option value="b">256 GB</option>
+<option value="c">512 GB</option>
+</select>
+</div>
+</div>
+<div class="col-4">
+<div class="input-style input-style-2">
+<span class="input-style-1-active">Size</span>
+<em><i class="fa fa-angle-down"></i></em>
+<select class="form-control">
+<option value="default" selected>Small</option>
+<option value="a">Medium</option>
+<option value="b">Large</option>
+</select>
+</div>
+</div>
+</div>
+<a href="#" class="close-menu btn btn-full gradient-blue font-13 btn-m font-600 mt-3 rounded-s">Apply Changes</a>
+</div>
+</div>
+
+
+
+
+
+<div id="menu-cart" class="menu menu-box-modal rounded-m bg-theme" data-menu-width="350" data-menu-height="470">
+<div class="menu-title">
+<p class="color-highlight">Your Current </p>
+<h1 class="font-800">Cart Items</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="content">
+<div class="d-flex mb-3">
+<div>
+<img src="images/pictures/17s.jpg" class="rounded-sm" width="70">
+</div>
+<div class="w-100 ml-3 pt-1">
+<h6 class="font-500 font-14">Beats by Dre Studio overhead headset with leather carying pouch</h6>
+<h4 class="font-700 color-highlight">$98.<sup>50</sup></h4>
+</div>
+<div class="align-self-center mr-n2">
+<a href="#" data-menu="menu-cart-item"><i class="fa fa-info-circle font-20 icon-20 ml-4 mr-3"></i></a>
+</div>
+</div>
+<div class="d-flex mb-3">
+<div>
+<img src="images/pictures/18s.jpg" class="rounded-sm" width="70">
+</div>
+<div class="w-100 ml-3 pt-1">
+<h6 class="font-500 font-14">Apple Airpods 2nd Generation With wireless charging case and protector.</h6>
+<h4 class="font-700 color-highlight">$199.<sup>50</sup></h4>
+</div>
+<div class="align-self-center mr-n2">
+<a href="#" data-menu="menu-cart-item"><i class="fa fa-info-circle font-20 icon-20 ml-4 mr-3"></i></a>
+</div>
+</div>
+<div class="divider mb-2 mt-3"></div>
+<div class="d-flex">
+<div class="pr-4 w-60">
+<p class="font-600 color-highlight mb-0 font-13">Your Total</p>
+<h1>$2798<sup>.00</sup></h1>
+</div>
+<div class="w-100 pt-1">
+<h6 class="font-14 font-700">Shipping<span class="float-right color-green-dark">+$50</span></h6>
+<div class="divider mb-2 mt-1"></div>
+<h6 class="font-14 font-700">Taxes<span class="float-right color-red-dark">+$0.15</span></h6>
+</div>
+</div>
+<div class="divider mt-2 mb-2"></div>
+<div class="row">
+<div class="col-6">
+<a href="#" class="close-menu btn btn-full gradient-green font-12 btn-m font-600 mt-3 rounded-s">Go To Checkout</a>
+</div>
+<div class="col-6">
+<a href="#" class="close-menu btn btn-full gradient-blue font-12 btn-m font-600 mt-3 rounded-s">Keep Shopping</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div id="menu-video" class="menu menu-box-modal rounded-m" data-menu-height="370" data-menu-width="350">
+<div class='responsive-iframe max-iframe'><iframe src='https://www.youtube.com/embed/c9MnSeYYtYY' frameborder='0' allowfullscreen></iframe></div>
+<div class="menu-title">
+<p class="color-highlight">Just tap and</p>
+<h1>Watch Now</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="content mt-n2">
+<p>
+It's super easy to embed videos. Just copy the embed!
+</p>
+<a href="#" class="close-menu btn btn-full btn-m shadow-l rounded-s text-uppercase font-600 bg-green-dark mt-n2">Awesome</a>
+</div>
+</div>
+
+
+
+
+
+<div id="menu-maps" class="menu menu-box-modal rounded-m" data-menu-height="370" data-menu-width="350">
+<div class='responsive-iframe max-iframe'><iframe src='https://maps.google.com/?ie=UTF8&amp;ll=47.595131,-122.330414&amp;spn=0.006186,0.016512&amp;t=h&amp;z=17&amp;output=embed' frameborder='0' allowfullscreen></iframe></div>
+<div class="menu-title">
+<p class="color-highlight">We have coffee and</p>
+<h1>We're Here</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="content mt-n2">
+<p>
+Come over for a coffee, we have milk and cookies too!
+</p>
+<a href="#" class="close-menu btn btn-full btn-m shadow-l rounded-s text-uppercase font-600 bg-blue-dark mt-n2">Awesome</a>
+</div>
+</div>
+
+
+
+
+
+<div id="menu-success-1" class="menu menu-box-modal rounded-m" data-menu-height="170" data-menu-width="350">
+<div class="menu-title">
+<i class="fa fa-check-circle scale-box float-left mr-3 ml-3 fa-4x color-green-dark"></i>
+<p class="color-highlight">The task has been a</p>
+<h1>Success</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="content mb-0 mt-0">
+<p class="pr-3">
+Thank you for successfully completing this action. This message can now be dismissed manually or programatically.
+</p>
+</div>
+</div>
+<div id="menu-success-2" class="menu menu-box-modal bg-green-dark rounded-m" data-menu-height="310" data-menu-width="350">
+<h1 class="text-center mt-4"><i class="fa fa-3x fa-check-circle scale-box color-white shadow-xl rounded-circle"></i></h1>
+<h1 class="text-center mt-3 font-700 color-white">All's Good</h1>
+<p class="boxed-text-l color-white opacity-70">
+You can continue with your previous actions.<br> Easy to attach these to success calls.
+</p>
+<a href="#" class="close-menu btn btn-m btn-center-m button-s shadow-l rounded-s text-uppercase font-600 bg-white color-black">Great, Thanks!</a>
+</div>
+
+
+
+
+
+<div id="menu-warning-1" class="menu menu-box-modal rounded-m" data-menu-height="140" data-menu-width="350">
+<div class="menu-title">
+<i class="fa fa-times-circle float-left mr-3 scale-box ml-3 fa-4x color-red-dark"></i>
+<p class="color-highlight">The task has</p>
+<h1>Failed</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="content mb-0 mt-0">
+<p class="pr-3">
+This task has failed. This message can now be dismissed manually or programatically.
+</p>
+</div>
+</div>
+<div id="menu-warning-2" class="menu menu-box-modal bg-red-dark rounded-m" data-menu-height="310" data-menu-width="350">
+<h1 class="text-center mt-4"><i class="fa fa-3x fa-times-circle scale-box color-white shadow-xl rounded-circle"></i></h1>
+<h1 class="text-center mt-3 text-uppercase color-white font-700">Wooops!</h1>
+<p class="boxed-text-l color-white opacity-70">
+You can continue with your previous actions.<br> Easy to attach these to success calls.
+</p>
+<a href="#" class="close-menu btn btn-m btn-center-l button-s shadow-l rounded-s text-uppercase font-600 bg-white color-black">Hmmm, Check again?</a>
+</div>
+
+
+
+
+
+<div id="menu-option-1" class="menu menu-box-modal rounded-m" data-menu-height="200" data-menu-width="350">
+<div class="menu-title">
+<i class="fa fa-question-circle scale-box float-left mr-3 ml-3 fa-3x mt-1 color-blue-dark"></i>
+<p class="color-highlight">We need to know,</p>
+<h1 class="font-20">Are you Sure?</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="content mt-0">
+<p class="pr-3">
+Please confirm before proceeding to the next step.
+</p>
+<div class="row mb-0">
+<div class="col-6">
+<a href="#" class="btn close-menu btn-full btn-m bg-red-dark font-600 rounded-s">No, cancel</a>
+</div>
+<div class="col-6">
+<a href="#" class="btn close-menu btn-full btn-m bg-green-dark font-600 rounded-s">Yes, proceed!</a>
+</div>
+</div>
+</div>
+</div>
+<div id="menu-option-2" class="menu menu-box-modal rounded-m" data-menu-height="300" data-menu-width="350">
+<h1 class="text-center mt-4"><i class="fa fa-3x fa-info-circle scale-box color-blue-dark shadow-xl rounded-circle"></i></h1>
+<h3 class="text-center mt-3 font-700">Are you sure?</h3>
+<p class="boxed-text-xl opacity-70">
+You can continue with your previous actions.<br> Easy to attach these to success calls.
+</p>
+<div class="row mb-0 mr-3 ml-3">
+<div class="col-6">
+<a href="#" class="btn close-menu btn-full btn-m color-red-dark border-red-dark font-600 rounded-s">No, cancel</a>
+</div>
+<div class="col-6">
+<a href="#" class="btn close-menu btn-full btn-m color-green-dark border-green-dark font-600 rounded-s">Yes, continue!</a>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div id="menu-forgot" class="menu menu-box-modal rounded-m" data-menu-height="220" data-menu-width="350">
+<div class="menu-title">
+<p class="color-highlight">Let's get you into your account,</p>
+<h1 class="font-24">Recover Password</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="content mt-0 mb-0">
+<div class="input-style has-icon input-style-1 input-required mb-4">
+<i class="input-icon fa fa-at"></i>
+<span>Email</span>
+<em>(required)</em>
+<input type="email" placeholder="Email">
+</div>
+<a href="#" class="btn btn-full btn-m shadow-l rounded-s bg-highlight font-600 top-20">SEND RECOVERY EMAIL</a>
+</div>
+</div>
+
+
+
+
+
+<div id="menu-signin" class="menu menu-box-modal rounded-m" data-menu-height="300" data-menu-width="350">
+<div class="menu-title">
+<h1 class="font-24">Sign In</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="content mb-0 mt-0">
+<div class="input-style has-icon input-style-1 input-required">
+<i class="input-icon fa fa-user font-11"></i>
+<span>Username</span>
+<em>(required)</em>
+<input type="name" placeholder="Username">
+</div>
+<div class="input-style has-icon input-style-1 input-required">
+<i class="input-icon fa fa-lock font-11"></i>
+<span>Password</span>
+<em>(required)</em>
+<input type="password" placeholder="Password">
+</div>
+<div class="row">
+<div class="col-6">
+<a href="#" data-menu="menu-forgot" class="font-10">Forgot Password?</a>
+</div>
+<div class="col-6">
+<a data-menu="menu-signup" href="#" class="float-right font-10">Create Account</a>
+<div class="clearfix"></div>
+</div>
+</div>
+<a href="#" class="btn btn-full btn-m shadow-l rounded-s font-600 bg-green-dark mt-4">LOGIN</a>
+</div>
+</div>
+
+
+
+
+
+<div id="menu-signup" class="menu menu-box-modal rounded-m" data-menu-height="370" data-menu-width="350">
+<div class="menu-title">
+<p class="color-highlight">Join Now for Free</p>
+<h1 class="font-24">Sign Up</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="content mb-0 mt-0">
+<div class="input-style has-icon input-style-1 input-required">
+<i class="input-icon fa fa-user font-11"></i>
+<span>Username</span>
+<em>(required)</em>
+<input type="name" placeholder="Username">
+</div>
+<div class="input-style has-icon input-style-1 input-required">
+<i class="input-icon fa fa-at"></i>
+<span>Email</span>
+<em>(required)</em>
+<input type="email" placeholder="Email">
+</div>
+<div class="input-style has-icon input-style-1 input-required">
+<i class="input-icon fa fa-lock font-11"></i>
+<span>Password</span>
+<em>(required)</em>
+<input type="password" placeholder="Choose a Password">
+</div>
+<p class="text-center pb-0 mb-n1 pt-1">
+<a href="#" data-menu="menu-signin" class="text-center font-11 color-gray2-dark">Already Registered? Sign In Here.</a>
+</p>
+<a href="#" class="btn btn-full btn-m shadow-l rounded-s font-600 bg-blue-dark mt-4">Register</a>
+</div>
+</div>
+
+
+
+
+
+<div id="menu-language" class="menu menu-box-modal rounded-m" data-menu-height="350" data-menu-width="350">
+<div class="menu-title">
+<p class="color-highlight">We're multilingual</p>
+<h1 class="font-24">Choose your Language</h1>
+<a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+</div>
+<div class="mr-3 ml-3 mt-3">
+<div class="list-group list-custom-small">
+<a href="#"><img class="mr-3 mt-2" src="images/flags/United-States.png"><span>English</span><i class="fa fa-angle-right"></i></a>
+<a href="#"><img class="mr-3 mt-2" src="images/flags/India.png"><span>Indian</span><i class="fa fa-angle-right"></i></a>
+<a href="#"><img class="mr-3 mt-2" src="images/flags/Germany.png"><span>German</span><i class="fa fa-angle-right"></i></a>
+<a href="#"><img class="mr-3 mt-2" src="images/flags/Italy.png"><span>Italian</span><i class="fa fa-angle-right"></i></a>
+<a href="#" class="border-0"><img class="mr-3 mt-2" width="20" src="images/flags/Spain.png"><span>Spanish</span><i class="fa fa-angle-right"></i></a>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div id="menu-age" class="menu menu-box-modal rounded-m" data-menu-height="250" data-menu-width="350">
+<div class="mr-3 ml-3 mt-3 pt-1">
+<h3 class="Verify font-700 mb-0">Verify your age</h3>
+<p class="font-11 mb-3">
+This menu can be automatically activated on page load. The date format must be 31/12/1986. The system will do the rest.
+</p>
+<div class="row mb-0">
+<div class="col-4">
+<div class="input-style input-style-1 input-required">
+<span>Day - 31</span>
+<input id="date-birth-day" type="number" placeholder="Day - 31">
+</div>
+</div>
+<div class="col-4">
+<div class="input-style input-style-1 input-required">
+<span>Month - 12</span>
+<input id="date-birth-month" type="number" placeholder="Month - 12">
+</div>
+</div>
+<div class="col-4">
+<div class="input-style input-style-1 input-required">
+<span>Year - 1986</span>
+<input id="date-birth-year" type="number" placeholder="Year - 1986">
+</div>
+</div>
+</div>
+<a href="#" class="check-age btn btn-full btn-m shadow-l rounded-s bg-blue-dark mt-3 text-uppercase font-600">Check Age</a>
+</div>
+</div>
+<div id="menu-age-okay" class="menu menu-box-modal rounded-m" data-menu-height="300" data-menu-width="350">
+<h1 class="text-center mt-4"><i class="fa fa-3x fa-check-circle color-green-dark"></i></h1>
+<h1 class="text-center text-uppercase font-900">Age Verified</h1>
+<p class="boxed-text-l mt-2 mb-3 pb-3">
+Thank you for confirming your age.<br> You can now continue browsing our page.
+</p>
+<a href="#" class="close-menu btn btn-m btn-center-m button-s shadow-l rounded-s font-600 bg-green-light">Great</a>
+</div>
+<div id="menu-age-fail" class="menu menu-box-modal rounded-m" data-menu-height="300" data-menu-width="350">
+<h1 class="text-center mt-4"><i class="fa fa-3x fa-check-circle color-red-dark"></i></h1>
+<h1 class="text-center text-uppercase font-900">Too young</h1>
+<p class="boxed-text-l mt-2 mb-3 pb-3">
+Thank you for confirming your age.<br> You can now continue browsing our page.
+</p>
+<a href="#" class="close-menu btn btn-m btn-center-m button-s shadow-l rounded-s font-600 bg-red-light">Sorry</a>
+</div>
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

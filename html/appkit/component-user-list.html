@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">User Lists</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html" class="active-nav"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1>User Lists</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card card-style">
+<div class="content mb-2">
+<h4>Small List</h4>
+<p>
+A list that contains 2 icons, and a text. ideal for a small patch of text and icons.
+These support background colors, classic simple lists styles, or can support badges and even switches!
+</p>
+<div class="list-group list-custom-small">
+<a href="#">
+<img src="images/avatars/1s.png">
+<span>Jane</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#">
+<img src="images/avatars/2s.png">
+<span>Jack</span>
+<span class="badge bg-red-dark color-white font-10">MANAGER </span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#">
+<img src="images/avatars/6s.png">
+<span>Dora</span>
+<span class="badge bg-green-dark color-white">SUPPORTER</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a data-trigger-switch="switch-22" class="border-0" href="#">
+<img src="images/avatars/5s.png">
+<span>Dave</span>
+<div class="custom-control scale-switch ios-switch">
+<input type="checkbox" class="ios-input" id="switch-22">
+<label class="custom-control-label" for="switch-1"></label>
+</div>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-2">
+<h4>Large List</h4>
+<p>
+A list that contains 2 icons, and a text. ideal for a small patch of text and icons.
+These support background colors, classic simple lists styles, or can support badges and even switches!
+</p>
+<div class="list-group list-custom-large">
+<a href="#">
+<img src="images/avatars/1s.png">
+<span>Jane</span>
+<strong>Company Founder</strong>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#">
+<img src="images/avatars/2s.png">
+<span>Jack</span>
+<strong>Group Manager</strong>
+<span class="badge bg-red-dark font-11 color-white">MANAGER</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#">
+<img src="images/avatars/8s.png">
+<span>Dora</span>
+<span class="badge bg-blue-dark color-white">SUPPORTER</span>
+<strong>Support Staff Manager</strong>
+<i class="fa fa-angle-right"></i>
+</a>
+<a data-trigger-switch="switch-1" class="border-0" href="#">
+<img src="images/avatars/5s.png">
+<span>Dave</span>
+<strong>Senior Developer</strong>
+<div class="custom-control scale-switch ios-switch">
+<input type="checkbox" class="ios-input" id="switch-1" checked>
+<label class="custom-control-label" for="switch-1"></label>
+</div>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content">
+<h4>User Groups</h4>
+<p>You can also create user groups, which can be linked to the user list above. It's simple and very intuitive.</p>
+<div class="d-flex">
+<div class="w-35 border-right pr-3 border-highlight">
+<img src="images/avatars/2s.png" width="80" class="bg-highlight rounded-circle">
+<h6 class="font-14 font-600 mt-2 text-center">Johnatan D</h6>
+<p class="color-blue-dark mt-n3 font-9 font-400 text-center mb-0 pt-1">Group Manager</p>
+</div>
+<div class="w-65 pl-3 pt-2">
+<h5>Support Staff Team</h5>
+<p class="color-highlight mt-n3 font-10 pt-1 mb-3">Monday to Friday - 09:00AM - 05:00 PM</p>
+<a href="#"><img src="images/empty.png" data-src="images/avatars/1s.png" width="40" class="rounded-circle preload-img"></a>
+<a href="#"><img src="images/empty.png" data-src="images/avatars/2s.png" width="40" class="rounded-circle preload-img"></a>
+<a href="#"><img src="images/empty.png" data-src="images/avatars/3s.png" width="40" class="rounded-circle preload-img"></a>
+<a href="#"><img src="images/empty.png" data-src="images/avatars/4s.png" width="40" class="rounded-circle preload-img"></a>
+</div>
+</div>
+<div class="divider mt-4"></div>
+<div class="d-flex">
+<div class="w-35 border-right pr-3 border-green-dark">
+<img src="images/avatars/2s.png" width="80" class="bg-green-dark rounded-circle">
+<h6 class="font-14 font-600 mt-2 text-center">Johnatan D</h6>
+<p class="color-green-dark mt-n3 font-9 font-400 text-center mb-0 pt-1">Group Manager</p>
+</div>
+<div class="w-65 pl-3 pt-2">
+<h5>Design & Development</h5>
+<p class="color-green-dark mt-n3 font-10 pt-1 mb-3">Monday to Friday - 09:00AM - 05:00 PM</p>
+<a href="#"><img src="images/empty.png" data-src="images/avatars/4s.png" width="40" class="rounded-circle preload-img"></a>
+<a href="#"><img src="images/empty.png" data-src="images/avatars/5s.png" width="40" class="rounded-circle preload-img"></a>
+<a href="#"><img src="images/empty.png" data-src="images/avatars/6s.png" width="40" class="rounded-circle preload-img"></a>
+<a href="#"><img src="images/empty.png" data-src="images/avatars/7s.png" width="40" class="rounded-circle preload-img"></a>
+</div>
+</div>
+<div class="divider mt-4"></div>
+<div class="d-flex">
+<div class="w-35 border-right pr-3 border-red-dark">
+<img src="images/avatars/4s.png" width="80" class="bg-yellow-dark rounded-circle">
+<h6 class="font-14 font-600 mt-2 text-center">Johnatan D</h6>
+<p class="color-red-dark mt-n3 font-9 font-400 text-center mb-0 pt-1">Group Manager</p>
+</div>
+<div class="w-65 pl-3 pt-2">
+<h5>Account & Billing</h5>
+<p class="color-red-dark mt-n3 font-10 pt-1 mb-3">Monday to Friday - 09:00AM - 05:00 PM</p>
+<a href="#"><img src="images/empty.png" data-src="images/avatars/8s.png" width="40" class="rounded-circle preload-img"></a>
+<a href="#"><img src="images/empty.png" data-src="images/avatars/9s.png" width="40" class="rounded-circle preload-img"></a>
+<a href="#"><img src="images/empty.png" data-src="images/avatars/10s.png" width="40" class="rounded-circle preload-img"></a>
+<a href="#"><img src="images/empty.png" data-src="images/avatars/11s.png" width="40" class="rounded-circle preload-img"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content">
+<h3>Swipe & Tap Lists</h3>
+<p>
+To get more contact information simply tap the "Tap For More" text, or better yet, swipe the card to the left.
+</p>
+<div class="user-slider owl-carousel">
+<div class="user-left">
+<div class="d-flex">
+<div><img src="images/avatars/1s.png" class="mr-3 rounded-circle shadow-l bg-red-dark" width="50"></div>
+<div>
+<h5 class="mt-1 mb-0">Johnatan Doe</h5>
+<p class="font-10 mt-n1 color-red-dark">Executive Officer</p>
+</div>
+<div class="ml-auto"><span class="next-slide-user badge bg-red-dark mt-2 p-2 font-8">TAP FOR MORE</span></div>
+</div>
+</div>
+<div class="user-right">
+<div class="d-flex">
+<div>
+<h5 class="mt-1 mb-0">Johnatan Doe</h5>
+<p class="font-10 mt-n1 color-red-dark">Executive Officer</p>
+</div>
+<div class="ml-auto">
+<a href="#" class="icon icon-xs rounded-circle shadow-l bg-phone"><i class="fa fa-phone"></i></a>
+<a href="#" class="icon icon-xs rounded-circle shadow-l bg-facebook mr-2 ml-2"><i class="fab fa-facebook-f"></i></a>
+<a href="#" class="icon icon-xs rounded-circle shadow-l bg-twitter"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="divider mt-3"></div>
+<div class="user-slider owl-carousel">
+<div class="user-left">
+<div class="d-flex">
+<div><img src="images/avatars/2s.png" class="bg-green-dark mr-3 rounded-circle shadow-l" width="50"></div>
+<div>
+<h5 class="mt-1 mb-0">Alexander Mac</h5>
+<p class="font-10 mt-n1 color-green-dark">Support Team Manager</p>
+</div>
+<div class="ml-auto"><span class="next-slide-user badge bg-green-dark mt-2 p-2 font-8">TAP FOR MORE</span></div>
+</div>
+</div>
+<div class="user-right">
+<div class="d-flex">
+<div>
+<h5 class="mt-1 mb-0">Alexander Mac</h5>
+<p class="font-10 mt-n1 color-green-dark">Support Team Manager</p>
+</div>
+<div class="ml-auto">
+<a href="#" class="icon icon-xs rounded-circle shadow-l bg-phone"><i class="fa fa-phone"></i></a>
+<a href="#" class="icon icon-xs rounded-circle shadow-l bg-facebook mr-2 ml-2"><i class="fab fa-facebook-f"></i></a>
+<a href="#" class="icon icon-xs rounded-circle shadow-l bg-twitter"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="divider mt-3"></div>
+<div class="user-slider owl-carousel">
+<div class="user-left">
+<div class="d-flex">
+<div><img src="images/avatars/5s.png" class="bg-yellow-dark mr-3 rounded-circle shadow-l" width="50"></div>
+<div>
+<h5 class="mt-1 mb-0">Johnatan Unixer</h5>
+<p class="font-10 mt-n1 color-blue-dark">Executive Officer</p>
+</div>
+<div class="ml-auto"><span class="next-slide-user badge bg-blue-dark mt-2 p-2 font-8">TAP FOR MORE</span></div>
+</div>
+</div>
+<div class="user-right">
+<div class="d-flex">
+<div>
+<h5 class="mt-1 mb-0">Johnatan Doe</h5>
+<p class="font-10 mt-n1 color-blue-dark">Executive Officer</p>
+</div>
+<div class="ml-auto">
+<a href="#" class="icon icon-xs rounded-circle shadow-l bg-phone"><i class="fa fa-phone"></i></a>
+<a href="#" class="icon icon-xs rounded-circle shadow-l bg-facebook mr-2 ml-2"><i class="fab fa-facebook-f"></i></a>
+<a href="#" class="icon icon-xs rounded-circle shadow-l bg-twitter"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="divider mt-3"></div>
+<div class="user-slider owl-carousel">
+<div class="user-left">
+<div class="d-flex">
+<div><img src="images/avatars/7s.png" class="bg-red-dark mr-3 rounded-circle shadow-l" width="50"></div>
+<div>
+<h5 class="mt-1 mb-0">Vincent Mobi</h5>
+<p class="font-10 mt-n1 color-gray-dark">Back End Developer</p>
+</div>
+<div class="ml-auto"><span class="next-slide-user badge bg-blue-dark mt-2 p-2 font-8">TAP FOR MORE</span></div>
+</div>
+</div>
+<div class="user-right">
+<div class="d-flex">
+<div>
+<h5 class="mt-1 mb-0">Vincent Mobi</h5>
+<p class="font-10 mt-n1 color-gray-dark">Back End Developer</p>
+</div>
+<div class="ml-auto">
+<a href="#" class="icon icon-xs rounded-circle shadow-l bg-phone"><i class="fa fa-phone"></i></a>
+<a href="#" class="icon icon-xs rounded-circle shadow-l bg-facebook mr-2 ml-2"><i class="fab fa-facebook-f"></i></a>
+<a href="#" class="icon icon-xs rounded-circle shadow-l bg-twitter"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

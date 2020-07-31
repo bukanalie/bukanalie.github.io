@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Subscriptions</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1 class="font-22">Subscriptions</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card card-style bg-12" data-card-height="200">
+<div class="card-top">
+<a href="#" data-menu="menu-trial" class="bg-white color-black btn-s font-600 rounded-sm scale-box float-right mr-2 mt-2">Start Trial</a>
+</div>
+<div class="card-bottom ml-3">
+<h1 class="color-white mb-n2">Catered for You</h1>
+<p class="color-white opacity-50 mb-3">
+Subscriptions to suit all your needs.
+</p>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="tab-controls mr-3 ml-3 tabs-round tab-animated tabs-large tabs-rounded clearfix shadow-xl mb-4" data-tab-items="3" data-tab-active="bg-highlight activated color-white">
+<a href="#" data-tab="tab-1">Basic</a>
+<a href="#" data-tab-active data-tab="tab-2">Regular</a>
+<a href="#" data-tab="tab-3">Pro</a>
+</div>
+<div class="tab-content" id="tab-1">
+<div class="card card-style">
+<div class="content">
+<p class="color-highlight mb-n1 font-600">Great for Starting</p>
+<h1>Basic Plan</h1>
+<p>The best plan if you're a beginner. Covers everything you'll need to start your awesome project.</p>
+<h5>10 <span class="opacity-30 pl-1">Courses</span></h5>
+<h5>15 <span class="opacity-30 pl-1">Video Tutorial</span></h5>
+<h3 class="mt-4 mb-4">$49.00<span class="opacity-30">/month</span></h3>
+<div class="divider"></div>
+<a href="#" class="btn btn-full btn-m rounded-sm font-13 font-600 gradient-highlight mb-4">Choose Basic Plan</a>
+<h5 class="mt-3"><i class="fa fa-check color-green-dark pr-2"></i> Downloadable Courses</h5>
+<h5 class="mt-3"><i class="fa fa-check color-green-dark pr-2"></i> Infinite Replays</h5>
+<h5 class="mt-3"><i class="fa fa-check color-green-dark pr-2"></i> Cancel Anytime</h5>
+<h5 class="mt-3"><i class="fa fa-check color-green-dark pr-2"></i> 30 Day Money Back Guarantee</h5>
+</div>
+</div>
+</div>
+<div class="tab-content" id="tab-2">
+<div class="card card-style">
+<div class="content">
+<p class="color-highlight mb-n1 font-600">Best for Everyone</p>
+<h1>Regular Plan</h1>
+<p>The best plan if you're a beginner. Covers everything you'll need to start your awesome project.</p>
+<h5>20 <span class="opacity-30 pl-1">Courses</span></h5>
+<h5>35 <span class="opacity-30 pl-1">Video Tutorial</span></h5>
+<h3 class="mt-4 mb-4">$99.00<span class="opacity-30">/month</span></h3>
+<div class="divider"></div>
+<a href="#" class="btn btn-full btn-m rounded-sm font-13 font-600 gradient-highlight mb-4">Choose Regular Plan</a>
+<h5 class="mt-3"><i class="fa fa-check color-green-dark pr-2"></i> Downloadable Courses</h5>
+<h5 class="mt-3"><i class="fa fa-check color-green-dark pr-2"></i> Infinite Replays</h5>
+<h5 class="mt-3"><i class="fa fa-check color-green-dark pr-2"></i> Cancel Anytime</h5>
+<h5 class="mt-3"><i class="fa fa-check color-green-dark pr-2"></i> 30 Day Money Back Guarantee</h5>
+</div>
+</div>
+</div>
+<div class="tab-content" id="tab-3">
+<div class="card card-style">
+<div class="content">
+<p class="color-highlight mb-n1 font-600">Power Users</p>
+<h1>Pro Plan</h1>
+<p>The best plan if you're a beginner. Covers everything you'll need to start your awesome project.</p>
+<h5>ALL <span class="opacity-30 pl-1">Courses</span></h5>
+<h5>ALL <span class="opacity-30 pl-1">Video Tutorial</span></h5>
+<h3 class="mt-4 mb-4">$199.00<span class="opacity-30">/month</span></h3>
+<div class="divider"></div>
+<a href="#" class="btn btn-full btn-m rounded-sm font-13 font-600 gradient-highlight mb-4">Choose Pro Plan</a>
+<h5 class="mt-3"><i class="fa fa-check color-green-dark pr-2"></i> Downloadable Courses</h5>
+<h5 class="mt-3"><i class="fa fa-check color-green-dark pr-2"></i> Infinite Replays</h5>
+<h5 class="mt-3"><i class="fa fa-check color-green-dark pr-2"></i> Cancel Anytime</h5>
+<h5 class="mt-3"><i class="fa fa-check color-green-dark pr-2"></i> 30 Day Money Back Guarantee</h5>
+</div>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-trial" class="menu menu-box-modal rounded-m" data-menu-height="390" data-auto-activate="3" data-menu-width="350">
+<div class="content">
+<p class="mb-n1 color-highlight font-600">No Credit Card Need</p>
+<h1>Start your Trial</h1>
+<p>
+Start your trial today and enjoy the awesome perks you get with any subscription! You'll love it!
+</p>
+<h5 class="mt-3"><i class="fa fa-check color-green-dark pr-2"></i> Full Access</h5>
+<h5 class="mt-3"><i class="fa fa-check color-green-dark pr-2"></i> Cancel Anytime</h5>
+<h5 class="mt-3"><i class="fa fa-check color-green-dark pr-2"></i> No Credit Card Required</h5>
+<h5 class="mt-3"><i class="fa fa-check color-green-dark pr-2"></i> 30 Day Money Back Guarantee</h5>
+<div class="row mb-0 mt-4 pt-1">
+<div class="col-6">
+<a href="#" class="close-menu btn btn-full rounded-s btn-border color-highlight border-highlight btn-m font-600">No, thanks!</a>
+</div>
+<div class="col-6">
+<a href="#" class="close-menu btn btn-full rounded-s gradient-highlight btn-m font-600 scale-box border-0">Start Trial</a>
+</div>
+</div>
+</div>
+</div>
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

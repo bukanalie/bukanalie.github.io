@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Ads</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html" class="active-nav"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1>Ads</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+
+<div class="ads" id="adblock-detect">
+<img src="images/ad.png" height="250" width="300" alt="">
+</div>
+<div id="adblock-message" class="p-3 mr-3 ml-3 rounded-sm shadow-xl bg-blue-dark mb-4">
+<h4 class="color-white font-700 pl-0 mb-0 pt-1">Ad Blocker Detected</h4>
+<p class="color-white opacity-60 mb-0">To view Ads Components please disable Ad Blocker.</p>
+</div>
+<div class="card card-style">
+<div class="content">
+<h4>Banners</h4>
+<p class="mb-4">
+Ads are a very important part of mobile interfaces, they're a great source of revenue. We've integrated, the best, the most correct and widely approved ads in our item.
+</p>
+<div class="ad-300x50 bg-highlight mb-3">
+<div class="card bg-1" data-card-height="50">
+<h4 class="card-center color-white text-center">300 x 50 Mobile Banner Ad</h4>
+<div class="card-overlay rounded-0 bg-black opacity-40"></div>
+</div>
+</div>
+<div class="ad-300x250 bg-highlight">
+<div class="card bg-6" data-card-height="250">
+<h4 class="card-center color-white text-center">300 x 250 Mobile Banner Ad</h4>
+<div class="card-overlay rounded-0 bg-black opacity-40"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content">
+<h4>Scrolling Ads</h4>
+<p>
+Scrolling ads show and hide as you scroll through the page. Tap the button below to activate it and scroll up and down to see it in action.
+</p>
+<a href="#" class="btn btn btn-m bg-highlight font-600 activate-scroll-ad">Preview</a>
+</div>
+</div>
+<div class="card card-style">
+<div class="content">
+<h4>Fixed Ad</h4>
+<p>
+The classic fixed 300x50 ad that shows at the bottom of the screen. To enable it simply tap the below button.
+</p>
+<a href="#" class="btn btn-m bg-highlight font-600 activate-fixed-ad">Preview</a>
+</div>
+</div>
+<div class="card card-style">
+<div class="content">
+<h4>Timed Ads</h4>
+<p>
+Timed ads are those little ads that show in gamaes where you have to wait a certain period before being
+able to close them. Although annoying they have a high conversion rate.
+</p>
+<div class="row mb-0">
+<div class="col-6">
+<a href="#" data-menu="ad-timed-2" data-timed-ad="10" class="btn btn-m btn-full shadow-xl font-600 bg-highlight mb-2">Full Ad</a>
+</div>
+<div class="col-6">
+<a href="#" data-menu="ad-timed-1" data-timed-ad="5" class="btn btn-m btn-full shadow-xl font-600 bg-highlight mb-3">Modal Ad</a>
+</div>
+</div>
+<div class="divider mt-4"></div>
+<h4>Automatic Ad</h4>
+<p>
+You can deploy full timed ads by timer, to show automatically after a certain period.
+</p>
+<a href="#" data-menu="ad-timed-3" data-timed-ad="5" data-auto-show-ad="60" class="btn btn-m btn-full shadow-xl font-600 bg-highlight mb-2">Auto Show in 60 Seconds</a>
+<div class="divider mt-4"></div>
+<h4>Tap or Programatic</h4>
+<p>
+Yes. Full screen and modal ads can be activated programatically.
+</p>
+<code>
+$('#your-ad-id').showMenu(); <br>
+$('#your-ad-id').hideMenu();
+</code>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+<div id="fixed-ad" class="disabled ad-300x50 ad-300x50-fixed bg-red-dark mb-2">
+<div class="card bg-1" data-card-height="50">
+<h4 class="card-center color-white text-center">300 x 50 Mobile Banner Ad</h4>
+<div class="card-overlay rounded-0 bg-black opacity-40"></div>
+</div>
+</div>
+<div id="scroll-ad" class="disabled scroll-ad shadow-xl bg-dark-dark">
+<img src="images/pictures/18s.jpg" class="shadow-l" alt="img">
+<h1 class="text-uppercase font-800 font-16 color-white">Get Appkit Today</h1>
+<em class="font-12">Flexibile, fast and fully featured. <br> Pure mobile awesome!</em>
+<a href="#" class="bg-highlight color-white shadow-m">Purchase</a>
+</div>
+<div id="ad-timed-1" class="menu menu-box-modal menu-box-detached" data-menu-width="340" data-menu-height="450" data-menu-effect="menu-over">
+<div class="card bg-17 mb-0" data-card-height="450">
+<div class="card-top">
+<a href="#" class="close-menu ad-time-close color-highlight"><i class="fa fa-times disabled"></i><span></span></a>
+</div>
+<div class="card-top">
+<span class="color-white bg-black font-10 opacity-70 pb-1 pt-1 pl-2 pr-2 ml-1">Sponsored Content</span>
+</div>
+<div class="card-center ml-2 mr-2">
+<h1 class="color-white text-center mb-3">Modal Ad</h1>
+<p class="color-white text-center opacity-50 mt-n1 mb-0">Timed ads show for the amount of time you want. During this time, users cannot click the close button. After the time has elapsed, the ad can be closed.</p>
+<a href="#" class="close-menu mt-5 btn btn-m btn-center-l rounded-s shadow-xl text-uppercase font-900 bg-red-dark">Demo Close Button</a>
+</div>
+<div class="card-overlay bg-black opacity-90"></div>
+</div>
+</div>
+<div id="ad-timed-2" class="menu menu-box-modal menu-box-detached" data-menu-width="101vw" data-menu-height="101vh" data-menu-effect="menu-over">
+<div class="card bg-17 mb-0" data-card-height="101vh">
+<div class="card-top">
+<a href="#" class="close-menu ad-time-close color-highlight"><i class="fa fa-times disabled"></i><span></span></a>
+</div>
+<div class="card-top">
+<span class="color-white bg-black font-10 opacity-70 pb-1 pt-1 pl-2 pr-2 ml-1">Sponsored Content</span>
+</div>
+<div class="card-center ml-5 mr-5">
+<h1 class="color-white text-center mb-3 font-40">Full Ad</h1>
+<p class="color-white text-center opacity-50 mt-n1 mb-0">Timed ads show for the amount of time you want. During this time, users cannot click the close button. After the time has elapsed, the ad can be closed.</p>
+<a href="#" class="close-menu mt-5 btn btn-m btn-center-l rounded-s shadow-xl text-uppercase font-900 bg-red-dark">Demo Close Button</a>
+</div>
+<div class="card-overlay bg-black opacity-90"></div>
+</div>
+</div>
+<div id="ad-timed-3" class="menu menu-box-modal menu-box-detached" data-menu-width="101vw" data-menu-height="101vh" data-menu-effect="menu-over">
+<div class="card bg-17 mb-0" data-card-height="101vh">
+<div class="card-top">
+<a href="#" class="close-menu ad-time-close color-highlight"><i class="fa fa-times disabled"></i><span></span></a>
+</div>
+<div class="card-top">
+<span class="color-white bg-black font-10 opacity-70 pb-1 pt-1 pl-2 pr-2 ml-1">Sponsored Content</span>
+</div>
+<div class="card-center ml-5 mr-5">
+<h1 class="color-white text-center mb-3 font-40">Automatic Show</h1>
+<p class="color-white text-center opacity-50 mt-n1 mb-0">This ad apears on it's own, and can only be closed after 5 seconds. In the demo, you can use the red close button, in real life, you can remove that button.</p>
+<a href="#" class="close-menu mt-5 btn btn-m btn-center-l rounded-s shadow-xl text-uppercase font-900 bg-red-dark">Demo Close Button</a>
+</div>
+<div class="card-overlay bg-black opacity-90"></div>
+</div>
+</div>
+<script type="text/javascript">
+        $('.activate-scroll-ad').on('click',function(){
+            $('#scroll-ad').removeClass('disabled');
+            $('#fixed-ad').addClass('disabled');
+        })
+        $('.activate-fixed-ad').on('click',function(){
+            $('#scroll-ad').addClass('disabled');
+            $('#fixed-ad').removeClass('disabled');
+        })
+    </script>
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Store</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1>Menu</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card ml-3 mr-3 card-style mx-0 px-2 bg-highlight" style="background-image:url(images/food/sweets/sweet-2.png);" data-card-height="350">
+<div class="card-top pl-3 pr-3">
+<p class="color-white opacity-50 font-600 mb-n1 pt-3">Dessert & Sweets</p>
+<h1 class="mb-0 color-white font-30">Strawberry Pie</h1>
+</div>
+<div class="card-bottom pl-3 pr-3 pb-3">
+<h1 class="mb-n2 color-white font-800 text-right font-30"><span class="font-12 font-300 opacity-30">per serving</span> $24.99</h1>
+</div>
+<div class="card-bottom">
+<a href="#" class="btn btn-m font-600 color-black bg-white ml-2 mb-2 rounded-sm">Order Now</a>
+</div>
+</div>
+<div class="card card-style" style="background-image:url(images/menu2-bg.jpg);">
+<div class="card-body ml-1 mr-1">
+<p class="mb-0 color-white font-600 opacity-30 mt-3">Main Course</p>
+<h1 class="color-white font-44 font-800 mb-5">Pizza</h1>
+<div class="d-flex">
+<div>
+<h3 class="color-white mb-0">Margerita</h3>
+<p class="color-white opacity-50 line-height-s font-12">Tomato Sauce, Mozzarella, Pizza Condiments, Oregano</p>
+</div>
+<div class="ml-auto pl-3">
+<h4 class="color-white">$5<sup>.99</sup></h4>
+</div>
+</div>
+<div class="d-flex">
+<div>
+<h3 class="color-white mb-0">Prosciutto</h3>
+<p class="color-white opacity-50 line-height-s font-12">Tomato Sauce, Mozzarella, Pizza Condiments, Oregano, Mushrooms, Ham, Chiken Breast</p>
+</div>
+<div class="ml-auto pl-3">
+<h4 class="color-white">$9<sup>.99</sup></h4>
+</div>
+</div>
+<div class="d-flex">
+<div>
+<h3 class="color-white mb-0">Funghi</h3>
+<p class="color-white opacity-50 line-height-s font-12">Tomato Sauce, Mozzarella, Pizza Condiments, Oregano, Hot Salami, Ham, Mushrooms, Chicken Salami</p>
+</div>
+<div class="ml-auto pl-3">
+<h4 class="color-white">$19<sup>.99</sup></h4>
+</div>
+</div>
+<a href="#" class="btn btn-full btn-m font-600 rounded-sm border-white color-white mb-3">Call Now and Order</a>
+</div>
+</div>
+<div class="content mt-0 mb-0">
+<div class="row mb-0">
+<div class="col-6 pr-2">
+<div class="card card-style mx-0 px-2">
+<img src="images/food/pizza/pizza-3.png" class="img-fluid">
+<p class="color-highlight font-600 mb-n1">Pizza</p>
+<h2>Margerita</h2>
+<h5 class="font-14">$14.99</h5>
+<p class="font-11 line-height-s pt-3">
+Tomato Sauce, Mozzarella, Pizza Stuff, Oregano
+</p>
+<a href="#" class="btn btn-s btn-full border-highlight rounded-s color-highlight mb-3">Order</a>
+</div>
+</div>
+<div class="col-6 pl-2">
+<div class="card card-style mx-0 px-2">
+<img src="images/food/pizza/pizza-5.png" class="img-fluid">
+<p class="color-highlight font-600 mb-n1">Pizza</p>
+<h2>Vegetarian</h2>
+<h5 class="font-14">$24.99</h5>
+<p class="font-11 line-height-s pt-3">
+Tomato Sauce, Mozzarella, Pizza Stuff, Oregano
+</p>
+<a href="#" class="btn btn-s btn-full border-highlight rounded-s color-highlight mb-3">Order</a>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<img src="images/pictures/4.jpg" class="img-fluid">
+<div class="card-body ml-1 mr-1 mt-n3">
+<p class="font-600 color-highlight mt-3 mb-n1">Drinks and Apetizers</p>
+<h1 class="font-800 font-28 mb-4">Beverages</h1>
+<div class="d-flex mb-n3">
+<div>
+<h5 class="mb-0">Whiskey</h5>
+<p class="opacity-50 line-height-s font-12">Malt or Distiled</p>
+</div>
+<div class="ml-auto pl-3">
+<h4>$5<sup>.99</sup></h4>
+</div>
+</div>
+<div class="d-flex mb-n3">
+<div>
+<h5 class="mb-0">Tequila</h5>
+<p class="opacity-50 line-height-s font-12">Original with Lemon</p>
+</div>
+<div class="ml-auto pl-3">
+<h4>$9<sup>.99</sup></h4>
+</div>
+</div>
+<div class="d-flex mb-n3">
+<div>
+<h5 class="mb-0">Beer</h5>
+<p class="opacity-50 line-height-s font-12">Filtered or Unfiltered</p>
+</div>
+<div class="ml-auto pl-3">
+<h4>$19<sup>.99</sup></h4>
+</div>
+</div>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

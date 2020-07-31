@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center">
+<a href="index.html" class="header-title">Cover Slider</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-content pb-0">
+<div class="cover-slider owl-carousel mb-0">
+<div data-card-height="cover" class="card mb-0" style="background-image:url(images/pictures/1l.jpg)">
+<div class="card-center text-center">
+<h1 class="color-white font-40">AppKit PWA</h1>
+<h6 class="color-white mb-4 pb-2">The best Mobile Product on Envato</h6>
+<p class="boxed-text-xl font-15 line-height-l color-white opacity-60 mb-5">
+Designed to look grogeous on your Mobile and bring your website to the new age of design and technology levels. Appkit is Amazing
+</p>
+<a href="#" class="btn btn-m bg-highlight rounded-s btn-center-m shadow-l font-700 text-uppercase">AWESOME</a>
+</div>
+<div class="card-overlay bg-black opacity-70"></div>
+</div>
+<div data-card-height="cover" class="card mb-0" style="background-image:url(images/pictures/16l.jpg)">
+<div class="card-center text-left pl-4 pr-4">
+<h1 class="color-white font-40 font-800">Flexible</h1>
+<h1 class="color-white font-33 font-800">by Design</h1>
+<h6 class="color-white mb-4 pb-2">The best Mobile Product on Envato</h6>
+<p class="font-15 line-height-l color-white opacity-60 mb-5">
+Don't limit your creativity. Design cards that are awesome with an Bootstrap 4 and enahanced by us! Familiar code, unlimited powere.
+</p>
+<a href="#" class="btn btn-m bg-highlight rounded-s shadow-l font-700 text-uppercase">GEt Started</a>
+</div>
+<div class="card-overlay bg-black opacity-70"></div>
+</div>
+<div data-card-height="cover" class="card mb-0" style="background-image:url(images/pictures/6l.jpg)">
+<div class="card-bottom text-right pl-4 pr-4 mb-5 pb-5">
+<h1 class="color-white font-33 font-800 mb-2">Appkit Screams</h1>
+<h1 class="color-white font-40 font-800 mb-3">Performance</h1>
+<p class="font-15 line-height-l color-white opacity-60 mb-5">
+Cards are beyond powerful. You can create card style you want in under 5 minutes. Appkit delivers performance and flexibility
+</p>
+<a href="#" class="btn btn-m bg-highlight rounded-s shadow-l font-700 text-uppercase mb-5">GEt Started</a>
+<div class="mb-5"></div>
+</div>
+<div class="card-overlay bg-black opacity-70"></div>
+</div>
+<div data-card-height="cover" class="card mb-0" style="background-image:url(images/pictures/19l.jpg)">
+<div class="card-center text-center">
+<h1 class="color-white font-40">Endless Styles</h1>
+<h6 class="color-white mb-4 pb-2">We took every aspect into consideration.</h6>
+<p class="text-center px-5 font-15 line-height-l color-white opacity-60 mb-5">
+What are you waiting for? The latest web design languages await! Get AppKit today and unleash your Mobile Website to the world.
+</p>
+<a href="#" class="btn btn-m bg-highlight rounded-s btn-center-l shadow-l font-700 text-uppercase">Purchase Appkit</a>
+</div>
+<div class="card-overlay bg-black opacity-70"></div>
+</div>
+</div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

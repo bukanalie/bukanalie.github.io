@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center">
+<a href="index.html" class="header-title show-business-opened">Welcome, We're Open</a>
+<a href="index.html" class="header-title show-business-closed">Sorry, We're Closed</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-content header-clear-medium">
+<div class="card card-style">
+<div class="content">
+<p class="mb-n1 color-highlight font-600">Fully Working</p>
+<h1>Working Hours</h1>
+<p>
+Showcase your schedule automatically, our page will show and hide content based on your
+working schedule, and will also adjust colors in case of the time table below.
+</p>
+</div>
+</div>
+<div class="show-business-opened card card-style bg-16" data-card-height="150">
+<div class="card-center pl-3">
+<h1 class="color-white mb-n2">We're Open</h1>
+<p class="color-white mb-0">
+We're open and waiting for you
+</p>
+</div>
+<div class="card-center">
+<a href="#" class="btn btn-s bg-white color-black rounded-xl float-right mr-2 font-600">Visit</a>
+<a href="#" class="btn btn-s bg-white color-black rounded-xl float-right mr-2 font-600">Call</a>
+</div>
+<div class="card-overlay bg-black opacity-70"></div>
+</div>
+<div class="show-business-closed card card-style bg-6" data-card-height="150">
+<div class="card-center pl-3">
+<h1 class="color-white mb-n2">We're Closed</h1>
+<p class="color-white mb-0">
+See you tomorrow
+</p>
+</div>
+<div class="card-center">
+<a href="#" class="btn btn-s bg-white color-black rounded-xl float-right mr-2 font-600">Visit</a>
+<a href="#" class="btn btn-s bg-white color-black rounded-xl float-right mr-2 font-600">Email</a>
+</div>
+<div class="card-overlay bg-black opacity-70"></div>
+</div>
+<div class="card card-style alert show-business-closed" role="alert">
+<div class="d-flex py-2">
+<div>
+<i class="fa fa-exclamation-circle mr-3 scale-box fa-4x color-red-dark"></i>
+</div>
+<div>
+<p class="color-highlight mb-n1 font-12 font-600">Sorry</p>
+<h1 class="mb-0">We're Closed</h1>
+</div>
+<div class="ml-auto align-self-center">
+<div data-dismiss="alert" aria-label="Close"><i class="fa fa-times-circle font-16 color-red-dark"></i></div>
+</div>
+</div>
+</div>
+<div class="card card-style alert show-business-opened" role="alert">
+<div class="d-flex py-2">
+<div>
+<i class="fa fa-check-circle mr-3 scale-box fa-4x color-blue-dark"></i>
+</div>
+<div>
+<p class="color-highlight mb-n1 font-12 font-600">Welcome</p>
+<h1 class="mb-0">We're Open</h1>
+</div>
+<div class="ml-auto align-self-center">
+<div data-dismiss="alert" aria-label="Close"><i class="fa fa-times-circle font-16 color-red-dark"></i></div>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div data-card-height="120" data-closed-message="Sorry! We're closed!" data-closed-message-under="We'll be back very soon!" data-opened-message="Welcome! We're open!" data-opened-message-under="Call us Now! Let's have a chat!" class="business-hours caption shadow-xl">
+<div class="card-top">
+<a id="business-hours-call" href="tel:+1 234 567 890" class="float-right btn btn-xs rounded-xl text-uppercase font-900 mt-5 mr-3 bg-white color-black">Call Now</a>
+<a id="business-hours-mail" href="page-contact.html" class="float-right btn btn-xs rounded-xl text-uppercase font-900 mt-5 mr-3 bg-white color-black">Email Us</a>
+</div>
+<div class="card-top mt-4 ml-3 pl-1">
+<h1 class="color-white mt-1 font-20 font-700"></h1>
+<p class="color-white opacity-90 mt-n2 mb-0"></p>
+</div>
+<div class="caption-overlay show-business-opened bg-green-dark"></div>
+<div class="caption-overlay show-business-closed bg-red-dark"></div>
+</div>
+<div class="content">
+
+
+<div class="working-hours day-monday"> <p>Monday</p> <p>09:00 AM</p> <p>05:00 PM</p></div>
+<div class="working-hours day-tuesday"> <p>Tuesday</p> <p>09:00 AM</p> <p>05:00 PM</p></div>
+<div class="working-hours day-wednesday"> <p>Wednesday</p> <p>09:00 AM</p> <p>05:00 PM</p></div>
+<div class="working-hours day-thursday"> <p>Thursday</p> <p>09:00 AM</p> <p>05:00 PM</p></div>
+<div class="working-hours day-friday"> <p>Friday</p> <p>09:00 AM</p> <p>05:00 PM</p></div>
+<div class="working-hours day-saturday"> <p>Saturday</p> <p>09:00 AM</p> <p>01:00 PM</p></div>
+<div class="working-hours day-sunday"> <p>Sunday</p> <p class="opacity-00">-</p> <p>We're Closed</p></div>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

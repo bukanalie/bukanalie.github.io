@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Courses</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1>Courses</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="tab-controls mr-3 ml-3 tabs-round tab-animated tabs-medium tabs-rounded clearfix shadow-xl mb-4" data-tab-items="2" data-tab-active="bg-highlight activated color-white">
+<a href="#" class="font-12" data-tab-active data-tab="tab-1">New Courses</a>
+<a href="#" class="font-12" data-tab="tab-2">Your Progress</a>
+</div>
+<div class="tab-content" id="tab-1">
+<div class="card card-style">
+<img src="images/pictures/13w.jpg" class="img-fluid">
+<div class="content">
+<p class="mb-n1 color-highlight font-600">Video Tutorials</p>
+<h1>Adobe Photoshop</h1>
+<p class="opacity-60 text-uppercase font-10 mt-n2 font-600 mb-1">Beginner - 15 Minutes</p>
+<p>
+This course aims to teach you how to create awesome effects in Adobe Photoshop using the best practices in the industry.
+</p>
+<div class="d-flex">
+<div class="mr-auto">
+<div class="list-group list-custom-large mt-n3">
+<a href="#" class="border-0">
+<img src="images/pictures/1s.jpg" class="rounded-sm">
+<span>John Droid</span>
+<strong>Senior Designer</strong>
+</a>
+</div>
+</div>
+<div>
+<a href="#" class="btn btn-full btn-s font-600 rounded-s gradient-highlight mt-1 float-left ">Read More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="divider divider-margins"></div>
+<div class="card card-style">
+<div class="card rounded-0 mb-0 bg-16" data-card-height="250">
+<div class="card-top pr-3 pt-3">
+<h1 class="color-white text-right">$99<sup>.99</sup></h1>
+<p class="color-white opacity-50 text-right font-10 mt-n3">Lifetime Access</p>
+</div>
+</div>
+<div class="content">
+<p class="badge mb-n1 bg-red-dark font-600">PREMIUM COURSE</p>
+<h1>Singing & Karaoke</h1>
+<p class="opacity-60 text-uppercase font-10 mt-n2 font-600 mb-1">Expert - 3 Hours 15 Minutes</p>
+<p>
+This couse will make you a superstar in the fastest possible time! Forget singing in the shower!
+</p>
+<div class="d-flex">
+<div class="mr-auto">
+<div class="list-group list-custom-large mt-n3">
+<a href="#" class="border-0">
+<img src="images/pictures/6s.jpg" class="rounded-sm">
+<span>Jane Louder</span>
+<strong>Vocal Instructor</strong>
+</a>
+</div>
+</div>
+<div>
+<a href="#" class="btn btn-full btn-s font-600 rounded-s gradient-highlight mt-1">Purchase</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-content" id="tab-2">
+<div class="card card-style">
+<div class="content">
+<h1>Adobe Photoshop</h1>
+<span class="badge bg-highlight mb-3 p-1">PREMIUM</span>
+<span class="badge bg-highlight mb-3 p-1">1 Hour 40 Minutes</span>
+<h5 class="font-13 opacity-30 line-height-s mb-4">Practical tutorials with downloadable files included and video editing course. </h5>
+<div class="row mb-0">
+<div class="col-8">
+<p class="font-600 mb-0 font-10 color-highlight">80% Complete</p>
+<div class="progress" style="height:10px;">
+<div class="progress-bar border-0 bg-highlight text-left pl-2" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+</div>
+</div>
+</div>
+<div class="col-4">
+<a href="#" class="btn btn-full btn-s font-600 font-12 rounded-s gradient-highlight">Start</a>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content">
+<h4 class="mb-2">Breakdance Lessons with Parkour Style Dancing</h4>
+<span class="badge bg-red-dark mb-3 p-1">PREMIUM</span>
+<span class="badge bg-red-dark mb-3 p-1">2 Hours</span>
+<h5 class="font-13 opacity-30 line-height-s mb-4">Practical tutorials with downloadable files included and video editing course. </h5>
+<div class="row mb-0">
+<div class="col-8">
+<p class="font-600 mb-0 font-10 color-red-dark">50% Complete</p>
+<div class="progress" style="height:10px;">
+<div class="progress-bar border-0 gradient-red text-left pl-2" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+</div>
+</div>
+</div>
+<div class="col-4">
+<a href="#" class="btn btn-full btn-s font-600 font-12 rounded-s gradient-red">Start</a>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content">
+<h2 class="mb-2">Target Audience Marketing Traning and Research</h2>
+<span class="badge bg-green-dark mb-3 p-1">COMPLETED</span>
+<h5 class="font-13 opacity-30 line-height-s mb-4">Practical tutorials with downloadable files included and video editing course. </h5>
+<div class="row mb-0">
+<div class="col-8">
+<p class="font-600 mb-0 font-10 color-green-dark">10% Complete</p>
+<div class="progress" style="height:10px;">
+<div class="progress-bar border-0 gradient-green text-left pl-2" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+</div>
+</div>
+</div>
+<div class="col-4">
+<a href="#" class="btn btn-full btn-s font-600 font-12 rounded-s gradient-green">Start</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

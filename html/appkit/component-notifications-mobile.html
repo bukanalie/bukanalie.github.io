@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Notifications</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html" class="active-nav"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1>Notifications</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card card-style">
+<div class="content mb-0">
+<h4>Mobile Styled</h4>
+<p>
+Designed to fall down from the top of the screen, these support multiple colors icons and links.
+</p>
+<div class="list-group list-custom-small list-icon-0">
+<a href="#" data-toast="notification-1">
+<i class="fab font-17 fa-apple color-gray-dark"></i>
+<span>iOS Style</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-toast="notification-2">
+<i class="fab font-17 fa-android color-green-dark"></i>
+<span>Android Style 1</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-toast="notification-3">
+<i class="fab font-17 fa-android color-green-dark"></i>
+<span>Android Style 2</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-toast="notification-4">
+<i class="fa font-14 fa-bold color-blue-dark"></i>
+<span>Boostrap Style - 1</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-toast="notification-5">
+<i class="fa font-14 fa-bold color-blue-dark"></i>
+<span>Boostrap Style - 2</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-toast="notification-6" class="border-0">
+<i class="fa font-14 fa-bold color-blue-dark"></i>
+<span>Boostrap Style - 3</span>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+<div class="divider"></div>
+<a href="component-notifications-alerts.html" class="btn btn-m font-700 rounded-s bg-blue-dark btn-full mb-3">Check out Alert Styled Notifications</a>
+<div class="divider mt-4"></div>
+<h4>Tap or Programatic</h4>
+<p class="mb-3">
+We built notifications based on Boostrap toast system, so you can trigger them via a tap
+or programatically by simply using the Boostrap classic code.
+</p>
+<code>$('#notification-1').toast('show');</code><br>
+<code>$('#notification-1').toast('hide');</code>
+<div class="pb-4"></div>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+<div id="notification-1" data-dismiss="notification-1" data-delay="3000" data-autohide="true" class="notification notification-ios bg-dark-dark ml-2 mr-2 mt-2 rounded-s">
+<span class="notification-icon color-white rounded-s">
+<i class="fa fa-bell"></i>
+<em>Enabled</em>
+<i data-dismiss="notification-1" class="fa fa-times-circle"></i>
+</span>
+<h1 class="font-18 color-white mb-n3">All Good</h1>
+<p class="pt-1">
+I'm a notification. I show at the top or bottom of the page.
+</p>
+</div>
+<div id="notification-2" data-dismiss="notification-2" data-delay="3000" data-autohide="true" class="notification notification-android bg-dark-dark">
+<i class="fa fa-check bg-green-dark"></i>
+<h1 class="font-20 color-white">All Good</h1>
+<strong>19:24</strong>
+<p class="pb-0">
+I'm a notification. I show at the top of the page.
+</p>
+<div class="notification-buttons">
+<div class="row mb-0">
+<div class="col-6">
+<a href="#"><i class="fa fa-info-circle"></i>Find out More</a>
+</div>
+<div class="col-6">
+<a href="#"><i class="fa fa-download"></i>Download</a>
+</div>
+</div>
+</div>
+</div>
+<div id="notification-3" data-dismiss="notification-3" data-delay="3000" data-autohide="true" class="notification notification-material bg-dark-dark">
+<span class="notification-icon">
+<i class="fa fa-comment color-green-light"></i>
+<em class="color-green1-light">Hangouts</em>
+<strong>Messenger</strong>
+</span>
+<img src="images/pictures/0t.jpg">
+<h1 class="font-20 color-white">John Doe</h1>
+<p class="pb-1 mt-n1">
+I'm a notification. I show at the top of the page.
+</p>
+</div>
+<div id="notification-4" data-dismiss="notification-4" data-delay="30000" data-autohide="true" class="notification bg-dark-dark shadow-xl">
+<div class="toast-header  bg-dark-dark">
+<img src="images/preload-logo.png" width="15" class="rounded mr-2" alt="...">
+<strong class="mr-auto color-white">Enabled</strong>
+<small class="text-muted">just now</small>
+<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+<span class="color-white" aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="toast-body color-white">
+We always listen to your feedback, so we added Boostrap to our items. Just as fast as before, only now, with code you are familiar with slightly upgraded for maximum performance!
+</div>
+</div>
+<div id="notification-5" data-dismiss="notification-5" data-delay="3000" data-autohide="true" class="notification bg-blue-dark shadow-xl">
+<div class="toast-header bg-highlight">
+<img src="images/preload-logo.png" width="15" class="rounded mr-2" alt="...">
+<strong class="mr-auto color-white">Enabled</strong>
+<small class="color-white opacity-50 mr-2">just now</small>
+<button type="button" class="ml-2 mb-1 color-white close" data-dismiss="toast" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="toast-body bg-highlight color-white">
+This notification will adapt to the bg-highlight you select for the page.
+</div>
+</div>
+<div id="notification-6" data-dismiss="notification-4" data-delay="3000" data-autohide="true" class="notification bg-green-dark shadow-xl opacity-95">
+<div class="toast-body color-white p-3">
+<h1 class="ml-0 pl-0 pb-2 mt-0 color-white">All Good</h1>
+We always listen to your feedback, so we added Boostrap to our items. Just as fast as before, only now, with code you are familiar with slightly upgraded for maximum performance!
+</div>
+</div>
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

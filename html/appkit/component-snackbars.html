@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Snackbars</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html" class="active-nav"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1>Snackbars</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card card-style">
+<div class="content">
+<p>
+Trigger snackbars manually, programatically, or simply by tapping an element. These are powerful little messages with a beautiful animation
+</p>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-0">
+<h4>Classic Snackbars</h4>
+<p>
+These are the default snackbars that can be used in any circumstance you wish to confirm or warn about
+a page action. They disapear by default in 3 seconds, but you can increase this to whatever time you need.
+</p>
+<div class="list-group list-custom-small">
+<a href="#" data-toast="snackbar-1">
+<i class="fa font-14 fa-power-off color-red-dark"></i>
+<span>Page Highlight Snackbar</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-toast="snackbar-2">
+<i class="fa font-14 fa-check color-green-dark"></i>
+<span>Confirmation Snackbar</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-toast="snackbar-3">
+<i class="fa font-14 fa-exclamation-triangle color-yellow-dark"></i>
+<span>Warning Snackbar</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-toast="snackbar-4">
+<i class="fa font-14 fa-sync color-blue-dark"></i>
+<span>Loading Snackbar</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-toast="snackbar-5">
+<i class="fa font-14 fa-times color-red-dark"></i>
+<span>Error Snackbar</span>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-0">
+<h4>Large Snackbars</h4>
+<p>
+The large snackbars include a larger title and more text, in case you require them, we've prepared them.
+Each hides after 5 seconds, but you can increase or decrease this time as you need.
+</p>
+<div class="list-group list-custom-small">
+<a href="#" data-toast="snackbar-6">
+<i class="fa font-14 fa-power-off color-red-dark"></i>
+<span>Page Highlight Snackbar</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-toast="snackbar-7">
+<i class="fa font-14 fa-check color-green-dark"></i>
+<span>Confirmation Snackbar</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-toast="snackbar-8">
+<i class="fa font-14 fa-exclamation-triangle color-yellow-dark"></i>
+<span>Warning Snackbar</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-toast="snackbar-9">
+<i class="fa font-14 fa-sync color-blue-dark"></i>
+<span>Loading Snackbar</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#" data-toast="snackbar-10">
+<i class="fa font-14 fa-times color-red-dark"></i>
+<span>Error Snackbar</span>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="card card-style mt-5">
+<div class="content mb-3">
+<h4>Tap or Programatic</h4>
+<p class="mb-3">
+We built notifications based on Boostrap toast system, so you can trigger them via a tap
+or programatically by simply using the Boostrap classic code.
+</p>
+<code>$('#snackbar-1').toast('show');</code><br>
+<code>$('#snackbar-1').toast('hide');</code>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+<div id="snackbar-1" class="snackbar-toast color-white bg-highlight color-white" data-delay="3000" data-autohide="true"><i class="fa fa-sync fa-spin mr-3"></i>Processing...</div>
+<div id="snackbar-2" class="snackbar-toast color-white bg-green-dark" data-delay="3000" data-autohide="true"><i class="fa fa-check mr-3"></i>Confirmed</div>
+<div id="snackbar-3" class="snackbar-toast color-white bg-yellow-dark" data-delay="3000" data-autohide="true"><i class="fa fa-info mr-3"></i>Something's wrong!</div>
+<div id="snackbar-4" class="snackbar-toast color-white bg-blue-dark" data-delay="3000" data-autohide="true"><i class="fa fa-info mr-3"></i>We're on it</div>
+<div id="snackbar-5" class="snackbar-toast color-white bg-red-dark" data-delay="3000" data-autohide="true"><i class="fa fa-times mr-3"></i>Error Occured</div>
+<div id="snackbar-6" class="snackbar-toast color-white bg-highlight" data-delay="6000" data-autohide="true">
+<h1 class="color-white font-20 pt-3 mb-n4 pb-3">Processing</h1>
+<p class="color-white mb-0 pb-1">Applying the settings you've requested.</p>
+</div>
+<div id="snackbar-7" class="snackbar-toast color-white bg-green-dark" data-delay="6000" data-autohide="true">
+<h1 class="color-white font-20 pt-3 pb-3 mb-n4">Success</h1>
+<p class="color-white mb-0 pb-1">Changes applied succesfully.</p>
+</div>
+<div id="snackbar-8" class="snackbar-toast color-white bg-yellow-dark" data-delay="6000" data-autohide="true">
+<h1 class="color-white font-20 pt-3 pb-3 mb-n4">Warning</h1>
+<p class="color-white mb-0 pb-1">This will restart your application!</p>
+</div>
+<div id="snackbar-9" class="snackbar-toast color-white bg-blue-dark" data-delay="6000" data-autohide="true">
+<h1 class="color-white font-20 pt-3 pb-3 mb-n4">Loading...</h1>
+<p class="color-white mb-0 pb-1">This won't take long...</p>
+</div>
+<div id="snackbar-10" class="snackbar-toast color-white bg-red-dark" data-delay="6000" data-autohide="true">
+<h1 class="color-white font-20 pt-3 pb-3 mb-n4">Error</h1>
+<p class="color-white mb-0 pb-1">We couldn't save your settings...</p>
+</div>
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

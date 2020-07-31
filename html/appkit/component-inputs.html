@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Inputs</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html" class="active-nav"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1>Inputs</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card card-style">
+<div class="content">
+<h4>Checkboxes & Radios</h4>
+<p>
+Default Checkboxes, styled with FontAwesome. You can use absolutely <strong class="color-theme">any icon</strong> and <strong class="color-theme">any color</strong> for checked option.
+</p>
+<div class="row mb-0">
+<div class="col-6">
+<div class="form-check icon-check">
+<input class="form-check-input" type="checkbox" value="" id="check1" checked>
+<label class="form-check-label" for="check1">Checkbox 1</label>
+<i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+<i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+</div>
+<div class="form-check icon-check">
+<input class="form-check-input" type="checkbox" value="" id="check2">
+<label class="form-check-label" for="check2">Checkbox 2</label>
+<i class="icon-check-1 fa fa-circle color-gray-dark font-16"></i>
+<i class="icon-check-2 fa fa-check-circle font-16 color-highlight"></i>
+</div>
+<div class="form-check icon-check">
+<input class="form-check-input" type="checkbox" value="" id="check3" checked>
+<label class="form-check-label" for="check3">Checkbox 3</label>
+<i class="icon-check-1 far fa-square color-gray-dark font-16"></i>
+<i class="icon-check-2 far fa-check-square font-16 color-highlight"></i>
+</div>
+<div class="form-check icon-check">
+<input class="form-check-input" type="checkbox" value="" id="check4">
+<label class="form-check-label" for="check4">Checkbox 4</label>
+<i class="icon-check-1 far fa-circle color-gray-dark font-16"></i>
+<i class="icon-check-2 far fa-check-circle font-16 color-highlight"></i>
+</div>
+<div class="form-check icon-check">
+<input class="form-check-input" type="checkbox" value="" id="check5" checked>
+<label class="form-check-label" for="check5">Checkbox 5</label>
+<i class="icon-check-1 fa fa-thumbs-down color-gray-dark font-16"></i>
+<i class="icon-check-2 fa fa-thumbs-up font-16 color-highlight"></i>
+</div>
+<div class="form-check icon-check">
+<input class="form-check-input" type="checkbox" value="" id="check6">
+<label class="form-check-label" for="check6">Checkbox 6</label>
+<i class="icon-check-1 far fa-frown color-gray-dark font-16"></i>
+<i class="icon-check-2 far fa-smile font-16 color-highlight"></i>
+</div>
+</div>
+<div class="col-6">
+<div class="form-check icon-check">
+<input class="form-check-input" type="radio" name="inlineRadioOptions" value="" id="radio1">
+<label class="form-check-label" for="radio1">Radio 1</label>
+<i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+<i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+</div>
+<div class="form-check icon-check">
+<input class="form-check-input" type="radio" name="inlineRadioOptions" value="" id="radio2">
+<label class="form-check-label" for="radio2">Radio 2</label>
+<i class="icon-check-1 fa fa-circle color-gray-dark font-16"></i>
+<i class="icon-check-2 fa fa-check-circle font-16 color-highlight"></i>
+</div>
+<div class="form-check icon-check">
+<input class="form-check-input" type="radio" name="inlineRadioOptions" value="" id="radio3">
+<label class="form-check-label" for="radio3">Radio 3</label>
+<i class="icon-check-1 far fa-square color-gray-dark font-16"></i>
+<i class="icon-check-2 far fa-check-square font-16 color-highlight"></i>
+</div>
+<div class="form-check icon-check">
+<input class="form-check-input" type="radio" name="inlineRadioOptions" value="" id="radio4">
+<label class="form-check-label" for="radio4">Radio 4</label>
+<i class="icon-check-1 far fa-circle color-gray-dark font-16"></i>
+<i class="icon-check-2 far fa-check-circle font-16 color-highlight"></i>
+</div>
+<div class="form-check icon-check">
+<input class="form-check-input" type="radio" name="inlineRadioOptions" value="" id="radio5">
+<label class="form-check-label" for="radio5">Radio 5</label>
+<i class="icon-check-1 fa fa-thumbs-down color-gray-dark font-16"></i>
+<i class="icon-check-2 fa fa-thumbs-up font-16 color-highlight"></i>
+</div>
+<div class="form-check icon-check">
+<input class="form-check-input" type="radio" name="inlineRadioOptions" value="" id="radio6">
+<label class="form-check-label" for="radio6">Radio 6</label>
+<i class="icon-check-1 far fa-frown color-gray-dark font-16"></i>
+<i class="icon-check-2 far fa-smile font-16 color-highlight"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-0">
+<h4>Modern Fields</h4>
+<p>
+These boxes will react to them when you type or select a value.
+</p>
+<div class="input-style input-style-2 has-icon input-required">
+<i class="input-icon fa fa-user"></i>
+<span class="color-highlight">Name</span>
+<em>(required)</em>
+<input class="form-control" type="name" placeholder="">
+</div>
+<div class="input-style input-style-2 input-required">
+<span class="color-highlight">Email</span>
+<em>(required)</em>
+<input class="form-control" type="email" placeholder="">
+</div>
+<div class="input-style input-style-2 input-required">
+<span class="color-highlight">Password</span>
+<em>(required)</em>
+<input class="form-control" type="password" placeholder="">
+</div>
+<div class="input-style input-style-2 input-required">
+<span class="color-highlight">Website</span>
+<em>(required)</em>
+<input class="form-control" type="url" placeholder="">
+</div>
+<div class="input-style input-style-2 input-required">
+<span class="color-highlight">Phone</span>
+<em>(required)</em>
+<input class="form-control" type="tel" placeholder="">
+</div>
+<div class="input-style input-style-2 input-required">
+<span>Select a Value</span>
+<em><i class="fa fa-angle-down"></i></em>
+<select class="form-control">
+<option value="default" disabled selected>Select a Value</option>
+<option value="iOS">iOS</option>
+<option value="Linux">Linux</option>
+<option value="MacOS">MacOS</option>
+<option value="Android">Android</option>
+<option value="Windows">Windows</option>
+</select>
+</div>
+<div class="input-style input-style-2 input-required">
+<span>Enter your Message</span>
+<em>(required)</em>
+<textarea class="form-control" placeholder=""></textarea>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-0">
+<h4 class="bolder">Minimalist Fields</h4>
+<p>
+These boxes will react to them when you type or select a value.
+</p>
+<div class="input-style has-icon input-style-1 input-required">
+<i class="input-icon fa fa-user"></i>
+<span class="color-highlight">Name</span>
+<em>(required)</em>
+<input type="name" placeholder="Name">
+</div>
+<div class="input-style input-style-1 input-required">
+<span class="color-highlight">Email</span>
+<em>(required)</em>
+<input type="email" placeholder="Email">
+</div>
+<div class="input-style input-style-1 input-required">
+<span class="color-highlight">Password: Minimum 8 Characters and 1 Number</span>
+<em>(required)</em>
+<input type="password" placeholder="Password">
+</div>
+<div class="input-style input-style-1 input-required">
+<span class="color-highlight">Website</span>
+<em>(required)</em>
+<input type="url" placeholder="Website">
+</div>
+<div class="input-style input-style-1 input-required">
+<span class="color-highlight">Phone</span>
+<em>(required)</em>
+<input type="tel" placeholder="Phone">
+</div>
+<div class="input-style input-style-1 input-required">
+<span class="color-highlight">Select a Value</span>
+<em><i class="fa fa-angle-down"></i></em>
+<select>
+<option value="default" disabled selected>Select a Value</option>
+<option value="iOS">iOS</option>
+<option value="Linux">Linux</option>
+<option value="MacOS">MacOS</option>
+<option value="Android">Android</option>
+<option value="Windows">Windows</option>
+</select>
+</div>
+<div class="input-style input-style-1 input-required">
+<span class="color-highlight">Enter your message</span>
+<em>(required)</em>
+<textarea placeholder="Enter your message"></textarea>
+</div>
+<div class="input-style input-style-1 input-required">
+<span class="color-highlight">Select your Birthday</span>
+<em><i class="fa fa-angle-down"></i></em>
+<input type="date" value="1980-08-26">
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-0">
+<h4>Stepper</h4>
+<p>
+Great for shopping carts where or any place you want your user to increase the value by 1.
+</p>
+<div class="row">
+<div class="col-4">
+<div class="mx-auto">
+<div class="stepper rounded-s float-left">
+<a href="#" class="stepper-sub"><i class="fa fa-minus color-theme opacity-40"></i></a>
+<input type="number" min="1" max="99" value="5">
+<a href="#" class="stepper-add"><i class="fa fa-plus color-theme opacity-40"></i></a>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="col-4">
+<div class="mx-auto">
+<div class="stepper rounded-s float-left">
+<a href="#" class="stepper-sub"><i class="fa fa-minus color-red-dark"></i></a>
+<input type="number" min="1" max="99" value="10">
+<a href="#" class="stepper-add"><i class="fa fa-plus color-green-dark"></i></a>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="col-4">
+<div class="mx-auto">
+<div class="stepper rounded-s float-left">
+<a href="#" class="stepper-sub color-red-dark">Less</a>
+<input type="number" min="1" max="99" value="70">
+<a href="#" class="stepper-add color-green-dark">More</a>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content mb-0">
+<h4>Range Sliders</h4>
+<p>
+Slide and increase or decrease their value.
+</p>
+<form class="range-slider bottom-15 range-slider-icons">
+<i class="fa fa-range-icon-1 fa-volume-down color-theme"></i>
+<i class="fa fa-range-icon-2 fa-volume-up color-theme"></i>
+<input class="ios-slider" type="range" value="50">
+</form>
+<form class="range-slider bottom-15 ">
+<input class="classic-slider" type="range" value="50">
+</form>
+<form class="range-slider">
+<input class="material-slider" type="range" value="50">
+</form>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

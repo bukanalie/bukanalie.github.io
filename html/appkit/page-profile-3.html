@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Profile </a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<h1>Profile</h1>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="mb-4">
+<div class="divider mb-4"></div>
+<div class="d-flex content mt-0 mb-1">
+
+<div>
+<img src="images/empty.png" data-src="images/pictures/6t.jpg" width="85" class="rounded-circle mr-3 shadow-xl preload-img">
+</div>
+
+<div class="flex-grow-1">
+<h2>jane.louder84<i class="fa fa-check-circle color-blue-dark font-16 ml-3"></i></h2>
+<a href="#" class="mt-3 btn btn-xs font-600 btn-border border-highlight color-highlight">Message</a>
+<a href="#" data-menu="menu-follow" class="mt-3 ml-2 btn btn-xs font-600 btn-border border-highlight color-highlight">
+<i class="fa fa-user"></i><i class="ml-2 font-11 fa fa-check"></i>
+</a>
+</div>
+</div>
+<div class="content">
+<h6>Jane Louder</h6>
+<p class="mb-n3">Mauris consequat mi vel felis pharetra ornare. Praesent facilisis arcu orci, non tempor nisl interdum et. Nunc volutpat facilisis metus, sit amet placerat nulla.</p><br>
+<a href="#" class="font-600 color-highlight">@iEnabled</a><br>
+<a href="#" class="font-600 color-highlight">https://enableds.com</a>
+<p class="opacity-60 font-12 pt-2">Followed by <a href="#" class="color-theme font-600">@Envato</a>, <a href="#" class="color-theme font-600">@EnvatoMarket</a>, <a href="#" class="color-theme font-600">@ThemeForest</a> +324 more</p>
+</div>
+<div class="story-slider text-center owl-carousel mb-3">
+<div class="mr-3"><a data-menu="menu-story" href="#"><img src="images/pictures/1s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">PWA</span></a></div>
+<div class="mr-3"><a data-menu="menu-story" href="#"><img src="images/pictures/31s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">Mobile</span></a></div>
+<div class="mr-3"><a data-menu="menu-story" href="#"><img src="images/pictures/25s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">Bootstrap</span></a></div>
+<div class="mr-3"><a data-menu="menu-story" href="#"><img src="images/pictures/22s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">Dark</span></a></div>
+<div class="mr-3"><a data-menu="menu-story" href="#"><img src="images/pictures/16s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">Flexbile</span></a></div>
+<div class="mr-3"><a data-menu="menu-story" href="#"><img src="images/pictures/12s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">Trending</span></a></div>
+<div class="mr-3"><a data-menu="menu-story" href="#"><img src="images/pictures/1s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">PWA</span></a></div>
+<div class="mr-3"><a data-menu="menu-story" href="#"><img src="images/pictures/31s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">Mobile</span></a></div>
+<div class="mr-3"><a data-menu="menu-story" href="#"><img src="images/pictures/25s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">Bootstrap</span></a></div>
+<div class="mr-3"><a data-menu="menu-story" href="#"><img src="images/pictures/22s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">Dark</span></a></div>
+<div class="mr-3"><a data-menu="menu-story" href="#"><img src="images/pictures/16s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">Flexbile</span></a></div>
+<div class="mr-3"><a data-menu="menu-story" href="#"><img src="images/pictures/12s.jpg" width="60" class="rounded-circle mx-auto mb-n4 border border-m"><br><span class="d-block pt-2 font-12 color-theme opacity-60">Trending</span></a></div>
+</div>
+
+<div class="divider mb-2"></div>
+<div class="row mb-2 text-center">
+<div class="col-4">
+<h6 class="mb-0 color-theme">1,702</h6>
+posts
+</div>
+<div class="col-4">
+<h6 class="mb-0 color-theme">1,8m</h6>
+followers
+</div>
+<div class="col-4">
+<h6 class="mb-0 color-theme">385</h6>
+following
+</div>
+</div>
+<div class="divider mb-3"></div>
+<div class="d-flex">
+<div>
+<a href="images/pictures/1l.jpg" title="Flexibility Unmatched" data-lightbox="gallery">
+<img src="images/pictures/1t.jpg" class="img-fluid border border-transparent">
+</a>
+</div>
+<div>
+<a href="images/pictures/2l.jpg" title="Crazy Hair" data-lightbox="gallery">
+<img src="images/pictures/2t.jpg" class="img-fluid border border-transparent">
+</a>
+</div>
+<div>
+<a href="images/pictures/3l.jpg" title="Neon Lights" data-lightbox="gallery">
+<img src="images/pictures/3t.jpg" class="img-fluid border border-transparent">
+</a>
+</div>
+</div>
+<div class="d-flex">
+<div>
+<a href="images/pictures/4l.jpg" title="Neon Glass" data-lightbox="gallery">
+<img src="images/pictures/4t.jpg" class="img-fluid border border-transparent">
+</a>
+</div>
+<div>
+<a href="images/pictures/5l.jpg" title="Eyeglass Trend" data-lightbox="gallery">
+<img src="images/pictures/5t.jpg" class="img-fluid border border-transparent">
+</a>
+</div>
+<div>
+<a href="images/pictures/6l.jpg" title="Screaming Music" data-lightbox="gallery">
+<img src="images/pictures/6t.jpg" class="img-fluid border border-transparent">
+</a>
+</div>
+</div>
+<div class="d-flex">
+<div>
+<a href="images/pictures/19l.jpg" title="Modern Phone" data-lightbox="gallery">
+<img src="images/pictures/19t.jpg" class="img-fluid border border-transparent">
+</a>
+</div>
+<div>
+<a href="images/pictures/25l.jpg" title="Profile Style" data-lightbox="gallery">
+<img src="images/pictures/25t.jpg" class="img-fluid border border-transparent">
+</a>
+</div>
+<div>
+<a href="images/pictures/23l.jpg" title="Red Lights" data-lightbox="gallery">
+<img src="images/pictures/23t.jpg" class="img-fluid border border-transparent">
+</a>
+</div>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+
+<div id="menu-story" class="menu menu-box-modal bg-dark-dark" data-menu-width="100%" data-menu-height="100%">
+<h1 class="color-white font-18 ml-3 mt-4">
+<img src="images/pictures/6s.jpg" width="30" class="rounded-xl mr-2 mt-n1">
+Jane Louder
+<span class="opacity-60 font-300 font-12 pl-3 pb-3">12w</span>
+<a href="#" class="close-menu float-right mr-3 mt-0 color-white font-20"><i class="fa fa-times"></i></a>
+</h1>
+<div class="card bg-6 rounded-0 mb-0 mt-3" data-card-height="story-card">
+<div class="card-center text-center">
+<h1 class="color-white mb-3 font-50 text-uppercase font-900">Create</h1>
+<h1 class="color-white mb-3 font-38 text-uppercase font-900">Awesome</h1>
+<h1 class="color-white mb-0 font-48 text-uppercase font-900">Stories</h1>
+<p class="color-white boxed-text-l font-16 mt-4">
+Simulate Stories with ease. It's a great and super easy to use feature.
+</p>
+<a href="#" class="btn btn-center-s rounded-s close-menu btn-m font-13 border-gray-light font-700 text-uppercase color-white">Awesome</a>
+</div>
+<div class="card-overlay bg-black opacity-80"></div>
+</div>
+</div>
+
+<div id="menu-follow" class="menu menu-box-modal rounded-m" data-menu-width="300" data-menu-height="380">
+<div class="text-center">
+<img src="images/pictures/6t.jpg" width="150" class="mx-auto mt-4 rounded-circle">
+<p class="text-center font-15 mt-4">Unfollow @jane.louder84?</p>
+<div class="divider mb-0"></div>
+<a href="#" class="color-red-dark font-15 font-600 text-center py-3 d-block">Unfollow</a>
+<div class="divider mb-0"></div>
+<a href="#" class="close-menu color-theme font-15 text-center py-3 d-block">Cancel</a>
+</div>
+</div>
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

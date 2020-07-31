@@ -1,0 +1,442 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center">
+<a href="index.html" class="header-title">Instant Articles</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-content header-clear-medium">
+<div class="card card-style">
+<div class="content">
+<p class="font-600 color-highlight mb-n1">Try the Articles</p>
+<h1>Tap any Icon</h1>
+<p>
+Test dummy instant articles. You can add these to any element you want, in this
+demo we're showing the power and posibilities.
+</p>
+</div>
+<div class="card card-style m-0 bg-17" data-card-height="400">
+<div class="card-top text-center pt-4">
+<a data-menu="article-1" href="#" class="icon color-theme bg-theme icon-s rounded-sm scale-box icon-40"><i class="fa fa-arrow-down"></i></a>
+</div>
+<div class="card-bottom text-center pb-4">
+<a data-menu="article-2" href="#" class="icon color-theme bg-theme icon-s rounded-sm scale-box icon-40"><i class="fa fa-arrow-up"></i></a>
+</div>
+<div class="card-center text-left pl-4 pr-4">
+<a data-menu="article-3" href="#" class="float-left icon color-theme bg-theme icon-s rounded-sm scale-box icon-40"><i class="fa fa-arrow-right"></i></a>
+<a data-menu="article-4" href="#" class="float-right icon color-theme bg-theme icon-s rounded-sm scale-box icon-40"><i class="fa fa-arrow-left"></i></a>
+<a data-menu="article-5" href="#" class="d-block mx-auto icon color-theme bg-theme icon-s rounded-sm scale-box icon-40"><i class="fa fa-circle"></i></a>
+</div>
+<div class="card-overlay bg-black opacity-70"></div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content">
+<h4>Show articles instantly</h4>
+<p>
+Articles that show instantly from left or right, top or bottom, even as a modal. These are great if you connect them to
+your own AJAX system, to simulate the use of Google and Facebook Instant Articles.
+</p>
+<h5>How do I trigger an Instant Article?</h5>
+<p>
+You can trigger an instant article from any element, buttons, images, links icons or even menu items. These
+support <strong>any component</strong>. Instant articles also support programatic use!
+</p>
+</div>
+</div>
+<div data-menu-load="menu-footer.html"></div>
+</div>
+
+<div id="article-1" class="menu menu-box-top menu-box-bottom-full rounded-0" data-menu-height="100%">
+<div class="card rounded-0 bg-1" data-card-height="500">
+<div class="card-top pt-4 pl-3 pr-3">
+<a href="#" class="close-menu icon icon-s rounded-l bg-theme color-theme "><i class="fa fa-arrow-up"></i></a>
+<a href="#" class="float-right icon icon-s rounded-l bg-theme color-theme ml-3"><i class="fa fa-home"></i></a>
+<a href="#" class="float-right icon icon-s rounded-l bg-theme color-theme ml-3 show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="float-right icon icon-s rounded-l bg-theme color-theme ml-3 show-on-theme-dark" data-toggle-theme><i class="fa fa-sun"></i></a>
+</div>
+<div class="card-bottom pl-3 pr-3 mb-5 pb-4">
+<h1 class="color-white font-36">Top Card</h1>
+<p class="color-white opacity-50">
+This article will deploy from the top of the page. You can deploy articles from any part of the page you want.
+</p>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style card-full-right" style="margin-top:-100px; margin-bottom:-80px; z-index:1">
+<div class="content">
+<p class="mb-n1 color-highlight font-600">Awesome Article</p>
+<h1>Read with Style</h1>
+<p>It's difficult to design an article card that looks great on Mobile, not anymore. Appkit comes ready with designs that make your page look absolutely gorgeous. From here we'll keep writing with Lorem Ipsums o we can express the design even better. We know you'llhave your own awesome content to add here.</p>
+<div class="row text-center row-cols-3 mb-0">
+<a class="col mb-4" data-lightbox="gallery-1" href="images/pictures/27t.jpg" title="Vynil and Typerwritter"><img src="images/empty.png" data-src="images/pictures/32s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+<a class="col mb-4" data-lightbox="gallery-1" href="images/pictures/22t.jpg" title="Cream Cookie"><img src="images/empty.png" data-src="images/pictures/18s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+<a class="col mb-4" data-lightbox="gallery-1" href="images/pictures/23t.jpg" title="Cookies and Flowers"><img src="images/empty.png" data-src="images/pictures/16s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+</div>
+<h4>Appkit is Awesome</h4>
+<p class="pb-4">Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+</div>
+</div>
+<div class="card rounded-0 bg-1" data-card-height="400">
+<div class="card-center">
+<h1 class="color-white font-italic text-center font-40">"Built for You"</h1>
+<p class="color-white text-center mb-0 mt-n2">With loads of Care and Love by Enabled</p>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style card-full-left" style="margin-top:-100px; z-index:1">
+<div class="content">
+<p class="mb-n1 color-highlight font-600">Left or Right</p>
+<h1>Card Styles</h1>
+<p>Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+<div class="list-group list-custom-large mb-4">
+<a data-trigger-switch="switch-1" data-menu="menu-heart" class="border-0" href="#">
+<i class="fa font-14 fa-bookmark shadow-s bg-red-dark color-white"></i>
+<span>Read this Later</span>
+<strong>Save it now, read it later.</strong>
+<div class="custom-control scale-switch ios-switch">
+<input type="checkbox" class="ios-input" id="switch-1">
+<label class="custom-control-label" for="switch-1"></label>
+</div>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+<p>Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+<div class="divider"></div>
+<div class="d-flex mb-4">
+<div class="mr-2"><img src="images/pictures/6s.jpg" width="40" class="rounded-s"></div>
+<div>
+<h5>Jane Louder</h5>
+<p class="mb-0 mt-n2">Content Writer at Enabled</p>
+</div>
+<div class="ml-auto">
+<a href="#" data-menu="menu-share" class="icon icon-s bg-theme shadow-xl rounded-xl float-right"><i class="fa color-theme fa-share-alt"></i></a>
+<a href="#" data-menu="menu-heart" class="icon icon-s bg-theme shadow-xl rounded-xl float-right mr-2"><i class="fa color-red-dark fa-bookmark"></i></a>
+</div>
+</div>
+</div>
+</div>
+<a href="#" class="close-menu btn btn-l rounded-sm font-600 btn-full btn-margins gradient-red">Close Article</a>
+</div>
+<div id="article-2" class="menu menu-box-bottom menu-box-bottom-full rounded-0" data-menu-height="100%">
+<div class="card rounded-0 bg-2" data-card-height="500">
+<div class="card-top pt-4 pl-3 pr-3">
+<a href="#" class="close-menu icon icon-s rounded-l bg-theme color-theme "><i class="fa fa-arrow-down"></i></a>
+<a href="#" class="float-right icon icon-s rounded-l bg-theme color-theme ml-3"><i class="fa fa-home"></i></a>
+<a href="#" class="float-right icon icon-s rounded-l bg-theme color-theme ml-3 show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="float-right icon icon-s rounded-l bg-theme color-theme ml-3 show-on-theme-dark" data-toggle-theme><i class="fa fa-sun"></i></a>
+</div>
+<div class="card-bottom pl-3 pr-3 mb-5 pb-4">
+<h1 class="color-white font-36">Bottom Card</h1>
+<p class="color-white opacity-50">
+This article will deploy from the top of the page. You can deploy articles from any part of the page you want.
+</p>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style card-full-right" style="margin-top:-100px; margin-bottom:-80px; z-index:1">
+<div class="content">
+<p class="mb-n1 color-highlight font-600">Awesome Article</p>
+<h1>Read with Style</h1>
+<p>It's difficult to design an article card that looks great on Mobile, not anymore. Appkit comes ready with designs that make your page look absolutely gorgeous. From here we'll keep writing with Lorem Ipsums o we can express the design even better. We know you'llhave your own awesome content to add here.</p>
+<div class="row text-center row-cols-3 mb-0">
+<a class="col mb-4" data-lightbox="gallery-1" href="images/pictures/27t.jpg" title="Vynil and Typerwritter"><img src="images/empty.png" data-src="images/pictures/32s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+<a class="col mb-4" data-lightbox="gallery-1" href="images/pictures/22t.jpg" title="Cream Cookie"><img src="images/empty.png" data-src="images/pictures/18s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+<a class="col mb-4" data-lightbox="gallery-1" href="images/pictures/23t.jpg" title="Cookies and Flowers"><img src="images/empty.png" data-src="images/pictures/16s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+</div>
+<h4>Appkit is Awesome</h4>
+<p class="pb-4">Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+</div>
+</div>
+<div class="card rounded-0 bg-1" data-card-height="400">
+<div class="card-center">
+<h1 class="color-white font-italic text-center font-40">"Built for You"</h1>
+<p class="color-white text-center mb-0 mt-n2">With loads of Care and Love by Enabled</p>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style card-full-left" style="margin-top:-100px; z-index:1">
+<div class="content">
+<p class="mb-n1 color-highlight font-600">Left or Right</p>
+<h1>Card Styles</h1>
+<p>Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+<div class="list-group list-custom-large mb-4">
+<a data-trigger-switch="switch-1" data-menu="menu-heart" class="border-0" href="#">
+<i class="fa font-14 fa-bookmark shadow-s bg-red-dark color-white"></i>
+<span>Read this Later</span>
+<strong>Save it now, read it later.</strong>
+<div class="custom-control scale-switch ios-switch">
+<input type="checkbox" class="ios-input" id="switch-1">
+<label class="custom-control-label" for="switch-1"></label>
+</div>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+<p>Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+<div class="divider"></div>
+<div class="d-flex mb-4">
+<div class="mr-2"><img src="images/pictures/6s.jpg" width="40" class="rounded-s"></div>
+<div>
+<h5>Jane Louder</h5>
+<p class="mb-0 mt-n2">Content Writer at Enabled</p>
+</div>
+<div class="ml-auto">
+<a href="#" data-menu="menu-share" class="icon icon-s bg-theme shadow-xl rounded-xl float-right"><i class="fa color-theme fa-share-alt"></i></a>
+<a href="#" data-menu="menu-heart" class="icon icon-s bg-theme shadow-xl rounded-xl float-right mr-2"><i class="fa color-red-dark fa-bookmark"></i></a>
+</div>
+</div>
+</div>
+</div>
+<a href="#" class="close-menu btn btn-l rounded-sm font-600 btn-full btn-margins gradient-red">Close Article</a>
+</div>
+<div id="article-3" class="menu menu-box-left rounded-0" data-menu-width="100%">
+<div class="card rounded-0 bg-5" data-card-height="500">
+<div class="card-top pt-4 pl-3 pr-3">
+<a href="#" class="close-menu icon icon-s rounded-l bg-theme color-theme "><i class="fa fa-arrow-left"></i></a>
+<a href="#" class="float-right icon icon-s rounded-l bg-theme color-theme ml-3"><i class="fa fa-home"></i></a>
+<a href="#" class="float-right icon icon-s rounded-l bg-theme color-theme ml-3 show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="float-right icon icon-s rounded-l bg-theme color-theme ml-3 show-on-theme-dark" data-toggle-theme><i class="fa fa-sun"></i></a>
+</div>
+<div class="card-bottom pl-3 pr-3 mb-5 pb-4">
+<h1 class="color-white font-36">Left Card</h1>
+<p class="color-white opacity-50">
+This article will deploy from the top of the page. You can deploy articles from any part of the page you want.
+</p>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style card-full-right" style="margin-top:-100px; margin-bottom:-80px; z-index:1">
+<div class="content">
+<p class="mb-n1 color-highlight font-600">Awesome Article</p>
+<h1>Read with Style</h1>
+<p>It's difficult to design an article card that looks great on Mobile, not anymore. Appkit comes ready with designs that make your page look absolutely gorgeous. From here we'll keep writing with Lorem Ipsums o we can express the design even better. We know you'llhave your own awesome content to add here.</p>
+<div class="row text-center row-cols-3 mb-0">
+<a class="col mb-4" data-lightbox="gallery-1" href="images/pictures/27t.jpg" title="Vynil and Typerwritter"><img src="images/empty.png" data-src="images/pictures/32s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+<a class="col mb-4" data-lightbox="gallery-1" href="images/pictures/22t.jpg" title="Cream Cookie"><img src="images/empty.png" data-src="images/pictures/18s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+<a class="col mb-4" data-lightbox="gallery-1" href="images/pictures/23t.jpg" title="Cookies and Flowers"><img src="images/empty.png" data-src="images/pictures/16s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+</div>
+<h4>Appkit is Awesome</h4>
+<p class="pb-4">Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+</div>
+</div>
+<div class="card rounded-0 bg-1" data-card-height="400">
+<div class="card-center">
+<h1 class="color-white font-italic text-center font-40">"Built for You"</h1>
+<p class="color-white text-center mb-0 mt-n2">With loads of Care and Love by Enabled</p>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style card-full-left" style="margin-top:-100px; z-index:1">
+<div class="content">
+<p class="mb-n1 color-highlight font-600">Left or Right</p>
+<h1>Card Styles</h1>
+<p>Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+<div class="list-group list-custom-large mb-4">
+<a data-trigger-switch="switch-1" data-menu="menu-heart" class="border-0" href="#">
+<i class="fa font-14 fa-bookmark shadow-s bg-red-dark color-white"></i>
+<span>Read this Later</span>
+<strong>Save it now, read it later.</strong>
+<div class="custom-control scale-switch ios-switch">
+<input type="checkbox" class="ios-input" id="switch-1">
+<label class="custom-control-label" for="switch-1"></label>
+</div>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+<p>Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+<div class="divider"></div>
+<div class="d-flex mb-4">
+<div class="mr-2"><img src="images/pictures/6s.jpg" width="40" class="rounded-s"></div>
+<div>
+<h5>Jane Louder</h5>
+<p class="mb-0 mt-n2">Content Writer at Enabled</p>
+</div>
+<div class="ml-auto">
+<a href="#" data-menu="menu-share" class="icon icon-s bg-theme shadow-xl rounded-xl float-right"><i class="fa color-theme fa-share-alt"></i></a>
+<a href="#" data-menu="menu-heart" class="icon icon-s bg-theme shadow-xl rounded-xl float-right mr-2"><i class="fa color-red-dark fa-bookmark"></i></a>
+</div>
+</div>
+</div>
+</div>
+<a href="#" class="close-menu btn btn-l rounded-sm font-600 btn-full btn-margins gradient-red">Close Article</a>
+</div>
+<div id="article-4" class="menu menu-box-right rounded-0" data-menu-width="100%">
+<div class="card rounded-0 bg-8" data-card-height="500">
+<div class="card-top pt-4 pl-3 pr-3">
+<a href="#" class="float-right close-menu icon icon-s rounded-l bg-theme color-theme "><i class="fa fa-arrow-right"></i></a>
+<a href="#" class="float-left icon icon-s rounded-l bg-theme color-theme ml-3"><i class="fa fa-home"></i></a>
+<a href="#" class="float-left icon icon-s rounded-l bg-theme color-theme ml-3 show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="float-left icon icon-s rounded-l bg-theme color-theme ml-3 show-on-theme-dark" data-toggle-theme><i class="fa fa-sun"></i></a>
+</div>
+<div class="card-bottom pl-3 pr-3 mb-5 pb-4">
+<h1 class="color-white font-36">Right Card</h1>
+<p class="color-white opacity-50">
+This article will deploy from the top of the page. You can deploy articles from any part of the page you want.
+</p>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style card-full-right" style="margin-top:-100px; margin-bottom:-80px; z-index:1">
+<div class="content">
+<p class="mb-n1 color-highlight font-600">Awesome Article</p>
+<h1>Read with Style</h1>
+<p>It's difficult to design an article card that looks great on Mobile, not anymore. Appkit comes ready with designs that make your page look absolutely gorgeous. From here we'll keep writing with Lorem Ipsums o we can express the design even better. We know you'llhave your own awesome content to add here.</p>
+<div class="row text-center row-cols-3 mb-0">
+<a class="col mb-4" data-lightbox="gallery-1" href="images/pictures/27t.jpg" title="Vynil and Typerwritter"><img src="images/empty.png" data-src="images/pictures/32s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+<a class="col mb-4" data-lightbox="gallery-1" href="images/pictures/22t.jpg" title="Cream Cookie"><img src="images/empty.png" data-src="images/pictures/18s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+<a class="col mb-4" data-lightbox="gallery-1" href="images/pictures/23t.jpg" title="Cookies and Flowers"><img src="images/empty.png" data-src="images/pictures/16s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+</div>
+<h4>Appkit is Awesome</h4>
+<p class="pb-4">Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+</div>
+</div>
+<div class="card rounded-0 bg-1" data-card-height="400">
+<div class="card-center">
+<h1 class="color-white font-italic text-center font-40">"Built for You"</h1>
+<p class="color-white text-center mb-0 mt-n2">With loads of Care and Love by Enabled</p>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style card-full-left" style="margin-top:-100px; z-index:1">
+<div class="content">
+<p class="mb-n1 color-highlight font-600">Left or Right</p>
+<h1>Card Styles</h1>
+<p>Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+<div class="list-group list-custom-large mb-4">
+<a data-trigger-switch="switch-1" data-menu="menu-heart" class="border-0" href="#">
+<i class="fa font-14 fa-bookmark shadow-s bg-red-dark color-white"></i>
+<span>Read this Later</span>
+<strong>Save it now, read it later.</strong>
+<div class="custom-control scale-switch ios-switch">
+<input type="checkbox" class="ios-input" id="switch-1">
+<label class="custom-control-label" for="switch-1"></label>
+</div>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+<p>Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+<div class="divider"></div>
+<div class="d-flex mb-4">
+<div class="mr-2"><img src="images/pictures/6s.jpg" width="40" class="rounded-s"></div>
+<div>
+<h5>Jane Louder</h5>
+<p class="mb-0 mt-n2">Content Writer at Enabled</p>
+</div>
+<div class="ml-auto">
+<a href="#" data-menu="menu-share" class="icon icon-s bg-theme shadow-xl rounded-xl float-right"><i class="fa color-theme fa-share-alt"></i></a>
+<a href="#" data-menu="menu-heart" class="icon icon-s bg-theme shadow-xl rounded-xl float-right mr-2"><i class="fa color-red-dark fa-bookmark"></i></a>
+</div>
+</div>
+</div>
+</div>
+<a href="#" class="close-menu btn btn-l rounded-sm font-600 btn-full btn-margins gradient-red">Close Article</a>
+</div>
+<div id="article-5" class="menu menu-box-modal rounded-0" data-menu-height="100%" data-menu-width="100%">
+<div class="card rounded-0 bg-18" data-card-height="500">
+<div class="card-top pt-4 pl-3 pr-3">
+<a href="#" class="close-menu icon icon-s rounded-l bg-theme "><i class="fa fa-times color-red-dark"></i></a>
+<a href="#" class="float-right icon icon-s rounded-l bg-theme color-theme ml-3"><i class="fa fa-home"></i></a>
+<a href="#" class="float-right icon icon-s rounded-l bg-theme color-theme ml-3 show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="float-right icon icon-s rounded-l bg-theme color-theme ml-3 show-on-theme-dark" data-toggle-theme><i class="fa fa-sun"></i></a>
+</div>
+<div class="card-bottom pl-3 pr-3 mb-5 pb-4">
+<h1 class="color-white font-36">Modal Card</h1>
+<p class="color-white opacity-50">
+This article will deploy from the top of the page. You can deploy articles from any part of the page you want.
+</p>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style card-full-right" style="margin-top:-100px; margin-bottom:-80px; z-index:1">
+<div class="content">
+<p class="mb-n1 color-highlight font-600">Awesome Article</p>
+<h1>Read with Style</h1>
+<p>It's difficult to design an article card that looks great on Mobile, not anymore. Appkit comes ready with designs that make your page look absolutely gorgeous. From here we'll keep writing with Lorem Ipsums o we can express the design even better. We know you'llhave your own awesome content to add here.</p>
+<div class="row text-center row-cols-3 mb-0">
+<a class="col mb-4" data-lightbox="gallery-1" href="images/pictures/27t.jpg" title="Vynil and Typerwritter"><img src="images/empty.png" data-src="images/pictures/32s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+<a class="col mb-4" data-lightbox="gallery-1" href="images/pictures/22t.jpg" title="Cream Cookie"><img src="images/empty.png" data-src="images/pictures/18s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+<a class="col mb-4" data-lightbox="gallery-1" href="images/pictures/23t.jpg" title="Cookies and Flowers"><img src="images/empty.png" data-src="images/pictures/16s.jpg" class="preload-img img-fluid rounded-xs" alt="img"></a>
+</div>
+<h4>Appkit is Awesome</h4>
+<p class="pb-4">Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+</div>
+</div>
+<div class="card rounded-0 bg-1" data-card-height="400">
+<div class="card-center">
+<h1 class="color-white font-italic text-center font-40">"Built for You"</h1>
+<p class="color-white text-center mb-0 mt-n2">With loads of Care and Love by Enabled</p>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="card card-style card-full-left" style="margin-top:-100px; z-index:1">
+<div class="content">
+<p class="mb-n1 color-highlight font-600">Left or Right</p>
+<h1>Card Styles</h1>
+<p>Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+<div class="list-group list-custom-large mb-4">
+<a data-trigger-switch="switch-1" data-menu="menu-heart" class="border-0" href="#">
+<i class="fa font-14 fa-bookmark shadow-s bg-red-dark color-white"></i>
+<span>Read this Later</span>
+<strong>Save it now, read it later.</strong>
+<div class="custom-control scale-switch ios-switch">
+<input type="checkbox" class="ios-input" id="switch-1">
+<label class="custom-control-label" for="switch-1"></label>
+</div>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+<p>Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.Donec consectetur dictum nisi, et sodales lectus rutrum at. Donec lacinia metus quis metus rutrum, sed aliquet neque faucibus.</p>
+<div class="divider"></div>
+<div class="d-flex mb-4">
+<div class="mr-2"><img src="images/pictures/6s.jpg" width="40" class="rounded-s"></div>
+<div>
+<h5>Jane Louder</h5>
+<p class="mb-0 mt-n2">Content Writer at Enabled</p>
+</div>
+<div class="ml-auto">
+<a href="#" data-menu="menu-share" class="icon icon-s bg-theme shadow-xl rounded-xl float-right"><i class="fa color-theme fa-share-alt"></i></a>
+<a href="#" data-menu="menu-heart" class="icon icon-s bg-theme shadow-xl rounded-xl float-right mr-2"><i class="fa color-red-dark fa-bookmark"></i></a>
+</div>
+</div>
+</div>
+</div>
+<a href="#" class="close-menu btn btn-l rounded-sm font-600 btn-full btn-margins gradient-red">Close Article</a>
+</div>
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

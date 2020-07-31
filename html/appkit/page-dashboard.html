@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-center header-auto-show">
+<a href="index.html" class="header-title">Dashboard</a>
+<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+<a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+<a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+<div id="footer-bar" class="footer-bar-6">
+<a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+<a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+<a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+<a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+<a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+</div>
+<div class="page-title page-title-fixed">
+<div>
+<h1 class="font-16 color-highlight mb-n3">Welcome Back</h1>
+<h1>Enabled</h1>
+</div>
+<a href="#" class="page-title-icon shadow-xl bg-theme mt-2 color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme mt-2 color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme mt-2 color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+<a href="#" class="page-title-icon shadow-xl bg-theme mt-2 color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="page-title-clear"></div>
+<div class="page-content">
+<div class="card card-style bg-11 mt-3" data-card-height="160">
+<div class="card-bottom pl-3 pb-3">
+<h1 class="font-17 color-white mb-n3">At a Glance</h1>
+<h4 class="font-13 color-white mb-4 opacity-50">Latest Statistics</h4>
+<div class="d-flex">
+<div class="pr-3">
+<h5 class="color-white">15k</h5>
+<h6 class="color-white opacity-60">Visits</h6>
+</div>
+<div class="pr-3">
+<h5 class="color-white">14k</h5>
+<h6 class="color-white opacity-60">Sales</h6>
+</div>
+<div class="ml-auto text-right pr-3">
+<h5 class="color-white">$15.315</h5>
+<h6 class="color-white opacity-60">Total Earnings</h6>
+</div>
+</div>
+</div>
+<div class="card-overlay bg-black opacity-80"></div>
+</div>
+<div class="content mb-0 mt-3">
+<div class="row mb-0">
+<div class="col-6 pr-1">
+<div class="card card-style mx-0 mb-2 p-3">
+<h6 class="font-14">Income</h6>
+<h3 class="color-green-dark mb-0">+31.2%</h3>
+</div>
+</div>
+<div class="col-6 pl-1">
+<div class="card card-style mx-0 mb-2 p-3">
+<h6 class="font-14">Expenses</h6>
+<h3 class="color-red-dark mb-0">-14.5%</h3>
+</div>
+</div>
+<div class="col-6 pr-1">
+<div class="card card-style mx-0 p-3">
+<h6 class="font-14">Subscriptions</h6>
+<h3 class="color-brown-dark mb-0">+11.2%</h3>
+</div>
+</div>
+<div class="col-6 pl-1">
+<div class="card card-style mx-0 p-3">
+<h6 class="font-14">Savings</h6>
+<h3 class="color-blue-dark mb-0">$14,500</h3>
+</div>
+</div>
+</div>
+</div>
+<div class="content mt-0 mb-0">
+<div class="row mb-0">
+<div class="col-6">
+<div class="card mx-0 card-style" data-card-height="260">
+<div class="content">
+<h5 class="font-14 opacity-50">Average <a href="#" class="float-right color-highlight"><i class="fa fa-arrow-right"></i></a></h5>
+<div class="divider mb-3"></div>
+<div class="mb-4">
+<h5>Memory<span class="opacity-30 float-right">30%</span></h5>
+<div class="progress" style="height:8px;">
+<div class="progress-bar border-0 bg-green-dark text-left pl-2" role="progressbar" style="width: 30%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+</div>
+</div>
+</div>
+<div class="mb-4">
+<h5>Storage<span class="opacity-30 float-right">70%</span></h5>
+<div class="progress" style="height:8px;">
+<div class="progress-bar border-0 bg-blue-dark text-left pl-2" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+</div>
+</div>
+</div>
+<div class="mb-3">
+<h5>Trafic<span class="opacity-30 float-right">90%</span></h5>
+<div class="progress" style="height:8px;">
+<div class="progress-bar border-0 bg-yellow-dark text-left pl-2" role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="card mx-0 card-style" data-card-height="260">
+<div class="content">
+<h5 class="font-14 opacity-50">Conversions <a href="#" class="float-right color-highlight"><i class="fa fa-arrow-right"></i></a></h5>
+<div class="divider mb-3"></div>
+</div>
+<div class="card-center text-center pb-4">
+<span class="icon icon-xxl rounded-m gradient-highlight scale-box"><i class="fa fa-arrow-up rotate-45 font-30"></i></span>
+</div>
+<div class="card-bottom text-center">
+<div class="content pb-1">
+<h1 class="mb-n1">24.55%</h1>
+<h5 class="opacity-30">57% Increase</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content">
+<h5 class="font-14 opacity-50">Notifications <a href="#" class="float-right color-highlight">View All</a></h5>
+<div class="divider mb-3"></div>
+<div class="list-group list-custom-small list-menu ml-0 mr-2">
+<a href="#" class="menu-active">
+<i class="fa fa-comment gradient-blue color-white"></i>
+<span>New Messages</span>
+<span class="badge gradient-blue color-white">15</span>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#">
+<i class="fa fa-heart gradient-red color-white"></i>
+<span>Newsletter</span>
+<span class="badge gradient-red color-white">SENT</span>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="card card-style mt-4">
+<div class="content">
+<h5 class="font-14 opacity-50">Earnings Report<a href="#" class="float-right color-highlight">View All</a></h5>
+<div class="divider mb-3"></div>
+<div class="d-flex mb-3">
+<div class="mr-3 pr-1">
+<a href="#" class="icon icon-m mt-1 rounded-m gradient-green"><i class="fa fa-dollar-sign"></i></a>
+</div>
+<div>
+<p class="font-11 mb-0">Item Earnings</p>
+<h2>$199.53</h2>
+</div>
+</div>
+<div class="d-flex mb-3">
+<div class="mr-3 pr-1">
+<a href="#" class="icon icon-m mt-1 rounded-m gradient-blue"><i class="fa fa-handshake"></i></a>
+</div>
+<div>
+<p class="font-11 mb-0">Contributor Bonus</p>
+<h2>$1231.43</h2>
+</div>
+</div>
+<div class="d-flex">
+<div class="mr-3 pr-1">
+<a href="#" class="icon icon-m mt-1 rounded-m gradient-orange"><i class="fa fa-times"></i></a>
+</div>
+<div>
+<p class="font-11 mb-0">Sale Reversals</p>
+<h2>$0.00</h2>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style mt-4">
+<div class="content">
+<h5 class="font-14 opacity-50">Reports from Co-workers<a href="#" class="float-right color-highlight">View All</a></h5>
+<div class="divider mb-3"></div>
+<div class="list-group list-custom-small list-menu ml-0 mr-1">
+<a href="#">
+<img src="images/pictures/1s.jpg">
+<span>John Droid</span>
+<strong class="badge gradient-green color-white">Submitted</strong>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#">
+<img src="images/pictures/5s.jpg">
+<span>Jane Seed</span>
+<strong class="badge gradient-yellow color-white">Pending</strong>
+<i class="fa fa-angle-right"></i>
+</a>
+<a href="#">
+<img src="images/pictures/6s.jpg">
+<span>Jane Louder</span>
+<strong class="badge gradient-red color-white">Rejected</strong>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="card card-style mt-4">
+<div class="content">
+<h5 class="font-14 opacity-50">Best Seling Product<a href="#" class="float-right color-highlight">View All</a></h5>
+<div class="divider mb-3"></div>
+<div class="card card-style mx-0 bg-18" data-card-height="250">
+<div class="card-bottom mb-3 ml-3">
+<h1 class="color-white mb-n2">StickyMobile</h1>
+<p class="color-white opacity-50">Best Mobile Template on Envato</p>
+</div>
+<div class="card-overlay bg-gradient"></div>
+</div>
+<div class="d-flex mb-2">
+<div>
+<p class="font-11 mb-0">Total Sales</p>
+<h2>1020</h2>
+</div>
+<div class="ml-auto">
+<a href="#" class="icon icon-m mt-1 rounded-m gradient-green"><i class="fa fa-dollar-sign"></i></a>
+</div>
+</div>
+<div class="d-flex">
+<div>
+<p class="font-11 mb-0">Customer Rating</p>
+<h2>4.95<span class="opacity-20">/5</span></h2>
+</div>
+<div class="ml-auto">
+<a href="#" class="icon icon-m mt-1 rounded-m gradient-yellow"><i class="fa fa-star"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style mt-4">
+<div class="content">
+<h5 class="font-14 opacity-50">Most Visited Items<a href="#" class="float-right color-highlight">View All</a></h5>
+<div class="divider mb-3"></div>
+<div class="row mb-0">
+<div class="col-5 mb-4 pr-0">
+<a href="#"><img src="images/pictures/16s.jpg" class="rounded-sm shadow-xl" width="120"></a>
+</div>
+<div class="col-7">
+<a href="#" class="d-block">
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i><br>
+</a>
+<a href="#">
+<h5 class="mb-0">Azures Mobie</h5>
+<span class="color-green-dark font-10">In Stock</span>
+</a>
+<h1 class="mt-1 mb-n2 font-800">$23<sup class="font-300 font-16">.99</sup></h1>
+</div>
+<div class="col-5 pr-0">
+<a href="#"><img src="images/pictures/1s.jpg" class="rounded-sm shadow-xl" width="120"></a>
+</div>
+<div class="col-7">
+<a href="#" class="d-block">
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i>
+<i class="fa fa-star color-yellow-dark"></i><br>
+</a>
+<a href="#">
+<h5 class="mb-0">EazyMobile</h5>
+<span class="color-green-dark font-10">In Stock</span>
+</a>
+<h1 class="mt-1 mb-n2 font-800">$23<sup class="font-300 font-16">.99</sup></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-style mt-4">
+<div class="content mb-n2">
+<h5 class="font-14 opacity-50">Most Viewed From<a href="#" class="float-right color-highlight">View All</a></h5>
+<div class="divider mb-4 mt-3"></div>
+<div class="chart-container mb-4" style="width:100%; height:350px;">
+<canvas class="chart" id="vertical-chart" />
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+<div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+<div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
